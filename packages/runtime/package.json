@@ -20,12 +20,14 @@
   "exports": {
     ".": {
       "node": {
+        "jsnext:source": "./src/index.ts",
         "import": "./dist/js/modern/index.js",
         "require": "./dist/js/node/index.js"
       },
       "default": "./dist/js/treeshaking/index.js"
     },
     "./styled": {
+      "jsnext:source": "./src/styled.ts",
       "node": {
         "import": "./dist/js/modern/styled.js",
         "require": "./dist/js/node/styled.js"
