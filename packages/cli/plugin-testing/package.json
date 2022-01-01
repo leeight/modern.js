@@ -72,6 +72,7 @@
     "@modern-js/runtime-core": "workspace:^1.1.2"
   },
   "devDependencies": {
+    "esbuild": "^0.13.8",
     "@modern-js-reduck/plugin-auto-actions": "^1.0.0",
     "@modern-js-reduck/plugin-effects": "^1.0.0",
     "@modern-js-reduck/plugin-immutable": "^1.0.0",

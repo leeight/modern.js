@@ -15,7 +15,7 @@ const manager = createManager({ jestConfig });
 const { createPlugin } = manager;
 
 export const createLifeCycle = (plugins?: any[]) => {
-  // todo: remove manager. @tianqi
+  // TODO: remove manager. @tianqi
   const _manager = manager || createManager({ jestConfig });
 
   plugins && _manager.usePlugin(...plugins);

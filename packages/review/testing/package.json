@@ -43,7 +43,7 @@
     "babel-jest": "^27.0.6",
     "chalk": "^4.1.2",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.0.6",
+    "jest": "^27",
     "lodash.merge": "^4.6.2",
     "semver": "^7.3.5",
     "ts-jest": "^27.0.4",

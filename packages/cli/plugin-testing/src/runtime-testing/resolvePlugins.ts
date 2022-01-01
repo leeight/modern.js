@@ -11,6 +11,7 @@ export default function resolvePlugins(features: NormalizedConfig['runtime']) {
 
   Object.keys(features).forEach(feature => {
     if (allowedFeatures.includes(feature)) {
+      // FIXME: @modern-js/runtime 这个依赖没有在 package.json 里面声明
       const curPluginRes = require(`@modern-js/runtime/plugins`)[feature]({
         ...features[feature],
       });

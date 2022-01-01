@@ -34,7 +34,7 @@
     "test": "modern test --passWithNoTests"
   },
   "dependencies": {
-    "esbuild": "^0.14.5",
+    "esbuild": "^0.13.8",
     "@babel/runtime": "^7"
   },
   "devDependencies": {

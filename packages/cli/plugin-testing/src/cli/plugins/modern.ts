@@ -12,7 +12,7 @@ const getModuleNameMapper = (config: any) => {
 
     const isFile = aliasValue.some((s: string) => s.endsWith('.js'));
 
-    // It's special for if using @modern-js/runtime alias other module @modern-js/runtime/model would not work.
+    // FIXME: It's special for if using @modern-js/runtime alias other module @modern-js/runtime/model would not work.
     if (cur === '@modern-js/runtime$') {
       memo[`.+${cur}`] = aliasValue[0];
 
@@ -45,7 +45,7 @@ export default (webpackConfig: any, userConfig: any, pwd: string) =>
 
         utils.setJestConfig({
           rootDir: pwd || process.cwd(),
-          // todo: diffrent test root for diffrent solutions
+          // TODO: diffrent test root for diffrent solutions
           // testMatch: [`<rootDir>/(src|tests|electron)/**/*.test.[jt]s?(x)`],
           // testMatch bug on windows, issue: https://github.com/facebook/jest/issues/7914
           testMatch: [

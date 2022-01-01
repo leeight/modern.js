@@ -44,6 +44,7 @@ export const getWebpackAliases = (
     [INTERNAL_DIR_ALAIS]: appContext.internalDirectory,
     [INTERNAL_SRC_ALIAS]: appContext.srcDirectory,
     '@': appContext.srcDirectory,
+    // FIXME: 这个 @shared 的 alias 定义感觉很诧异，是自己搞了一个标准吗？
     '@shared': appContext.sharedDirectory,
     'react-native': 'react-native-web',
     ...(isProdProfile() && {

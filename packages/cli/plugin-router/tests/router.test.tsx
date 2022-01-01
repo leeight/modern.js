@@ -1,3 +1,4 @@
+import React from 'react';
 import { createApp, createPlugin } from '@modern-js/runtime-core';
 import { render } from '@testing-library/react';
 import createRouterPlugin from '../src/runtime';

@@ -91,6 +91,7 @@ export async function runJest(
   config: Agrv,
   pwd: string = process.cwd(),
 ): Promise<void> {
+  console.log(JSON.stringify(config, null, 2));
   try {
     const argvConfig = await buildArgv(process.argv.slice(2), config);
     const { results, globalConfig } = await runCLI(argvConfig, [pwd]);

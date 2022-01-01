@@ -17,6 +17,7 @@
     "setup": "npm run reset && pnpm install --ignore-scripts",
     "reset": "pnpm dlx del-cli ./node_modules",
     "test": "pnpm run test --filter ./packages",
+    "fast-test": "node --conditions=jsnext:source -r btsm node_modules/jest/bin/jest.js -c jest.config.js",
     "prepare": "pnpm run prepare --filter ./packages",
     "lint": "modern lint",
     "change": "modern change",
@@ -64,6 +65,8 @@
     "coverage/"
   ],
   "devDependencies": {
+    "btsm": "2.2.2",
+    "jest": "^27",
     "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.2.0",
     "@modern-js-app/eslint-config": "workspace:^1.0.0",

@@ -23,6 +23,9 @@ jobs:
         node-version: [14.x, 16.x]
         os: [macos-latest] # ubuntu-latest
 
+    env:
+      CODECOV_TOKEN: 60e39bdf-fa0f-46b3-bec1-809bdca11749
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Setup Node.js ${{ matrix.node-version }}
@@ -43,12 +46,10 @@ jobs:
 
       - name: Init
         if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: npm install -g pnpm && pnpm run setup
-
-      - name: Prepare
-        if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: pnpm run prepare --filter ./packages
+        run: npm install -g pnpm codecov && pnpm run setup
 
       - name: Test
         if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: pnpm run test
+        run: |
+          pnpm run fast-test
+          codecov

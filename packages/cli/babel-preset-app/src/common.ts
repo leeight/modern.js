@@ -98,7 +98,7 @@ export const genCommon = (options: Options): BabelChain => {
     .plugin('built-in/babel-plugin-lock-corejs-version')
     .use(require.resolve('./built-in/babel-plugin-lock-corejs-version'));
 
-  // TODO depened on pnpm @modern-cli/dev-utils/monorepo
+  // TODO: depened on pnpm @modern-cli/dev-utils/monorepo
   // if (isPnpm(appDirectory)) {
   //   chain.plugin(require.resolve('./built-in/babel-plugin-pnpm-adapter'));
   // }

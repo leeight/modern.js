@@ -12,7 +12,7 @@ const test = async () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const config = useAppContext();
 
-  // todo: consider lib-tools ...
+  // TODO: consider lib-tools ...
   const webpackConfigs = getWebpackConfig(WebpackConfigTarget.CLIENT);
 
   userConfig.testing = userConfig.testing || {};

@@ -52,7 +52,7 @@
     "devcert": "^1.1.3",
     "enhanced-resolve": "^5.7.0",
     "es-module-lexer": "^0.4.1",
-    "esbuild": "^0.12.9",
+    "esbuild": "^0.13.8",
     "etag": "^1.8.1",
     "fast-glob": "^3.2.5",
     "find-node-modules": "^2.1.2",
