@@ -6,6 +6,7 @@
     "target": "ES5",
     "sourceMap": false,
     "jsx": "preserve",
+    "rootDir": "./",
     "baseUrl": "./",
     "skipLibCheck": true,
     "esModuleInterop": true,

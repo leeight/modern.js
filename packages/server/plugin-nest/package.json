@@ -39,7 +39,7 @@
     "prepublishOnly": "pnpm build -- --platform",
     "new": "modern new",
     "build": "tsc",
-    "test": "modern test --passWithNoTests"
+    "_test": "modern test --passWithNoTests"
   },
   "dependencies": {
     "@modern-js/adapter-helpers": "workspace:^1.1.1",

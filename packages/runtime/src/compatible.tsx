@@ -100,7 +100,9 @@ export const bootstrap: BootStrap = async (
 ) => {
   const runner = runnerMap.get(App)!;
 
-  const context = {
+  // FIXME(leeight): this type should be RuntimeContext but it's not working here.
+  // ...is missing the following properties from type 'RuntimeContext': SSRContext, fetch
+  const context: any = {
     loaderManager: createLoaderManager({}),
     runner,
   };
@@ -182,7 +184,8 @@ export const useRuntimeContext = () => {
   const context = useContext(RuntimeReactContext);
 
   return context.runner.pickContext(
-    { context, pickedContext: {} },
+    // FIXME(leeight): error TS2741: Property 'store' is missing in type '{}' but required in type 'TRuntimeContext'.
+    { context, pickedContext: {} as any },
     {
       onLast: ({ pickedContext }: { pickedContext: TRuntimeContext }) =>
         pickedContext,

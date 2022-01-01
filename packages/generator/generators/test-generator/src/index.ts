@@ -91,7 +91,7 @@ export default async (context: GeneratorContext, generator: GeneratorCore) => {
 
   appApi.showSuccessInfo(
     i18n.t(localeKeys.success, {
-      packageManager: getPackageManagerText(packageManager),
+      packageManager: getPackageManagerText(packageManager as any),
     }),
   );
 

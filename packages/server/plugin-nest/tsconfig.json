@@ -8,6 +8,7 @@
     "declaration": true,
     "outDir": "dist",
     "jsx": "preserve",
+    "rootDir": "./",
     "baseUrl": "./",
     "isolatedModules": true,
     "paths": {

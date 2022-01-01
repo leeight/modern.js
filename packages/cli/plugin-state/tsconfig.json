@@ -4,6 +4,7 @@
     "declaration": false,
     "jsx": "preserve",
     "skipLibCheck": true,
+    "rootDir": "./",
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]

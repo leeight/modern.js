@@ -5,6 +5,7 @@
     "lib": ["DOM"],
     "declaration": false,
     "jsx": "preserve",
+    "rootDir": "./",
     "baseUrl": "./",
     "esModuleInterop": true,
     "paths": {

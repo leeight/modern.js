@@ -1,7 +1,7 @@
 import enhanceResolve from 'enhanced-resolve';
 
 const resolver = enhanceResolve.create.sync({
-  conditionNames: ['require', 'node', 'default'],
+  conditionNames: ['require', 'node', 'default', 'jsnext:source'],
   extensions: ['.js', '.json', '.node', '.ts', '.tsx'],
 });
 

@@ -3,6 +3,7 @@
   "compilerOptions": {
     "declaration": true,
     "jsx": "preserve",
+    "rootDir": "./",
     "baseUrl": "./",
     "outDir": "./out",
     "emitDeclarationOnly": true,

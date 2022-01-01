@@ -4,6 +4,7 @@
     "allowJs": true,
     "declaration": false,
     "jsx": "preserve",
+    "rootDir": "./",
     "baseUrl": "./",
     "isolatedModules": true,
     "paths": {

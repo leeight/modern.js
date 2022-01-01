@@ -16,15 +16,16 @@ import webpack, {
   HotModuleReplacementPlugin,
   ProvidePlugin,
 } from 'webpack';
-import nodeLibsBrowser from 'node-libs-browser';
 import { Entrypoint } from '@modern-js/types';
 import CopyPlugin from 'copy-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { RouteManifest } from '../plugins/route-manifest-plugin';
 import { InlineChunkHtmlPlugin } from '../plugins/inline-html-chunk-plugin';
 import { AppIconPlugin } from '../plugins/app-icon-plugin';
-import { BaseWebpackConfig } from './base';
 import { ICON_EXTENSIONS } from '../utils/constants';
+import { BaseWebpackConfig } from './base';
+
+const nodeLibsBrowser = require('node-libs-browser');
 
 class ClientWebpackConfig extends BaseWebpackConfig {
   htmlFilename: (name: string) => string;

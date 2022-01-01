@@ -1,9 +1,11 @@
 import path from 'path';
 import { createMatchPath } from 'tsconfig-paths';
-import { resolvePath } from 'babel-plugin-module-resolver';
 import { PluginOptions } from '@babel/core';
 import { getUserAlias } from '@modern-js/utils';
 import { AliasOption } from '../types';
+
+// FIXME(leeight): temporary fix ts type error
+const { resolvePath } = require('babel-plugin-module-resolver');
 
 const defaultPaths = { '@': ['./src'] };
 

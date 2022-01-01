@@ -3,6 +3,7 @@
   "compilerOptions": {
     "declaration": true,
     "jsx": "preserve",
+    "rootDir": "./",
     "baseUrl": ".",
     "skipLibCheck": true,
     "esModuleInterop": true,

@@ -34,7 +34,7 @@ const plugin: any = () =>
           pickedContext: {
             ...pickedContext,
             request: context?.ssrContext?.request,
-          },
+          } as any,
         }),
     }),
     { name: '@modern-js/plugin-ssr' },
