@@ -4,7 +4,7 @@ import {
   createRuntime,
   createApp,
   createPlugin,
-} from '@/index';
+} from '../src/index';
 
 declare module '..' {
   interface RuntimeContext {
