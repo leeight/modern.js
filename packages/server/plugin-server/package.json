@@ -12,8 +12,7 @@
     "modern.js"
   ],
   "version": "1.0.1",
-  "types": "./dist/types/server.d.ts",
-  "main": "./dist/js/node/server.js",
+  "main": "./src/server.ts",
   "exports": {
     ".": {
       "node": {
@@ -49,8 +48,8 @@
   },
   "devDependencies": {
     "@modern-js/core": "workspace:^1.1.3",
-    "@modern-js/module-tools": "^1.1.3",
-    "@modern-js/plugin-testing": "^1.0.0",
+    "@modern-js/module-tools": "workspace:^1.1.3",
+    "@modern-js/plugin-testing": "workspace:^1.2.1",
     "del-cli": "^4.0.1",
     "typescript": "^4",
     "@types/jest": "^26.0.9",
