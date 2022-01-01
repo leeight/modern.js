@@ -62,6 +62,7 @@
     "signale": "^1.4.0"
   },
   "devDependencies": {
+    "btsm": "2.2.2",
     "@types/jest": "^26",
     "@types/js-yaml": "^4.0.2",
     "@types/md5": "^2.3.1",
