@@ -1,5 +1,16 @@
-// eslint-disable-next-line import/no-useless-path-segments
-import { isFunction, logger, isPlainObject } from './index';
+import { logger } from './index';
+
+function isFunction(func: any): func is Function {
+  return typeof func === 'function';
+}
+
+function isPlainObject(obj: any): obj is Record<string, any> {
+  return (
+    obj &&
+    typeof obj === 'object' &&
+    Object.prototype.toString.call(obj) === '[object Object]'
+  );
+}
 
 export const applyOptionsChain = <T, U>(
   defaults: T,
