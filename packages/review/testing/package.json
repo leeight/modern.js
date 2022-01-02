@@ -46,7 +46,7 @@
     "jest": "^27",
     "lodash.merge": "^4.6.2",
     "semver": "^7.3.5",
-    "ts-jest": "^27.0.4",
+    "ts-jest": "^27",
     "yargs": "^17.0.1"
   },
   "devDependencies": {

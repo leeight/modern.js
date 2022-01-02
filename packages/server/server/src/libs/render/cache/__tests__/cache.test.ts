@@ -179,7 +179,6 @@ describe('cache', () => {
     }
   });
 
-  jest.setTimeout(1000 * 10);
   it('should stale cache correctly', async () => {
     destroyCache();
     const cache = createCache();
@@ -189,7 +188,7 @@ describe('cache', () => {
       query: {},
       headers: {},
     };
-    const config = createCacheConfig({ interval: 5 });
+    const config = createCacheConfig({ interval: 1 });
     const content = 'hello';
     const shouldCache = await cache.set(context, content, config, true);
     expect(shouldCache.value).toBe(true);
@@ -200,7 +199,7 @@ describe('cache', () => {
     await new Promise<void>(resolve => {
       setTimeout(() => {
         resolve();
-      }, 6000);
+      }, 2000);
     });
 
     const staleResult = await cache.get(context);

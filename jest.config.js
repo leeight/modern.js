@@ -7,13 +7,14 @@ function resolve(filepath) {
 }
 
 module.exports = {
-  collectCoverage: false,
+  collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/packages/**/src/**/*.ts'],
   coveragePathIgnorePatterns: ['/node_modules/'],
   transform: {
-    '\\.[jt]sx?$': resolve(
-      '/packages/review/testing/src/config/transformer/babelTransformer.ts',
-    ),
+    // '\\.[jt]sx?$': resolve(
+    //   '/packages/review/testing/src/config/transformer/babelTransformer.ts',
+    // ),
+    '\\.[jt]sx?$': 'esbuild-jest',
   },
   moduleNameMapper: {
     // '\\.(css|less|scss|sass)$':

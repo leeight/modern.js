@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
-import { useLoader, createApp } from '../src/index';
+import { useLoader, createApp } from '../src';
 
 const loaderCount = jest.fn();
 const sleep = (t: number): Promise<void> =>
@@ -12,7 +12,7 @@ const App = () => {
   const { data, loading, reloading, error, reload } = useLoader(
     async () => {
       loaderCount();
-      await sleep(800);
+      await sleep(80);
       return Promise.resolve(++countRef.current);
     },
     { params: '1' },
@@ -97,7 +97,7 @@ describe('test useLoader', () => {
 
     expect(result.asFragment()).toMatchSnapshot();
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     expect(result.asFragment()).toMatchSnapshot();
 
@@ -108,11 +108,11 @@ describe('test useLoader', () => {
     const AppWrapper = createApp({ plugins: [] })(App);
     const result = render(<AppWrapper />);
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     fireEvent.click(result.getAllByText(/^reload$/)[0]);
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     expect(result.asFragment()).toMatchSnapshot();
   });
@@ -126,12 +126,12 @@ describe('test useLoader', () => {
     ));
     const result = render(<AppWrapper />);
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
     expect(result.asFragment()).toMatchSnapshot();
 
     fireEvent.click(result.getByText('reload1'));
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     expect(loaderCount).toBeCalledTimes(2);
     expect(result.asFragment()).toMatchSnapshot();
@@ -147,20 +147,20 @@ describe('test useLoader', () => {
     ));
     const result = render(<AppWrapper />);
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     expect(result.asFragment()).toMatchSnapshot();
 
     expect(loaderCount).toBeCalledTimes(2);
 
     fireEvent.click(result.getByText('reload1'));
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     expect(loaderCount).toBeCalledTimes(3);
     expect(result.asFragment()).toMatchSnapshot();
 
     fireEvent.click(result.getByText('reload2'));
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
 
     expect(loaderCount).toBeCalledTimes(4);
     expect(result.asFragment()).toMatchSnapshot();
@@ -174,9 +174,9 @@ describe('test useLoader', () => {
     ));
     const result = render(<AppWrapper />);
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
     fireEvent.click(result.getByText('update params'));
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
     expect(result.asFragment()).toMatchSnapshot();
   });
 
@@ -184,9 +184,9 @@ describe('test useLoader', () => {
     const AppWrapper = createApp({ plugins: [] })(() => <App3 />);
     const result = render(<AppWrapper />);
 
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
     fireEvent.click(result.getByText('reload3'));
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
     expect(result.asFragment()).toMatchSnapshot();
   });
 
@@ -195,7 +195,7 @@ describe('test useLoader', () => {
     const result = render(<AppWrapper />);
 
     expect(result.asFragment()).toMatchSnapshot();
-    await act(() => sleep(1000));
+    await act(() => sleep(100));
     fireEvent.click(result.getAllByText(/^reload$/)[0]);
     expect(result.asFragment()).toMatchSnapshot();
   });

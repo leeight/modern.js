@@ -24,6 +24,8 @@ export default function (
 
   options = { ...(defaultOptions as Options), ...options };
 
-  return generate(options, options.chain || createBabelChain()).toJSON();
+  const z = generate(options, options.chain || createBabelChain()).toJSON();
+  // console.log(JSON.stringify(z, null, 2));
+  return z;
 }
 /* eslint-enable  no-param-reassign */
