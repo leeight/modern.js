@@ -9,7 +9,7 @@ function resolve(filepath) {
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/packages/**/src/**/*.ts'],
-  coveragePathIgnorePatterns: ['/node_modules/'],
+  coveragePathIgnorePatterns: ['/node_modules/', '/fixtures/'],
   transform: {
     // '\\.[jt]sx?$': resolve(
     //   '/packages/review/testing/src/config/transformer/babelTransformer.ts',

@@ -59,7 +59,9 @@ describe('function-mode', () => {
     expect(res.body.id).toBe(777);
   });
 
-  // FIXME: 不清楚为啥，这个 case 是失败的（改成了 esbuild-jest 之后）
+  // TODO: 因为 esbuild-jest & esbuild 是不支持 decorator 的，但是 ts-jest 是支持的，所以目前使用 esbuild-jest 的时候，这个 case 是无法通过测试的
+  // 后续可以再改改配置，把 plugin-nest 这个模块的测试都走 ts-jest 可能就没有问题了
+  // https://github.com/evanw/esbuild/issues/257#issuecomment-658053616
   xit('should works with middleware', async () => {
     const res = await request(apiHandler).get('/cats');
     expect(res.status).toBe(200);

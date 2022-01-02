@@ -11,7 +11,5 @@
     "sourceMap": true,
     "types": ["node", "jest"]
   },
-  "paths": {
-    "@/*": ["../src/*"]
-  }
+  "paths": {}
 }
