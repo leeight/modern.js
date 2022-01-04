@@ -1,15 +1,18 @@
-import { Import } from '@modern-js/utils';
+// import { Import } from '@modern-js/utils';
 import chalk from 'chalk';
+import { mountHook } from '@modern-js/core';
+import inquirer from 'inquirer';
+import { devMenuTitle } from '../../utils/color';
 
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
-const inquirer: typeof import('inquirer') = Import.lazy('inquirer', require);
-const color: typeof import('../../utils/color') = Import.lazy(
-  '../../utils/color',
-  require,
-);
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
+// const inquirer: typeof import('inquirer') = Import.lazy('inquirer', require);
+// const color: typeof import('../../utils/color') = Import.lazy(
+//   '../../utils/color',
+//   require,
+// );
 
 export interface IDevConfig {
   appDirectory: string;
@@ -19,7 +22,7 @@ export interface IDevConfig {
 export type DevTaskType = 'storybook' | 'docsite' | 'unknow';
 
 export const showMenu = async (config: IDevConfig) => {
-  const metas = await (core.mountHook() as any).moduleToolsMenu(undefined);
+  const metas = await (mountHook() as any).moduleToolsMenu(undefined);
   if (metas.length <= 0) {
     console.info(
       chalk.yellow(
@@ -29,7 +32,7 @@ export const showMenu = async (config: IDevConfig) => {
     // eslint-disable-next-line no-process-exit
     process.exit(0);
   }
-  const menuMessage = color.devMenuTitle('Select the debug mode:');
+  const menuMessage = devMenuTitle('Select the debug mode:');
   const { type } = await inquirer.prompt([
     {
       name: 'type',
@@ -46,7 +49,7 @@ export const showMenu = async (config: IDevConfig) => {
 };
 
 export const devStorybook = async (config: IDevConfig) => {
-  const metas = await (core.mountHook() as any).moduleToolsMenu(undefined);
+  const metas = await (mountHook() as any).moduleToolsMenu(undefined);
   const findStorybook = metas.find((meta: any) => meta.value === 'storybook');
   if (findStorybook) {
     await findStorybook.runTask(config);

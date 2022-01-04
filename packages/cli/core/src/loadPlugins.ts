@@ -9,7 +9,12 @@ const debug = createDebugger('load-plugins');
 
 export interface PluginConfigItem {
   cli?: string;
+  // cliPluginInstance > cli
+  cliPluginInstance?: any;
+
   server?: string;
+  // serverPluginInstance > server
+  serverPluginInstance?: any;
 }
 
 export type PluginConfig = Array<PluginConfigItem>;
@@ -60,26 +65,38 @@ export const loadPlugins = (
   pluginConfig: PluginConfig,
   internalPlugins?: typeof INTERNAL_PLUGINS,
 ) => {
-  const plugins = [
+  const plugins: PluginConfigItem[] = [
     ...Object.keys(internalPlugins || INTERNAL_PLUGINS)
       .filter(name => isDepExists(appDirectory, name))
       .map(name => (internalPlugins || INTERNAL_PLUGINS)[name]),
     ...pluginConfig,
   ];
+  // console.log(plugins);
 
   return plugins.map(plugin => {
-    const { cli, server } = resolvePlugin(appDirectory, plugin);
+    let cliPlugin = plugin.cliPluginInstance;
+    let serverPlugin = plugin.serverPluginInstance;
+    let resolved;
 
-    debug(`resolve plugin %s: %s`, plugin, {
-      cli,
-      server,
-    });
+    if (!cliPlugin) {
+      if (!resolved) {
+        resolved = resolvePlugin(appDirectory, plugin);
+      }
+      const { cli } = resolved;
+      cliPlugin = cli && { ...compatRequire(cli), pluginPath: cli };
+    }
 
-    const cliPlugin = cli && { ...compatRequire(cli), pluginPath: cli };
-    const serverPlugin = server && {
-      ...compatRequire(server),
-      pluginPath: server,
-    };
+    if (!serverPlugin) {
+      if (!resolved) {
+        resolved = resolvePlugin(appDirectory, plugin);
+      }
+      const { server } = resolved;
+
+      serverPlugin = server && {
+        ...compatRequire(server),
+        pluginPath: server,
+      };
+    }
 
     return {
       cli: cliPlugin,

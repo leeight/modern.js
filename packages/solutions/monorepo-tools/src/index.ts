@@ -1,4 +1,5 @@
 import { createPlugin, usePlugins, defineConfig } from '@modern-js/core';
+import changesetPlugin from '@modern-js/plugin-changeset/cli';
 import { i18n } from './locale';
 import { newCli, deployCli, clearCli } from './cli';
 import { getLocaleLanguage } from './utils/language';
@@ -6,7 +7,7 @@ import { getLocaleLanguage } from './utils/language';
 export { defineConfig };
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
-usePlugins([require.resolve('@modern-js/plugin-changeset/cli')]);
+usePlugins([changesetPlugin]);
 
 export default createPlugin(
   () => {

@@ -1,6 +1,9 @@
 import path from 'path';
 import { PLUGIN_SCHEMAS, createRuntimeExportsUtils } from '@modern-js/utils';
 import { createPlugin, usePlugins, useAppContext } from '@modern-js/core';
+import statePlugin from '@modern-js/plugin-state/cli';
+import routerPlugin from '@modern-js/plugin-router/cli';
+import ssrPlugin from '@modern-js/plugin-ssr/cli';
 
 const useInternalDirectory = () => {
   try {
@@ -11,11 +14,7 @@ const useInternalDirectory = () => {
 };
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
-usePlugins([
-  require.resolve('@modern-js/plugin-state/cli'),
-  require.resolve('@modern-js/plugin-router/cli'),
-  require.resolve('@modern-js/plugin-ssr/cli'),
-]);
+usePlugins([statePlugin, routerPlugin, ssrPlugin]);
 
 export default createPlugin(
   () => {

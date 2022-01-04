@@ -6,20 +6,23 @@ import type {
   CoreOptions,
 } from '@modern-js/core';
 import type { ModuleToolsOutput } from '../types';
+import glob from 'glob';
+import { cli, manager } from '@modern-js/core';
+import { copyTask } from '../utils/copy';
 
 const argv: typeof import('process.argv').default = Import.lazy(
   'process.argv',
   require,
 );
-const glob: typeof import('glob') = Import.lazy('glob', require);
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
-const copyUtils: typeof import('../utils/copy') = Import.lazy(
-  '../utils/copy',
-  require,
-);
+// const glob: typeof import('glob') = Import.lazy('glob', require);
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
+// const copyUtils: typeof import('../utils/copy') = Import.lazy(
+//   '../utils/copy',
+//   require,
+// );
 
 const STYLE_DIRS = 'styles';
 const SRC_DIRS = 'src';
@@ -97,7 +100,7 @@ const taskMain = ({
   const outputDirToStyle = path.join(appDirectory, outputPath, assetsPath);
   copyAssets({ targetDir: srcDir, outputDir: outputDirToSrc });
   copyAssets({ targetDir: styleDir, outputDir: outputDirToStyle });
-  copyUtils.copyTask({ modernConfig, appContext });
+  copyTask({ modernConfig, appContext });
   if (config.watch) {
     watchAssets({ targetDir: srcDir, outputDir: outputDirToSrc });
     watchAssets({ targetDir: styleDir, outputDir: outputDirToStyle });
@@ -109,11 +112,11 @@ const taskMain = ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  const { resolved: modernConfig, appContext } = await core.cli.init(
+  const { resolved: modernConfig, appContext } = await cli.init(
     [],
     options,
   );
-  core.manager.run(() => {
+  manager.run(() => {
     try {
       taskMain({ modernConfig, appContext });
     } catch (e: any) {

@@ -3,27 +3,32 @@ import type { NormalizedConfig, CoreOptions } from '@modern-js/core';
 import type { ICompilerResult, IVirtualDist } from '@modern-js/babel-compiler';
 import type { ITsconfig } from '../types';
 import { initEnv } from './build-source-code';
+import { BuildWatchEvent, compiler } from '@modern-js/babel-compiler';
+import { clearFlag } from '../features/build/logger';
+import { readTsConfig } from '../utils/tsconfig';
+import { resolveBabelConfig } from '../utils/babel';
+import { cli, manager } from '@modern-js/core';
 
-const babelCompiler: typeof import('@modern-js/babel-compiler') = Import.lazy(
-  '@modern-js/babel-compiler',
-  require,
-);
-const logger: typeof import('../features/build/logger') = Import.lazy(
-  '../features/build/logger',
-  require,
-);
-const ts: typeof import('../utils/tsconfig') = Import.lazy(
-  '../utils/tsconfig',
-  require,
-);
-const babel: typeof import('../utils/babel') = Import.lazy(
-  '../utils/babel',
-  require,
-);
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
+// const babelCompiler: typeof import('@modern-js/babel-compiler') = Import.lazy(
+//   '@modern-js/babel-compiler',
+//   require,
+// );
+// const logger: typeof import('../features/build/logger') = Import.lazy(
+//   '../features/build/logger',
+//   require,
+// );
+// const ts: typeof import('../utils/tsconfig') = Import.lazy(
+//   '../utils/tsconfig',
+//   require,
+// );
+// const babel: typeof import('../utils/babel') = Import.lazy(
+//   '../utils/babel',
+//   require,
+// );
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
 const argv: typeof import('process.argv').default = Import.lazy(
   'process.argv',
   require,
@@ -46,7 +51,7 @@ const runBabelCompiler = async (
   modernConfig: NormalizedConfig,
 ) => {
   const { tsconfigPath } = config;
-  const babelConfig = babel.resolveBabelConfig(
+  const babelConfig = resolveBabelConfig(
     config.appDirectory,
     modernConfig,
     {
@@ -56,7 +61,7 @@ const runBabelCompiler = async (
       type: config.type,
     },
   );
-  const tsconfig = ts.readTsConfig<ITsconfig>(tsconfigPath || '', {});
+  const tsconfig = readTsConfig<ITsconfig>(tsconfigPath || '', {});
   const isTs = Boolean(tsconfig);
 
   const getExts = (isTsProject: boolean) => {
@@ -72,7 +77,7 @@ const runBabelCompiler = async (
 
     return exts;
   };
-  const emitter = await babelCompiler.compiler(
+  const emitter = await compiler(
     {
       enableVirtualDist: true,
       quiet: true,
@@ -84,30 +89,30 @@ const runBabelCompiler = async (
     },
     babelConfig,
   );
-  emitter.on(babelCompiler.BuildWatchEvent.compiling, () => {
-    console.info(logger.clearFlag, `Compiling...`);
+  emitter.on(BuildWatchEvent.compiling, () => {
+    console.info(clearFlag, `Compiling...`);
   });
   emitter.on(
-    babelCompiler.BuildWatchEvent.firstCompiler,
+    BuildWatchEvent.firstCompiler,
     (result: ICompilerResult) => {
       if (result.code === 1) {
-        console.error(logger.clearFlag);
+        console.error(clearFlag);
         console.error(result.message);
         for (const detail of result.messageDetails || []) {
           console.error(detail.content);
         }
       } else {
         generatorRealFiles(result.virtualDists!);
-        console.info(logger.clearFlag, '[Babel Compiler]: Successfully');
+        console.info(clearFlag, '[Babel Compiler]: Successfully');
       }
     },
   );
 
   emitter.on(
-    babelCompiler.BuildWatchEvent.watchingCompiler,
+    BuildWatchEvent.watchingCompiler,
     (result: ICompilerResult) => {
       if (result.code === 1) {
-        console.error(logger.clearFlag);
+        console.error(clearFlag);
         console.error(result.message);
         for (const detail of result.messageDetails || []) {
           console.error(detail.content);
@@ -175,8 +180,8 @@ const taskMain = async ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  const { resolved } = await core.cli.init([], options);
-  await core.manager.run(async () => {
+  const { resolved } = await cli.init([], options);
+  await manager.run(async () => {
     try {
       await taskMain({ modernConfig: resolved });
     } catch (e) {

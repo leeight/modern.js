@@ -34,6 +34,7 @@
   "scripts": {
     "prepare": "pnpm build",
     "prepublishOnly": "pnpm build -- --platform",
+    "__bundle": "esbuild src/cli.ts --conditions=jsnext:source --platform=node --target=node12 --external:fsevents --external:esbuild --external:@swc/core --external:file --external:pnpapi --external:jest-resolve --bundle --outfile=cli.js",
     "new": "modern new",
     "build": "modern build",
     "dev": "modern build --watch",

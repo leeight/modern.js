@@ -2,28 +2,35 @@ import { Import, fs } from '@modern-js/utils';
 import type { NormalizedConfig, CoreOptions } from '@modern-js/core';
 import type { BabelOptions, IVirtualDist } from '@modern-js/babel-compiler';
 import type { ITsconfig } from '../types';
+import { compiler } from '@modern-js/babel-compiler';
+import glob from 'glob';
+import { cli, manager } from '@modern-js/core';
+import { resolveBabelConfig } from '../utils/babel';
+import { readTsConfig } from '../utils/tsconfig';
+import moduleToolsPlugin from '../index';
+import testingPlugin from '@modern-js/plugin-testing/cli';
 
-const babelCompiler: typeof import('@modern-js/babel-compiler') = Import.lazy(
-  '@modern-js/babel-compiler',
-  require,
-);
-const glob: typeof import('glob') = Import.lazy('glob', require);
+// const babelCompiler: typeof import('@modern-js/babel-compiler') = Import.lazy(
+//   '@modern-js/babel-compiler',
+//   require,
+// );
+// const glob: typeof import('glob') = Import.lazy('glob', require);
 const argv: typeof import('process.argv').default = Import.lazy(
   'process.argv',
   require,
 );
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
-const bc: typeof import('../utils/babel') = Import.lazy(
-  '../utils/babel',
-  require,
-);
-const ts: typeof import('../utils/tsconfig') = Import.lazy(
-  '../utils/tsconfig',
-  require,
-);
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
+// const bc: typeof import('../utils/babel') = Import.lazy(
+//   '../utils/babel',
+//   require,
+// );
+// const ts: typeof import('../utils/tsconfig') = Import.lazy(
+//   '../utils/tsconfig',
+//   require,
+// );
 
 export enum Compiler {
   babel,
@@ -51,7 +58,7 @@ const runBabelCompiler = async (
 ) => {
   const { srcRootDir, distDir } = config;
   // TODO: 判断lynx模式下，修改distFileExtMap: {'js': 'js', 'jsx': 'jsx', 'ts': 'js', 'tsx': 'jsx'}
-  return babelCompiler.compiler(
+  return compiler(
     {
       quiet: true,
       enableVirtualDist: true,
@@ -104,7 +111,7 @@ export const buildSourceCode = async (config: IBuildSourceCodeConfig) => {
     sourceMaps,
     babelConfig,
   } = config;
-  const tsconfig = ts.readTsConfig(tsconfigPath);
+  const tsconfig = readTsConfig(tsconfigPath);
   const willCompilerFiles = getWillCompilerCode(willCompilerDirOrFile, {
     tsconfig,
     isTsProject: Boolean(tsconfig),
@@ -186,12 +193,13 @@ const taskMain = async ({
 }: {
   modernConfig: NormalizedConfig;
 }) => {
-  // Execution of the script's parameter handling and related required configuration acquisition
+  // TODO: Execution of the script's parameter handling and related required configuration acquisition
+  // FIXME: 这个 argv 是哪个库来的？
   const processArgv = argv(process.argv.slice(2));
-  const config = processArgv<ITaskConfig>(defaultConfig);
+  const config: any = processArgv<ITaskConfig>(defaultConfig);
   process.env.BUILD_FORMAT = initEnv(config);
   const compiler = Compiler.babel; // Currently, only babel is supported.
-  const babelConfig = bc.resolveBabelConfig(config.appDirectory, modernConfig, {
+  const babelConfig = resolveBabelConfig(config.appDirectory, modernConfig, {
     sourceAbsDir: config.srcRootDir,
     tsconfigPath: config.tsconfigPath,
     syntax: config.syntax,
@@ -239,8 +247,18 @@ const taskMain = async ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  const { resolved } = await core.cli.init([], options);
-  await core.manager.run(async () => {
+  const { resolved } = await cli.init([], {
+    plugins: {
+      '@modern-js/module-tools': {
+        cliPluginInstance: moduleToolsPlugin
+      },
+      '@modern-js/plugin-testing': {
+        cliPluginInstance: testingPlugin
+      }
+    },
+    ...options
+  });
+  await manager.run(async () => {
     try {
       await taskMain({ modernConfig: resolved });
     } catch (e) {

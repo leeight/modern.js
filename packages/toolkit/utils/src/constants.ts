@@ -66,7 +66,14 @@ export const SHARED_DIR = 'shared';
  * Internal plugins that work as soon as they are installed.
  */
 export const INTERNAL_PLUGINS: {
-  [name: string]: { cli?: string; server?: string };
+  [name: string]: {
+    cli?: string;
+    // cliPluginInstance > cli
+    cliPluginInstance?: any;
+    server?: string,
+    // serverPluginInstance > server
+    serverPluginInstance?: any;
+  };
 } = {
   '@modern-js/app-tools': { cli: '@modern-js/app-tools/cli' },
   '@modern-js/monorepo-tools': { cli: '@modern-js/monorepo-tools/cli' },

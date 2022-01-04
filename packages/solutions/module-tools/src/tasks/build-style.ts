@@ -7,24 +7,29 @@ import type {
 } from '@modern-js/core';
 import type { ICompilerResult, PostcssOption } from '@modern-js/style-compiler';
 import type { ModuleToolsOutput } from '../types';
+import { getPostcssConfig } from '@modern-js/css-config';
+import { cli, manager, mountHook } from '@modern-js/core';
+import { styleCompiler } from '@modern-js/style-compiler'
+import glob from 'glob';
+import { buildLifeCycle } from '@modern-js/module-tools-hooks';
 
-const cssConfig: typeof import('@modern-js/css-config') = Import.lazy(
-  '@modern-js/css-config',
-  require,
-);
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
-const compiler: typeof import('@modern-js/style-compiler') = Import.lazy(
-  '@modern-js/style-compiler',
-  require,
-);
-const glob: typeof import('glob') = Import.lazy('glob', require);
-const hooks: typeof import('@modern-js/module-tools-hooks') = Import.lazy(
-  '@modern-js/module-tools-hooks',
-  require,
-);
+// const cssConfig: typeof import('@modern-js/css-config') = Import.lazy(
+//   '@modern-js/css-config',
+//   require,
+// );
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
+// const compiler: typeof import('@modern-js/style-compiler') = Import.lazy(
+//   '@modern-js/style-compiler',
+//   require,
+// );
+// const glob: typeof import('glob') = Import.lazy('glob', require);
+// const hooks: typeof import('@modern-js/module-tools-hooks') = Import.lazy(
+//   '@modern-js/module-tools-hooks',
+//   require,
+// );
 
 const STYLE_DIRS = 'styles';
 const SRC_STYLE_DIRS = 'src';
@@ -57,7 +62,7 @@ const getPostcssOption = (
   appDirectory: string,
   modernConfig: NormalizedConfig,
 ): PostcssOption => {
-  const postcssOption = cssConfig.getPostcssConfig(
+  const postcssOption = getPostcssConfig(
     appDirectory,
     modernConfig,
     false,
@@ -101,20 +106,17 @@ const taskMain = async ({
   } = modernConfig.output as ModuleToolsOutput;
   const { appDirectory } = appContext;
 
-  const lessOption = await core
-    .mountHook()
+  const lessOption = await mountHook()
     .moduleLessConfig(
       { modernConfig },
       { onLast: async (_: any) => undefined },
     );
-  const sassOption = await core
-    .mountHook()
+  const sassOption = await mountHook()
     .moduleSassConfig(
       { modernConfig },
       { onLast: async (_: any) => undefined },
     );
-  const tailwindPlugin = await core
-    .mountHook()
+  const tailwindPlugin = await mountHook()
     .moduleTailwindConfig(
       { modernConfig },
       { onLast: async (_: any) => undefined },
@@ -128,7 +130,7 @@ const taskMain = async ({
   const existStylesDir = checkStylesDirExist({ appDirectory });
   // 编译 styles 目录样式
   if (existStylesDir) {
-    const styleResult = await compiler.styleCompiler({
+    const styleResult = await styleCompiler({
       projectDir: appDirectory,
       stylesDir: path.resolve(appDirectory, STYLE_DIRS),
       outDir: path.join(appDirectory, outputPath, assetsPath),
@@ -154,7 +156,7 @@ const taskMain = async ({
     assetsPath,
   );
   if (importStyle === 'compiled-code') {
-    const srcStyleResult = await compiler.styleCompiler({
+    const srcStyleResult = await styleCompiler({
       projectDir: appDirectory,
       stylesDir: srcDir,
       outDir: outputDirtoSrc,
@@ -179,12 +181,12 @@ const taskMain = async ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  hooks.buildLifeCycle();
-  const { resolved: modernConfig, appContext } = await core.cli.init(
+  buildLifeCycle();
+  const { resolved: modernConfig, appContext } = await cli.init(
     [],
     options,
   );
-  await core.manager.run(async () => {
+  await manager.run(async () => {
     try {
       await taskMain({ modernConfig, appContext });
     } catch (e: any) {

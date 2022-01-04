@@ -1,17 +1,20 @@
 import path from 'path';
-import { Import, fs } from '@modern-js/utils';
+import { fs } from '@modern-js/utils';
 import type { NormalizedConfig } from '@modern-js/core';
 import type { IBuildConfig } from '../../types';
+import { buildSourceCode } from './build';
+import { buildInWatchMode } from './build-watch';
+import { buildPlatform } from './build-platform';
 
-const buildFeature: typeof import('./build') = Import.lazy('./build', require);
-const buildWatchFeature: typeof import('./build-watch') = Import.lazy(
-  './build-watch',
-  require,
-);
-const bp: typeof import('./build-platform') = Import.lazy(
-  './build-platform',
-  require,
-);
+// const buildFeature: typeof import('./build') = Import.lazy('./build', require);
+// const buildWatchFeature: typeof import('./build-watch') = Import.lazy(
+//   './build-watch',
+//   require,
+// );
+// const bp: typeof import('./build-platform') = Import.lazy(
+//   './build-platform',
+//   require,
+// );
 
 export const build = async (
   config: IBuildConfig,
@@ -30,14 +33,14 @@ export const build = async (
   // TODO: maybe need watch mode in build platform
   if (typeof platform === 'boolean' && platform) {
     if (process.env.RUN_PLATFORM) {
-      await bp.buildPlatform({ platform: 'all', isTsProject });
+      await buildPlatform({ platform: 'all', isTsProject });
     }
     return;
   }
 
   if (typeof platform === 'string') {
     if (process.env.RUN_PLATFORM) {
-      await bp.buildPlatform({ platform, isTsProject });
+      await buildPlatform({ platform, isTsProject });
     }
     return;
   }
@@ -47,8 +50,8 @@ export const build = async (
   }
 
   if (enableWatchMode) {
-    await buildWatchFeature.buildInWatchMode(config, modernConfig);
+    await buildInWatchMode(config, modernConfig);
   } else {
-    await buildFeature.buildSourceCode(config, modernConfig);
+    await buildSourceCode(config, modernConfig);
   }
 };

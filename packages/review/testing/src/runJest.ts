@@ -7,7 +7,7 @@
  */
 
 import { Config } from '@jest/types';
-import yargs from 'yargs/yargs';
+import yargs from 'yargs';
 import { runCLI } from 'jest';
 import chalk from 'chalk';
 import { getJestUtils, patchConfig } from './config';
@@ -91,7 +91,6 @@ export async function runJest(
   config: Agrv,
   pwd: string = process.cwd(),
 ): Promise<void> {
-  console.log(JSON.stringify(config, null, 2));
   try {
     const argvConfig = await buildArgv(process.argv.slice(2), config);
     const { results, globalConfig } = await runCLI(argvConfig, [pwd]);

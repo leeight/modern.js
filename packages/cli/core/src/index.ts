@@ -111,10 +111,14 @@ export const {
   useRunner: mountHook,
 } = manager;
 
-export const usePlugins = (plugins: string[]) =>
-  plugins.forEach(plugin =>
-    manager.usePlugin(compatRequire(require.resolve(plugin))),
-  );
+export const usePlugins = (plugins: string[] | any[]) =>
+  plugins.forEach(plugin => {
+    if (typeof plugin === 'string') {
+      manager.usePlugin(compatRequire(require.resolve(plugin)));
+    } else {
+      manager.usePlugin(plugin);
+    }
+  });
 
 export {
   defineConfig,
@@ -143,7 +147,7 @@ const initAppDir = async (): Promise<string> => {
 export interface CoreOptions {
   configFile?: string;
   plugins?: typeof INTERNAL_PLUGINS;
-  beforeUsePlugins: (
+  beforeUsePlugins?: (
     plugins: any,
     config: any,
   ) => { cli: any; cliPath: any; server: any; serverPath: any }[];
@@ -174,7 +178,9 @@ const createCli = () => {
       plugins = options.beforeUsePlugins(plugins, loaded.config);
     }
 
-    plugins.forEach(plugin => plugin.cli && manager.usePlugin(plugin.cli));
+    plugins.forEach(plugin => {
+      plugin.cli && manager.usePlugin(plugin.cli)
+    });
 
     const appContext = initAppContext(appDirectory, plugins, loaded.filePath);
 

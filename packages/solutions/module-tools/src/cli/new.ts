@@ -1,32 +1,34 @@
 import type { Command } from 'commander';
-import { Import } from '@modern-js/utils';
+// import { Import } from '@modern-js/utils';
+import { i18n, localeKeys } from '../locale';
+import { ModuleNewAction } from '@modern-js/new-action';
 
-const newAction: typeof import('@modern-js/new-action') = Import.lazy(
-  '@modern-js/new-action',
-  require,
-);
-const local: typeof import('../locale') = Import.lazy('../locale', require);
+// const newAction: typeof import('@modern-js/new-action') = Import.lazy(
+//   '@modern-js/new-action',
+//   require,
+// );
+// const local: typeof import('../locale') = Import.lazy('../locale', require);
 
 export const newCli = (program: Command, locale?: string) => {
   program
     .command('new')
     .usage('[options]')
-    .description(local.i18n.t(local.localeKeys.command.new.describe))
+    .description(i18n.t(localeKeys.command.new.describe))
     .option(
       '-d, --debug',
-      local.i18n.t(local.localeKeys.command.new.debug),
+      i18n.t(localeKeys.command.new.debug),
       false,
     )
     .option(
       '-c, --config <config>',
-      local.i18n.t(local.localeKeys.command.new.config),
+      i18n.t(localeKeys.command.new.config),
     )
     .option(
       '--dist-tag <tag>',
-      local.i18n.t(local.localeKeys.command.new.distTag),
+      i18n.t(localeKeys.command.new.distTag),
     )
-    .option('--registry', local.i18n.t(local.localeKeys.command.new.registry))
+    .option('--registry', i18n.t(localeKeys.command.new.registry))
     .action(async options => {
-      await newAction.ModuleNewAction({ ...options, locale });
+      await ModuleNewAction({ ...options, locale });
     });
 };

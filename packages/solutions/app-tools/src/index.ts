@@ -1,4 +1,7 @@
 import { createPlugin, defineConfig, usePlugins, cli } from '@modern-js/core';
+import analyzePlugin from '@modern-js/plugin-analyze/cli';
+import fastRefreshPlugin from '@modern-js/plugin-fast-refresh/cli';
+import polyfillPlugin from '@modern-js/plugin-polyfill/cli';
 import { lifecycle } from './lifecycle';
 import { i18n, localeKeys } from './locale';
 import { getLocaleLanguage } from './utils/language';
@@ -8,11 +11,7 @@ import { dev } from './commands/dev';
 export { defineConfig };
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
-usePlugins([
-  require.resolve('@modern-js/plugin-analyze/cli'),
-  require.resolve('@modern-js/plugin-fast-refresh/cli'),
-  require.resolve('@modern-js/plugin-polyfill/cli'),
-]);
+usePlugins([analyzePlugin, fastRefreshPlugin, polyfillPlugin]);
 
 export default createPlugin(
   (() => {

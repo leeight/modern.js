@@ -4,34 +4,42 @@ import * as os from 'os';
 import { Import, fs } from '@modern-js/utils';
 import type { NormalizedConfig, CoreOptions } from '@modern-js/core';
 import type { ITsconfig } from '../types';
+import { transformDtsAlias } from '../utils/tspaths-transform';
+import { getFinalAlias } from '../utils/babel';
+import { tempTsconfigName } from './constants';
+import { cli, manager } from '@modern-js/core';
+import JSON5 from 'json5';
+import execa from 'execa';
+import glob from 'glob';
+import deepMerge from 'lodash.merge';
 
-const tsPathsTransform: typeof import('../utils/tspaths-transform') =
-  Import.lazy('../utils/tspaths-transform', require);
-const babel: typeof import('../utils/babel') = Import.lazy(
-  '../utils/babel',
-  require,
-);
-const constants: typeof import('./constants') = Import.lazy(
-  './constants',
-  require,
-);
+// const tsPathsTransform: typeof import('../utils/tspaths-transform') =
+//   Import.lazy('../utils/tspaths-transform', require);
+// const babel: typeof import('../utils/babel') = Import.lazy(
+//   '../utils/babel',
+//   require,
+// );
+// const constants: typeof import('./constants') = Import.lazy(
+//   './constants',
+//   require,
+// );
 
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
 
-const execa: typeof import('execa') = Import.lazy('execa', require);
-const JSON5: typeof import('json5') = Import.lazy('json5', require);
+// const execa: typeof import('execa') = Import.lazy('execa', require);
+// const JSON5: typeof import('json5') = Import.lazy('json5', require);
 const argv: typeof import('process.argv').default = Import.lazy(
   'process.argv',
   require,
 );
-const deepMerge: typeof import('lodash.merge') = Import.lazy(
-  'lodash.merge',
-  require,
-);
-const glob: typeof import('glob') = Import.lazy('glob', require);
+// const deepMerge: typeof import('lodash.merge') = Import.lazy(
+//   'lodash.merge',
+//   require,
+// );
+// const glob: typeof import('glob') = Import.lazy('glob', require);
 
 let removeTsconfigPath = '';
 
@@ -81,7 +89,7 @@ const generatorTsConfig = (
     },
   };
 
-  const tempTsconfigPath = path.join(tempPath, constants.tempTsconfigName);
+  const tempTsconfigPath = path.join(tempPath, tempTsconfigName);
   fs.ensureFileSync(tempTsconfigPath);
   fs.writeJSONSync(
     tempTsconfigPath,
@@ -201,7 +209,7 @@ const resolveAlias = (
     watchFilenames.length > 0
       ? watchFilenames
       : glob.sync(dtsDistPath, { absolute: true });
-  const alias = babel.getFinalAlias(modernConfig, {
+  const alias = getFinalAlias(modernConfig, {
     appDirectory: config.projectData.appDirectory,
     tsconfigPath:
       config.tsconfigPath ||
@@ -211,7 +219,7 @@ const resolveAlias = (
   const mergedPaths = alias.isTsPath
     ? alias.paths || {}
     : { ...defaultPaths, ...(alias.paths || {}) };
-  const result = tsPathsTransform.transformDtsAlias({
+  const result = transformDtsAlias({
     filenames: dtsFilenames,
     baseUrl: path.join(config.projectData.appDirectory, output.path || 'dist'),
     paths: mergedPaths,
@@ -265,8 +273,8 @@ const taskMain = async ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  const { resolved } = await core.cli.init([], options);
-  await core.manager.run(async () => {
+  const { resolved } = await cli.init([], options);
+  await manager.run(async () => {
     try {
       await taskMain({ modernConfig: resolved });
     } catch (e: any) {

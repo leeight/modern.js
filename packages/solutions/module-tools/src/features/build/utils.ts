@@ -1,6 +1,6 @@
 import * as path from 'path';
 import * as os from 'os';
-import { Import, chalk } from '@modern-js/utils';
+import { chalk } from '@modern-js/utils';
 import type {
   IBuildConfig,
   IPackageModeValue,
@@ -9,15 +9,17 @@ import type {
   ModuleToolsConfig,
 } from '../../types';
 import type { LoggerText } from './logger';
+import { clearFlag, PACKAGE_MODES, DEFAULT_PACKAGE_MODE } from './constants';
+import { useAppContext, useResolvedConfigContext } from '@modern-js/core';
 
-const constants: typeof import('./constants') = Import.lazy(
-  './constants',
-  require,
-);
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
+// const constants: typeof import('./constants') = Import.lazy(
+//   './constants',
+//   require,
+// );
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
 
 // 硬解字符串返回相应格式的对象
 const updateMapper = (
@@ -39,7 +41,7 @@ const updateMapper = (
 export const getCodeInitMapper = (_: IBuildConfig) => {
   const {
     output: { packageFields, packageMode },
-  } = core.useResolvedConfigContext() as ModuleToolsConfig;
+  } = useResolvedConfigContext() as ModuleToolsConfig;
   let initMapper: IPackageModeValue[] = [];
 
   // 如果不存在packageFields配置或者packageFields为空对象，则使用 packageMode
@@ -49,7 +51,7 @@ export const getCodeInitMapper = (_: IBuildConfig) => {
       Object.keys(packageFields).length === 0)
   ) {
     initMapper =
-      constants.PACKAGE_MODES[packageMode || constants.DEFAULT_PACKAGE_MODE];
+      PACKAGE_MODES[packageMode || DEFAULT_PACKAGE_MODE];
   } else if (packageFields && Object.keys(packageFields).length > 0) {
     if (packageFields.modern) {
       initMapper = updateMapper(packageFields.modern, 'modern', initMapper);
@@ -99,8 +101,8 @@ export const getCodeMapper = ({
   srcRootDir: string;
   willCompilerDirOrFile: string;
 }) => {
-  const { appDirectory } = core.useAppContext();
-  const modernConfig = core.useResolvedConfigContext();
+  const { appDirectory } = useAppContext();
+  const modernConfig = useResolvedConfigContext();
   const {
     output: { enableSourceMap, jsPath = 'js', path: distDir = 'dist' },
   } = modernConfig as ModuleToolsConfig;
@@ -136,8 +138,8 @@ export const getCodeMapper = ({
 
 // 获取执行生成 d.ts 的参数
 export const getDtsMapper = (config: IBuildConfig, logger: LoggerText) => {
-  const { appDirectory } = core.useAppContext();
-  const modernConfig = core.useResolvedConfigContext();
+  const { appDirectory } = useAppContext();
+  const modernConfig = useResolvedConfigContext();
   const {
     output: { disableTsChecker, path: outputPath = 'dist' },
   } = modernConfig as ModuleToolsConfig;
@@ -208,7 +210,7 @@ export const logTemplate = (
     .map(p => {
       p.trim();
 
-      return `${leftBorderFlag}${p.replace(constants.clearFlag, '')}`;
+      return `${leftBorderFlag}${p.replace(clearFlag, '')}`;
     }) // 移除 clearFlag
     .slice(0, maxLength) // 控制长度
     .filter(s => s !== leftBorderFlag) // 过滤空字符串

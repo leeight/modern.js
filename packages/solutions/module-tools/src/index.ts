@@ -1,38 +1,43 @@
 import { Import } from '@modern-js/utils';
+import changesetPlugin from '@modern-js/plugin-changeset/cli';
+import analyzePlugin from '@modern-js/plugin-analyze/cli';
+import { usePlugins, createPlugin, defineConfig } from '@modern-js/core';
+import { lifecycle } from '@modern-js/module-tools-hooks';
+import { devCli, buildCli, newCli } from './cli';
+import { i18n } from './locale';
+import { addSchema } from './schema';
+import { getLocaleLanguage } from './utils/language';
 
-const core: typeof import('@modern-js/core') = Import.lazy(
-  '@modern-js/core',
-  require,
-);
+// const core: typeof import('@modern-js/core') = Import.lazy(
+//   '@modern-js/core',
+//   require,
+// );
 // const { createPlugin, usePlugins, defineConfig } = core;
-const hooks: typeof import('@modern-js/module-tools-hooks') = Import.lazy(
-  '@modern-js/module-tools-hooks',
-  require,
-);
-const cli: typeof import('./cli') = Import.lazy('./cli', require);
-const local: typeof import('./locale') = Import.lazy('./locale', require);
-const schema: typeof import('./schema') = Import.lazy('./schema', require);
-const lang: typeof import('./utils/language') = Import.lazy(
-  './utils/language',
-  require,
-);
+// const hooks: typeof import('@modern-js/module-tools-hooks') = Import.lazy(
+//   '@modern-js/module-tools-hooks',
+//   require,
+// );
+// const cli: typeof import('./cli') = Import.lazy('./cli', require);
+// const local: typeof import('./locale') = Import.lazy('./locale', require);
+// const schema: typeof import('./schema') = Import.lazy('./schema', require);
+// const lang: typeof import('./utils/language') = Import.lazy(
+//   './utils/language',
+//   require,
+// );
 
-export const { defineConfig } = core;
+export { defineConfig };
 
-core.usePlugins([
-  require.resolve('@modern-js/plugin-changeset/cli'),
-  require.resolve('@modern-js/plugin-analyze/cli'),
-]);
+usePlugins([changesetPlugin, analyzePlugin]);
 
-export default core.createPlugin(
+export default createPlugin(
   (() => {
-    const locale = lang.getLocaleLanguage();
-    local.i18n.changeLanguage({ locale });
-    hooks.lifecycle();
+    const locale = getLocaleLanguage();
+    i18n.changeLanguage({ locale });
+    lifecycle();
 
     return {
       validateSchema() {
-        return schema.addSchema();
+        return addSchema();
       },
       config() {
         return {
@@ -43,9 +48,9 @@ export default core.createPlugin(
         };
       },
       commands({ program }: any) {
-        cli.devCli(program);
-        cli.buildCli(program);
-        cli.newCli(program, locale);
+        devCli(program);
+        buildCli(program);
+        newCli(program, locale);
         // 便于其他插件辨别
         program.$$libraryName = 'module-tools';
       },
