@@ -7,8 +7,6 @@ import glob from 'glob';
 import { cli, manager } from '@modern-js/core';
 import { resolveBabelConfig } from '../utils/babel';
 import { readTsConfig } from '../utils/tsconfig';
-import moduleToolsPlugin from '../index';
-import testingPlugin from '@modern-js/plugin-testing/cli';
 
 // const babelCompiler: typeof import('@modern-js/babel-compiler') = Import.lazy(
 //   '@modern-js/babel-compiler',
@@ -250,10 +248,10 @@ const taskMain = async ({
   const { resolved } = await cli.init([], {
     plugins: {
       '@modern-js/module-tools': {
-        cliPluginInstance: moduleToolsPlugin
+        cliPluginGetInstance: () => require('../index').default
       },
       '@modern-js/plugin-testing': {
-        cliPluginInstance: testingPlugin
+        cliPluginGetInstance: () => require('@modern-js/plugin-testing/cli').default
       }
     },
     ...options

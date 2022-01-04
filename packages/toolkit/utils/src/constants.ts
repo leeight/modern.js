@@ -68,11 +68,11 @@ export const SHARED_DIR = 'shared';
 export const INTERNAL_PLUGINS: {
   [name: string]: {
     cli?: string;
-    // cliPluginInstance > cli
-    cliPluginInstance?: any;
+    // cliPluginGetInstance > cli
+    cliPluginGetInstance?: any;
     server?: string,
-    // serverPluginInstance > server
-    serverPluginInstance?: any;
+    // serverPluginGetInstance > server
+    serverPluginGetInstance?: any;
   };
 } = {
   '@modern-js/app-tools': { cli: '@modern-js/app-tools/cli' },

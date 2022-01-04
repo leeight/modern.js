@@ -12,8 +12,6 @@ import JSON5 from 'json5';
 import execa from 'execa';
 import glob from 'glob';
 import deepMerge from 'lodash.merge';
-import moduleToolsPlugin from '../index';
-import testingPlugin from '@modern-js/plugin-testing/cli';
 
 // const tsPathsTransform: typeof import('../utils/tspaths-transform') =
 //   Import.lazy('../utils/tspaths-transform', require);
@@ -278,10 +276,10 @@ const taskMain = async ({
   const { resolved } = await cli.init([], {
     plugins: {
       '@modern-js/module-tools': {
-        cliPluginInstance: moduleToolsPlugin
+        cliPluginGetInstance: () => require('../index').default
       },
       '@modern-js/plugin-testing': {
-        cliPluginInstance: testingPlugin
+        cliPluginGetInstance: () => require('@modern-js/plugin-testing/cli').default
       }
     },
     ...options

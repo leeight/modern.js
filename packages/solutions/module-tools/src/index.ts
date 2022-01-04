@@ -1,4 +1,4 @@
-import { Import } from '@modern-js/utils';
+// import { Import } from '@modern-js/utils';
 import changesetPlugin from '@modern-js/plugin-changeset/cli';
 import analyzePlugin from '@modern-js/plugin-analyze/cli';
 import { usePlugins, createPlugin, defineConfig } from '@modern-js/core';

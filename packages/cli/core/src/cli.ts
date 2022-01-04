@@ -1,9 +1,6 @@
 // 这个文件跟 bin/modern-js.js 基本一样
 // 在开发阶段，因为 package.json 的 exports['./bin']['jsnext:source'] 配置
 // 了这个文件，所以需要保留, 后续如果找到更好的方式之后会移除这个文件
-
-import moduleToolsPlugin from '@modern-js/module-tools/cli';
-import testingPlugin from '@modern-js/plugin-testing/cli';
 import { cli } from '.';
 
 const { version } = require('../package.json');
@@ -27,10 +24,10 @@ if (!process.env.NODE_ENV) {
 cli.run(process.argv.slice(2), {
   plugins: {
     '@modern-js/module-tools': {
-      cliPluginInstance: moduleToolsPlugin
+      cliPluginGetInstance: () => require('@modern-js/module-tools/cli').default
     },
     '@modern-js/plugin-testing': {
-      cliPluginInstance: testingPlugin
+      cliPluginGetInstance: () => require('@modern-js/plugin-testing/cli').default
     }
   }
 });

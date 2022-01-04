@@ -9,12 +9,12 @@ const debug = createDebugger('load-plugins');
 
 export interface PluginConfigItem {
   cli?: string;
-  // cliPluginInstance > cli
-  cliPluginInstance?: any;
+  // cliPluginGetInstance > cli
+  cliPluginGetInstance?: any;
 
   server?: string;
-  // serverPluginInstance > server
-  serverPluginInstance?: any;
+  // serverPluginGetInstance > server
+  serverPluginGetInstance?: any;
 }
 
 export type PluginConfig = Array<PluginConfigItem>;
@@ -74,8 +74,8 @@ export const loadPlugins = (
   // console.log(plugins);
 
   return plugins.map(plugin => {
-    let cliPlugin = plugin.cliPluginInstance;
-    let serverPlugin = plugin.serverPluginInstance;
+    let cliPlugin = plugin.cliPluginGetInstance;
+    let serverPlugin = plugin.serverPluginGetInstance;
     let resolved;
 
     if (!cliPlugin) {
@@ -83,7 +83,7 @@ export const loadPlugins = (
         resolved = resolvePlugin(appDirectory, plugin);
       }
       const { cli } = resolved;
-      cliPlugin = cli && { ...compatRequire(cli), pluginPath: cli };
+      cliPlugin = () => cli && { ...compatRequire(cli), pluginPath: cli };
     }
 
     if (!serverPlugin) {
@@ -92,16 +92,16 @@ export const loadPlugins = (
       }
       const { server } = resolved;
 
-      serverPlugin = server && {
+      serverPlugin = () => server && {
         ...compatRequire(server),
         pluginPath: server,
       };
     }
 
     return {
-      cli: cliPlugin,
+      cli: cliPlugin(),
       cliPath: typeof plugin === 'string' ? plugin : plugin.cli,
-      server: serverPlugin,
+      server: serverPlugin(),
       serverPath: typeof plugin === 'string' ? undefined : plugin.server,
     };
   });

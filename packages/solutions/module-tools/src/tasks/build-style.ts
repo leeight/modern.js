@@ -12,8 +12,6 @@ import { cli, manager, mountHook } from '@modern-js/core';
 import { styleCompiler } from '@modern-js/style-compiler'
 import glob from 'glob';
 import { buildLifeCycle } from '@modern-js/module-tools-hooks';
-import moduleToolsPlugin from '../index';
-import testingPlugin from '@modern-js/plugin-testing/cli';
 
 // const cssConfig: typeof import('@modern-js/css-config') = Import.lazy(
 //   '@modern-js/css-config',
@@ -189,10 +187,10 @@ const taskMain = async ({
     {
       plugins: {
         '@modern-js/module-tools': {
-          cliPluginInstance: moduleToolsPlugin
+          cliPluginGetInstance: () => require('../index').default
         },
         '@modern-js/plugin-testing': {
-          cliPluginInstance: testingPlugin
+          cliPluginGetInstance: () => require('@modern-js/plugin-testing/cli').default
         }
       },
       ...options
