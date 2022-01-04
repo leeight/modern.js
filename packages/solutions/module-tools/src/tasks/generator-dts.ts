@@ -12,6 +12,8 @@ import JSON5 from 'json5';
 import execa from 'execa';
 import glob from 'glob';
 import deepMerge from 'lodash.merge';
+import moduleToolsPlugin from '../index';
+import testingPlugin from '@modern-js/plugin-testing/cli';
 
 // const tsPathsTransform: typeof import('../utils/tspaths-transform') =
 //   Import.lazy('../utils/tspaths-transform', require);
@@ -273,7 +275,17 @@ const taskMain = async ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  const { resolved } = await cli.init([], options);
+  const { resolved } = await cli.init([], {
+    plugins: {
+      '@modern-js/module-tools': {
+        cliPluginInstance: moduleToolsPlugin
+      },
+      '@modern-js/plugin-testing': {
+        cliPluginInstance: testingPlugin
+      }
+    },
+    ...options
+  });
   await manager.run(async () => {
     try {
       await taskMain({ modernConfig: resolved });

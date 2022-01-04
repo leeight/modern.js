@@ -9,6 +9,8 @@ import type { ModuleToolsOutput } from '../types';
 import glob from 'glob';
 import { cli, manager } from '@modern-js/core';
 import { copyTask } from '../utils/copy';
+import moduleToolsPlugin from '../index';
+import testingPlugin from '@modern-js/plugin-testing/cli';
 
 const argv: typeof import('process.argv').default = Import.lazy(
   'process.argv',
@@ -114,7 +116,17 @@ const taskMain = ({
   }
   const { resolved: modernConfig, appContext } = await cli.init(
     [],
-    options,
+    {
+      plugins: {
+        '@modern-js/module-tools': {
+          cliPluginInstance: moduleToolsPlugin
+        },
+        '@modern-js/plugin-testing': {
+          cliPluginInstance: testingPlugin
+        }
+      },
+      ...options
+    },
   );
   manager.run(() => {
     try {

@@ -8,6 +8,8 @@ import { clearFlag } from '../features/build/logger';
 import { readTsConfig } from '../utils/tsconfig';
 import { resolveBabelConfig } from '../utils/babel';
 import { cli, manager } from '@modern-js/core';
+import moduleToolsPlugin from '../index';
+import testingPlugin from '@modern-js/plugin-testing/cli';
 
 // const babelCompiler: typeof import('@modern-js/babel-compiler') = Import.lazy(
 //   '@modern-js/babel-compiler',
@@ -180,7 +182,17 @@ const taskMain = async ({
   if (process.env.CORE_INIT_OPTION_FILE) {
     ({ options } = require(process.env.CORE_INIT_OPTION_FILE));
   }
-  const { resolved } = await cli.init([], options);
+  const { resolved } = await cli.init([], {
+    plugins: {
+      '@modern-js/module-tools': {
+        cliPluginInstance: moduleToolsPlugin
+      },
+      '@modern-js/plugin-testing': {
+        cliPluginInstance: testingPlugin
+      }
+    },
+    ...options
+  });
   await manager.run(async () => {
     try {
       await taskMain({ modernConfig: resolved });

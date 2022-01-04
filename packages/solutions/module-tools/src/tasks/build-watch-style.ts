@@ -14,6 +14,8 @@ import { buildLifeCycle } from '@modern-js/module-tools-hooks';
 import { cli, manager, mountHook } from '@modern-js/core';
 import { styleCompiler, BuildWatchEvent } from '@modern-js/style-compiler';
 import glob from 'glob';
+import moduleToolsPlugin from '../index';
+import testingPlugin from '@modern-js/plugin-testing/cli';
 
 // const logger: typeof import('../features/build/logger') = Import.lazy(
 //   '../features/build/logger',
@@ -264,7 +266,17 @@ const taskMain = async ({
   buildLifeCycle();
   const { resolved: modernConfig, appContext } = await cli.init(
     [],
-    options,
+    {
+      plugins: {
+        '@modern-js/module-tools': {
+          cliPluginInstance: moduleToolsPlugin
+        },
+        '@modern-js/plugin-testing': {
+          cliPluginInstance: testingPlugin
+        }
+      },
+      ...options
+    },
   );
   await manager.run(async () => {
     try {
