@@ -2,7 +2,7 @@ const path = require('path');
 
 /** @type {import('@jest/types').Config.InitialOptions} */
 module.exports = {
-  collectCoverage: true,
+  collectCoverage: process.env.CI === 'true',
   collectCoverageFrom: ['<rootDir>/src/**/*.[jt]s?(x)'],
   coveragePathIgnorePatterns: ['/node_modules/', '/fixtures/'],
   transform: {
