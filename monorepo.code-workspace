@@ -421,8 +421,8 @@
       "path": "scripts/build"
     },
     {
-      "name": "@scripts/jest-config",
-      "path": "scripts/jest-config"
+      "name": "@scripts/test",
+      "path": "scripts/test"
     },
     {
       "name": "@scripts/codemod",
@@ -431,6 +431,10 @@
     {
       "name": "Integration Tests",
       "path": "tests"
+    },
+    {
+      "name": "Rush Config",
+      "path": "common/config/rush"
     }
   ],
   "settings": {

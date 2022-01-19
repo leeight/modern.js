@@ -14,7 +14,7 @@ describe('jsnext:source', () => {
       },
     );
     expect(stdout).toBe('');
-    expect(stderr.startsWith('Usage: modern <command> [options]')).toBe(true);
+    expect(stderr.includes('Usage: modern <command> [options]')).toBe(true);
     expect(status).toBe(1);
   });
 });

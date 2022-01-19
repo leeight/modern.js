@@ -1,14 +1,14 @@
 import path from 'path';
-import { Page } from 'puppeteer';
+import puppeteer from 'puppeteer';
+import { describe, beforeAll, test, expect, afterAll } from 'vitest';
 import {
   getPort,
   launchApp,
   killApp,
+  sleep,
   modernBuild,
   modernStart,
 } from '../../../utils/modernTestUtils';
-
-declare const page: Page;
 
 describe('bff in dev', () => {
   let port = 8080;
@@ -19,7 +19,6 @@ describe('bff in dev', () => {
   let app: any;
 
   beforeAll(async () => {
-    jest.setTimeout(1000 * 60 * 2);
     port = await getPort();
     app = await launchApp(appPath, port, {
       cwd: appPath,
@@ -27,18 +26,24 @@ describe('bff in dev', () => {
   });
 
   test('basic usage', async () => {
+    const browser = await puppeteer.launch({ headless: true, dumpio: true });
+    const page = await browser.newPage();
     await page.goto(`${host}:${port}/${BASE_PAGE}`);
     const text1 = await page.$eval('.hello', el => el.textContent);
     expect(text1).toBe('bff-express');
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await sleep(1000);
     const text2 = await page.$eval('.hello', el => el.textContent);
     expect(text2).toBe('Hello Modern.js');
+    browser.close();
   });
 
   test('basic usage with ssr', async () => {
+    const browser = await puppeteer.launch({ headless: true, dumpio: true });
+    const page = await browser.newPage();
     await page.goto(`${host}:${port}/${SSR_PAGE}`);
     const text1 = await page.$eval('.hello', el => el.textContent);
     expect(text1).toBe('Hello Modern.js');
+    browser.close();
   });
 
   afterAll(async () => {
@@ -67,18 +72,24 @@ describe('bff in prod', () => {
   });
 
   test('basic usage', async () => {
+    const browser = await puppeteer.launch({ headless: true, dumpio: true });
+    const page = await browser.newPage();
     await page.goto(`${host}:${port}/${BASE_PAGE}`);
     const text1 = await page.$eval('.hello', el => el.textContent);
     expect(text1).toBe('bff-express');
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await sleep(1000);
     const text2 = await page.$eval('.hello', el => el.textContent);
     expect(text2).toBe('Hello Modern.js');
+    browser.close();
   });
 
   test('basic usage with ssr', async () => {
+    const browser = await puppeteer.launch({ headless: true, dumpio: true });
+    const page = await browser.newPage();
     await page.goto(`${host}:${port}/${SSR_PAGE}`);
     const text1 = await page.$eval('.hello', el => el.textContent);
     expect(text1).toBe('Hello Modern.js');
+    browser.close();
   });
 
   afterAll(async () => {
