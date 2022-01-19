@@ -48,7 +48,7 @@
     "@types/jest": "^26.0.9",
     "@types/node": "^14",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/test": "workspace:*"
   },
   "sideEffects": [
     "*.css",

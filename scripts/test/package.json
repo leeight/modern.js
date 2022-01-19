@@ -1,5 +1,5 @@
 {
-  "name": "@scripts/jest-config",
+  "name": "@scripts/test",
   "private": true,
   "version": "0.0.0",
   "main": "jest.config.js",

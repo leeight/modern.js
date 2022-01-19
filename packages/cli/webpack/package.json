@@ -90,7 +90,7 @@
     "tapable": "^2.2.1",
     "typescript": "^4",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/test": "workspace:*"
   },
   "peerDependencies": {
     "@modern-js/core": "workspace:^1.3.0"

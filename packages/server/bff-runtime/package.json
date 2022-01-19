@@ -51,7 +51,7 @@
     "typescript": "^4",
     "@scripts/build": "workspace:*",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/test": "workspace:*"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

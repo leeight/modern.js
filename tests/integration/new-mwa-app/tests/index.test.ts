@@ -1,16 +1,17 @@
-const fs = require('fs');
-const path = require('path');
-const puppeteer = require('puppeteer');
-const {
+import fs from 'fs';
+import path from 'path';
+import puppeteer from 'puppeteer';
+import { describe, it, expect } from 'vitest';
+import {
   launchApp,
   killApp,
   getPort,
   modernBuild,
-} = require('../../../utils/modernTestUtils');
+} from '../../../utils/modernTestUtils';
 
 const appDir = path.resolve(__dirname, '../');
 
-function existsSync(filePath) {
+function existsSync(filePath: string) {
   return fs.existsSync(path.join(appDir, 'dist', filePath));
 }
 
@@ -26,8 +27,8 @@ describe('test build', () => {
   it(`should render page correctly`, async () => {
     const appPort = await getPort();
     const app = await launchApp(appDir, appPort, {}, {});
-    const logs = [];
-    const errors = [];
+    const logs: string[] = [];
+    const errors: string[] = [];
 
     const browser = await puppeteer.launch({ headless: true, dumpio: true });
     const page = await browser.newPage();

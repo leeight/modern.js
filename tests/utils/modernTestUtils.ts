@@ -1,14 +1,14 @@
-const path = require('path');
-const spawn = require('cross-spawn');
-const treeKill = require('tree-kill');
-const portfinder = require('portfinder');
+import path from 'path';
+import spawn from 'cross-spawn';
+import treeKill from 'tree-kill';
+import portfinder from 'portfinder';
 
 const kModernBin = path.join(
   __dirname,
   '../node_modules/@modern-js/core/bin/modern-js',
 );
 
-function runModernCommand(argv, options = {}) {
+export function runModernCommand(argv: any[], options: any = {}) {
   const { cwd } = options;
   const cmd = argv[0];
   const env = {
@@ -16,68 +16,76 @@ function runModernCommand(argv, options = {}) {
     ...options.env,
   };
 
-  return new Promise((resolve, reject) => {
-    // console.log(`Running command "modern ${argv.join(' ')}"`);
-    const instance = spawn(process.execPath, [kModernBin, ...argv], {
-      ...options.spawnOptions,
-      cwd,
-      env,
-      stdio: ['ignore', 'pipe', 'pipe'],
-    });
-
-    if (typeof options.instance === 'function') {
-      options.instance(instance);
-    }
-
-    let stderrOutput = '';
-    if (options.stderr) {
-      instance.stderr.on('data', chunk => {
-        stderrOutput += chunk;
+  return new Promise<{ code: number; stdout: string; stderr: string }>(
+    (resolve, reject) => {
+      // console.log(`Running command "modern ${argv.join(' ')}"`);
+      const instance = spawn(process.execPath, [kModernBin, ...argv], {
+        ...options.spawnOptions,
+        cwd,
+        env,
+        stdio: ['ignore', 'pipe', 'pipe'],
       });
-    }
 
-    let stdoutOutput = '';
-    // if (options.stdout) {
-    instance.stdout.on('data', async chunk => {
-      let marker = options.marker || /compiled successfully/i;
-      if (cmd === 'deploy') {
-        marker = /end deploy!/i;
+      if (typeof options.instance === 'function') {
+        options.instance(instance);
       }
-      stdoutOutput += chunk;
-      const message = chunk.toString();
-      if (marker.test(message)) {
-        resolve({
-          stdout: stdoutOutput,
+
+      let stderrOutput = '';
+      if (options.stderr) {
+        instance.stderr?.on('data', (chunk: string) => {
+          stderrOutput += chunk;
         });
-        await killApp(instance);
       }
-    });
-    // }
 
-    instance.on('close', code => {
-      resolve({
-        code,
-        stdout: stdoutOutput,
-        stderr: stderrOutput,
+      let stdoutOutput = '';
+      // if (options.stdout) {
+      instance.stdout?.on('data', async (chunk: string) => {
+        let marker = options.marker || /compiled successfully/i;
+        if (cmd === 'deploy') {
+          marker = /end deploy!/i;
+        }
+        stdoutOutput += chunk;
+        const message = chunk.toString();
+        if (marker.test(message)) {
+          resolve({
+            code: 0,
+            stdout: stdoutOutput,
+            stderr: '',
+          });
+          await killApp(instance);
+        }
       });
-    });
+      // }
 
-    instance.on('error', err => {
-      err.stdout = stdoutOutput;
-      err.stderr = stderrOutput;
-      reject(err);
-    });
-  });
+      instance.on('close', (code: number) => {
+        resolve({
+          code,
+          stdout: stdoutOutput,
+          stderr: stderrOutput,
+        });
+      });
+
+      instance.on('error', (err: any) => {
+        err.stdout = stdoutOutput;
+        err.stderr = stderrOutput;
+        reject(err);
+      });
+    },
+  );
 }
 
-function runModernCommandDev(argv, stdOut, options = {}) {
+export function runModernCommandDev(
+  argv: any[],
+  stdOut: any,
+  options: any = {},
+) {
   const { cwd } = options;
   const env = {
     ...process.env,
     ...options.env,
   };
 
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     const instance = spawn(process.execPath, [kModernBin, ...argv], {
       cwd,
       env,
@@ -85,7 +93,7 @@ function runModernCommandDev(argv, stdOut, options = {}) {
 
     let didResolve = false;
 
-    function handleStdout(data) {
+    function handleStdout(data: any) {
       const message = data.toString();
       const bootupMarkers = {
         dev: /App running at/i,
@@ -107,14 +115,14 @@ function runModernCommandDev(argv, stdOut, options = {}) {
       }
     }
 
-    instance.stdout.on('data', handleStdout);
+    instance.stdout?.on('data', handleStdout);
 
-    instance.on('error', error => {
+    instance.on('error', (error: any) => {
       reject(error);
     });
 
     instance.on('close', () => {
-      instance.stdout.removeListener('data', handleStdout);
+      instance.stdout?.removeListener('data', handleStdout);
       if (!didResolve) {
         didResolve = true;
         resolve();
@@ -123,7 +131,7 @@ function runModernCommandDev(argv, stdOut, options = {}) {
   });
 }
 
-function modernBuild(dir, args = [], opts = {}) {
+export function modernBuild(dir: string, args = [], opts = {}) {
   return runModernCommand(['build', ...args], {
     ...opts,
     cwd: dir,
@@ -135,7 +143,7 @@ function modernBuild(dir, args = [], opts = {}) {
   });
 }
 
-function modernDeploy(dir, mode = '', opts = {}) {
+export function modernDeploy(dir: string, mode = '', opts = {}) {
   return runModernCommand(['deploy', `--dir=${dir}`, `--mode=${mode}`], {
     ...opts,
     stdout: true,
@@ -148,7 +156,12 @@ function modernDeploy(dir, mode = '', opts = {}) {
   });
 }
 
-function launchApp(dir, port, opts = {}, env = {}) {
+export function launchApp(
+  dir: string,
+  port: string | number,
+  opts = {},
+  env = {},
+) {
   return runModernCommandDev(['dev'], undefined, {
     ...opts,
     cwd: dir,
@@ -160,7 +173,7 @@ function launchApp(dir, port, opts = {}, env = {}) {
   });
 }
 
-function modernStart(dir, port, opts = {}) {
+export function modernStart(dir: string, port: string | number, opts = {}) {
   return runModernCommandDev(['start'], undefined, {
     ...opts,
     cwd: dir,
@@ -172,8 +185,8 @@ function modernStart(dir, port, opts = {}) {
   });
 }
 
-async function killApp(instance) {
-  await new Promise((resolve, reject) => {
+export async function killApp(instance: any) {
+  await new Promise<void>((resolve, reject) => {
     if (!instance) {
       resolve();
     }
@@ -200,12 +213,12 @@ async function killApp(instance) {
   });
 }
 
-function markGuardian() {
+export function markGuardian() {
   // IGNORE
 }
 
-// eslint-disable-next-line no-unused-vars
-function installDeps(dir) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function installDeps(dir: string) {
   // console.log(`Installing dependencies in ${dir}`);
   // FIXME: 跳过本地依赖的安装，因为在根目录执行 pnpm install --ignore-scripts 的时候已经安装好了
   // spawn.sync('pnpm', ['install', '--filter', './', '--ignore-scripts'], {
@@ -214,8 +227,8 @@ function installDeps(dir) {
   // });
 }
 
-// eslint-disable-next-line no-unused-vars
-function clearBuildDist(dir) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function clearBuildDist(dir: string) {
   // console.log(`Clearing build dist in ${dir}`);
   // not support nested projects
   // const _clearBuildDist = _dir => {
@@ -236,25 +249,10 @@ function clearBuildDist(dir) {
   // _clearBuildDist(dir);
 }
 
-async function getPort() {
-  return await portfinder.getPortPromise({ port: 8080 });
+export async function getPort() {
+  return portfinder.getPortPromise({ port: 8080 });
 }
 
-function sleep(t) {
+export function sleep(t: number) {
   return new Promise(resolve => setTimeout(resolve, t));
 }
-
-module.exports = {
-  runModernCommand,
-  runModernCommandDev,
-  modernBuild,
-  modernDeploy,
-  modernStart,
-  launchApp,
-  killApp,
-  markGuardian,
-  getPort,
-  installDeps,
-  clearBuildDist,
-  sleep,
-};

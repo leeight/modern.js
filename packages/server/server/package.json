@@ -92,7 +92,7 @@
     "node-mocks-http": "^1.11.0",
     "portfinder": "^1.0.28",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*",
+    "@scripts/test": "workspace:*",
     "websocket": "^1"
   },
   "peerDependencies": {

@@ -82,7 +82,7 @@
     "webpack": "^5.54.0",
     "@scripts/build": "workspace:*",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/test": "workspace:*"
   },
   "sideEffects": false,
   "publishConfig": {

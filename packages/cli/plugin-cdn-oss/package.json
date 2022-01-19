@@ -58,7 +58,7 @@
     "@types/js-yaml": "^4.0.4",
     "@types/walk": "^2.3.1",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/test": "workspace:*"
   },
   "sideEffects": [
     "*.css",
