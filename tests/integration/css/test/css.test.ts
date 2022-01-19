@@ -1,28 +1,18 @@
-/* eslint-disable no-undef */
-const path = require('path');
-const fs = require('fs');
-const { resolve } = require('path');
-const { readdirSync, readFileSync } = require('fs-extra');
-const {
+import path, { resolve } from 'path';
+import fs from 'fs';
+import { readdirSync, readFileSync } from 'fs-extra';
+import { describe, it, expect } from 'vitest';
+import puppeteer from 'puppeteer';
+import {
   modernBuild,
-  installDeps,
-  clearBuildDist,
   getPort,
   launchApp,
   killApp,
-} = require('../../../utils/modernTestUtils');
-
-const { getCssFiles, readCssFile, copyModules } = require('./utils');
+} from '../../../utils/modernTestUtils';
+import { getCssFiles, readCssFile, copyModules } from './utils';
 
 const fixtures = path.resolve(__dirname, '../fixtures');
 
-beforeAll(async () => {
-  await installDeps(fixtures);
-});
-
-afterAll(() => {
-  clearBuildDist(fixtures);
-});
 describe('default less loader options', () => {
   it(`should inline javascript by default`, async () => {
     const appDir = resolve(fixtures, 'less-inline-js');
@@ -70,6 +60,7 @@ describe('test css support', () => {
         readFileSync(
           path.resolve(
             appDir,
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             `dist/static/css/${cssFiles.find(f => f.startsWith('entry1'))}`,
           ),
           'utf8',
@@ -81,6 +72,7 @@ describe('test css support', () => {
         readFileSync(
           path.resolve(
             appDir,
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             `dist/static/css/${cssFiles.find(f => f.startsWith('entry2'))}`,
           ),
           'utf8',
@@ -91,6 +83,7 @@ describe('test css support', () => {
         readFileSync(
           path.resolve(
             appDir,
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             `dist/static/css/${cssFiles.find(f => f.startsWith('entry3'))}`,
           ),
           'utf8',
@@ -144,7 +137,7 @@ describe('test css support', () => {
         /main\.[a-z\d]+\.css$/.test(fileName),
       );
 
-      expect(readCssFile(appDir, main)).toContain(
+      expect(readCssFile(appDir, main[0])).toContain(
         'body{color:#ff0;width:960px}html{min-height:100%}',
       );
     });
@@ -164,7 +157,7 @@ describe('test css support', () => {
         /main\.[a-z\d]+\.css$/.test(fileName),
       );
 
-      expect(readCssFile(appDir, main)).toContain(
+      expect(readCssFile(appDir, main[0])).toContain(
         `body{width:100%}html{min-height:100%}`,
       );
     });
@@ -186,7 +179,7 @@ describe('test css support', () => {
         /main\.[a-z\d]+\.css$/.test(fileName),
       );
 
-      expect(readCssFile(appDir, main)).toContain(
+      expect(readCssFile(appDir, main[0])).toContain(
         '#b{color:#ff0}#a{font-size:10px}html{font-size:18px}',
       );
     });
@@ -206,7 +199,7 @@ describe('test css support', () => {
         /main\.[a-z\d]+\.css$/.test(fileName),
       );
 
-      expect(readCssFile(appDir, main)).toContain(
+      expect(readCssFile(appDir, main[0])).toContain(
         `#b{color:#ff0}#a{font-size:10px}html{font-size:18px}`,
       );
     });
@@ -243,9 +236,9 @@ describe('test css support', () => {
   });
 
   describe('css souce map', () => {
-    const getCssMaps = appDir =>
+    const getCssMaps = (appDir: string) =>
       readdirSync(path.resolve(appDir, 'dist/static/css')).filter(filepath =>
-        /\.css\.map$/.test(filepath),
+        filepath.endsWith('.css.map'),
       );
 
     it('should generate source map', async () => {
@@ -324,14 +317,14 @@ describe('less-support', () => {
       expect(
         readCssFile(
           appDir,
-          cssFiles.find(name => /a\.[a-z\d]+\.css$/.test(name)),
+          cssFiles.find(name => /a\.[a-z\d]+\.css$/.test(name))!,
         ),
       ).toContain('#a{width:10px}');
 
       expect(
         readCssFile(
           appDir,
-          cssFiles.find(name => /b\.[a-z\d]+\.css$/.test(name)),
+          cssFiles.find(name => /b\.[a-z\d]+\.css$/.test(name))!,
         ),
       ).toContain('#b{height:20px}');
     });
@@ -364,9 +357,11 @@ describe('less-support', () => {
   });
 
   describe('support babel plugin import', () => {
-    const checkStyle = async (appDir, expectedColor) => {
+    const checkStyle = async (appDir: string, expectedColor: string) => {
       const port = await getPort();
 
+      const browser = await puppeteer.launch({ headless: true, dumpio: true });
+      const page = await browser.newPage();
       const app = await launchApp(appDir, port);
 
       await page.goto(`http://localhost:${port}`);
@@ -377,6 +372,7 @@ describe('less-support', () => {
 
       expect(bgColor).toBe(expectedColor);
 
+      browser.close();
       await killApp(app);
     };
 
@@ -388,4 +384,3 @@ describe('less-support', () => {
     });
   });
 });
-/* eslint-enable no-undef */

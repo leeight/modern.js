@@ -1,3 +1,5 @@
+import { describe, test, expect } from 'vitest';
+
 describe('Default cases', () => {
   test('hello world test', () => {
     const s = 'hello Modern.js';

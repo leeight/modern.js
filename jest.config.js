@@ -1,9 +1,14 @@
 module.exports = {
-  collectCoverage: true,
+  collectCoverage: process.env.CI === 'true',
   collectCoverageFrom: ['<rootDir>/packages/**/src/**/*.ts'],
   coveragePathIgnorePatterns: ['/node_modules/', '/fixtures/'],
   transform: {
-    '\\.[jt]sx?$': 'esbuild-jest',
+    '\\.[jt]sx?$': [
+      require.resolve('esbuild-jest'),
+      {
+        sourcemap: true,
+      },
+    ],
   },
   moduleNameMapper: {},
   globals: {},

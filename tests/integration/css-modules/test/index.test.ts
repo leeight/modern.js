@@ -1,42 +1,36 @@
-/* eslint-disable no-undef */
-
-const { join } = require('path');
-const { readdir, readFile, remove } = require('fs-extra');
-const {
+import { join } from 'path';
+import { readdir, readFile, remove } from 'fs-extra';
+import puppeteer from 'puppeteer';
+import { describe, it, expect, beforeAll, afterAll } from 'vitest';
+import {
   modernBuild,
   getPort,
   modernStart,
-  // launchApp,
   killApp,
-  installDeps,
-  clearBuildDist,
-} = require('../../../utils/modernTestUtils');
+} from '../../../utils/modernTestUtils';
 
 const fixturesDir = join(__dirname, '../fixtures');
-
-let appPort;
-beforeAll(async () => {
-  installDeps(fixturesDir);
-  appPort = await getPort();
-});
-
-afterAll(() => {
-  clearBuildDist(fixturesDir);
-});
 
 describe('Basic CSS Module Support', () => {
   const appDir = join(fixturesDir, 'basic-module');
 
-  let app, stdout, code;
+  let app: any;
+  let stdout: string;
+  let code: number;
+  let appPort: number;
+
   beforeAll(async () => {
     await remove(join(appDir, './dist'));
     ({ code, stdout } = await modernBuild(appDir));
 
+    appPort = await getPort();
     app = await modernStart(appDir, appPort);
   });
+
   afterAll(async () => {
     await killApp(app);
   });
+
   it('should have compiled successfully', () => {
     expect(code).toBe(0);
     // expect(stdout).toMatch(/Compiled successfully/);
@@ -47,7 +41,7 @@ describe('Basic CSS Module Support', () => {
     const cssFolder = join(appDir, 'dist/static/css');
 
     const files = await readdir(cssFolder);
-    const cssFiles = files.filter(f => /\.css$/.test(f));
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
     expect(cssFiles.length).toBe(1);
     const cssContent = await readFile(join(cssFolder, cssFiles[0]), 'utf8');
@@ -61,12 +55,19 @@ describe('Basic CSS Module Support', () => {
 describe('module.[less/sass] support', () => {
   const appDir = join(fixturesDir, 'diff-suffix-module');
 
-  let app, stdout, code;
+  let app: any;
+  let stdout: string;
+  let code: number;
+  let appPort: number;
+
   beforeAll(async () => {
     await remove(join(appDir, './dist'));
     ({ code, stdout } = await modernBuild(appDir));
+
+    appPort = await getPort();
     app = await modernStart(appDir, appPort);
   });
+
   afterAll(async () => {
     await killApp(app);
   });
@@ -79,7 +80,7 @@ describe('module.[less/sass] support', () => {
     const cssFolder = join(appDir, 'dist/static/css');
 
     const files = await readdir(cssFolder);
-    const cssFiles = files.filter(f => /\.css$/.test(f));
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
     expect(cssFiles.length).toBe(1);
     const cssContent = await readFile(join(cssFolder, cssFiles[0]), 'utf8');
@@ -92,7 +93,7 @@ describe('module.[less/sass] support', () => {
     const cssFolder = join(appDir, 'dist/static/css');
 
     const files = await readdir(cssFolder);
-    const cssFiles = files.filter(f => /\.css$/.test(f));
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
     expect(cssFiles.length).toBe(1);
     const cssContent = await readFile(join(cssFolder, cssFiles[0]), 'utf8');
@@ -106,13 +107,16 @@ describe('module.[less/sass] support', () => {
 describe('Global Module CSS Module Support', () => {
   const appDir = join(fixturesDir, 'global-module');
 
-  let app, code;
+  let app: any;
+  let code: number;
+  let appPort: number;
 
   beforeAll(async () => {
     await remove(join(appDir, 'dist'));
-    ({ code, stdout } = await modernBuild(appDir, [], {
+    ({ code } = await modernBuild(appDir, [], {
       stdout: true,
     }));
+    appPort = await getPort();
     app = await modernStart(appDir, appPort);
   });
   afterAll(async () => {
@@ -128,7 +132,7 @@ describe('Global Module CSS Module Support', () => {
     const cssFolder = join(appDir, 'dist/static/css');
 
     const files = await readdir(cssFolder);
-    const cssFiles = files.filter(f => /\.css$/.test(f));
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
     expect(cssFiles.length).toBe(1);
     const cssContent = await readFile(join(cssFolder, cssFiles[0]), 'utf8');
@@ -167,12 +171,16 @@ describe('Global Module CSS Module Support', () => {
 describe('Has CSS Module in computed styles in Production', () => {
   const appDir = join(fixturesDir, 'prod-module');
 
-  let app, code;
+  let app: any;
+  let code: number;
+  let appPort: number;
+
   beforeAll(async () => {
     await remove(join(appDir, 'dist'));
-    ({ code, stdout } = await modernBuild(appDir, [], {
+    ({ code } = await modernBuild(appDir, [], {
       stdout: true,
     }));
+    appPort = await getPort();
     app = await modernStart(appDir, appPort);
   });
   afterAll(async () => {
@@ -186,19 +194,25 @@ describe('Has CSS Module in computed styles in Production', () => {
   it('should have CSS for page', async () => {
     // const page = await global.__BROWSER__.newPage();
 
-    await page.goto(`http://localhost:${appPort}`);
+    const browser = await puppeteer.launch({ headless: true, dumpio: true });
+    const page = await browser.newPage();
+    await page.goto(`http://localhost:${appPort}`, {
+      waitUntil: ['networkidle0'],
+    });
     const currentColor = await page.$eval(
       '#verify-red',
       node => window.getComputedStyle(node).color,
     );
     expect(currentColor).toMatch('rgb(255, 0, 0)');
+    browser.close();
   });
 });
 
 describe('CSS Module Composes Usage (Basic)', () => {
   const appDir = join(fixturesDir, 'composes-basic');
 
-  let stdout;
+  let stdout: string;
+  let code: number;
   beforeAll(async () => {
     await remove(join(appDir, 'dist'));
     ({ code, stdout } = await modernBuild(appDir, [], {
@@ -215,7 +229,7 @@ describe('CSS Module Composes Usage (Basic)', () => {
     const cssFolder = join(appDir, 'dist/static/css');
 
     const files = await readdir(cssFolder);
-    const cssFiles = files.filter(f => /\.css$/.test(f));
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
     expect(cssFiles.length).toBe(1);
     const cssContent = await readFile(join(cssFolder, cssFiles[0]), 'utf8');
@@ -229,11 +243,12 @@ describe('CSS Module Composes Usage (Basic)', () => {
 describe('CSS Module Composes Usage (External)', () => {
   const appDir = join(fixturesDir, 'composes-external');
 
+  let code: number;
   beforeAll(async () => {
     await remove(join(appDir, 'dist'));
-    await modernBuild(appDir, [], {
+    ({ code } = await modernBuild(appDir, [], {
       stdout: true,
-    });
+    }));
   });
 
   it('should have compiled successfully', () => {
@@ -244,7 +259,7 @@ describe('CSS Module Composes Usage (External)', () => {
     const cssFolder = join(appDir, 'dist/static/css');
 
     const files = await readdir(cssFolder);
-    const cssFiles = files.filter(f => /\.css$/.test(f));
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
     expect(cssFiles.length).toBe(1);
     const cssContent = await readFile(join(cssFolder, cssFiles[0]), 'utf8');
@@ -254,4 +269,3 @@ describe('CSS Module Composes Usage (External)', () => {
     );
   });
 });
-/* eslint-enable no-undef */

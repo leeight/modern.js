@@ -1,24 +1,22 @@
-const { join } = require('path');
-const path = require('path');
-const puppeteer = require('puppeteer');
-const {
+import path, { join } from 'path';
+import puppeteer from 'puppeteer';
+import { describe, beforeAll, afterAll, it, expect } from 'vitest';
+import {
   launchApp,
   getPort,
   killApp,
   sleep,
-} = require('../../../utils/modernTestUtils');
+} from '../../../utils/modernTestUtils';
 
 const fixtureDir = path.resolve(__dirname, '../fixtures');
 
 describe('useLoader with SSR', () => {
-  let $data;
-  let logs = [];
-  let errors = [];
-  let app,
-    /** @type {puppeteer.Page} */
-    page,
-    /** @type {puppeteer.Browser} */
-    browser;
+  let $data: any;
+  let logs: string[] = [];
+  let errors: string[] = [];
+  let app: any;
+  let page: puppeteer.Page;
+  let browser: puppeteer.Browser;
 
   beforeAll(async () => {
     const appDir = join(fixtureDir, 'use-loader');
@@ -28,8 +26,8 @@ describe('useLoader with SSR', () => {
     browser = await puppeteer.launch({ headless: true, dumpio: true });
     page = await browser.newPage();
 
-    page.on('console', msg => logs.push(msg.text));
-    page.on('pageerror', error => errors.push(error.text));
+    page.on('console', msg => logs.push(msg.text()));
+    page.on('pageerror', error => errors.push(error.message));
     await page.goto(`http://localhost:${appPort}`, {
       waitUntil: ['networkidle0'],
     });
@@ -63,8 +61,8 @@ describe('useLoader with SSR', () => {
     expect(targetText).toEqual('1');
 
     const logMsg = logs.join('\n');
-    expect(logMsg).not.toMatch('useLoader exec with params: 1');
-    expect(logMsg).not.toMatch('useLoader success: 1');
+    expect(logMsg).toMatch('useLoader exec with params: 1');
+    expect(logMsg).toMatch('useLoader success 1');
   });
 
   it(`useLoader reload without params`, async () => {
@@ -76,8 +74,8 @@ describe('useLoader with SSR', () => {
     expect(targetText).toEqual('1');
 
     const logMsg = logs.join('\n');
-    expect(logMsg).not.toMatch('useLoader exec with params: 1');
-    expect(logMsg).not.toMatch('useLoader success: 1');
+    expect(logMsg).toMatch('useLoader exec with params: 1');
+    expect(logMsg).toMatch('useLoader success 1');
   });
 
   it(`useLoader reload with params`, async () => {
@@ -89,7 +87,7 @@ describe('useLoader with SSR', () => {
     expect(targetText).toEqual('100');
 
     const logMsg = logs.join('\n');
-    expect(logMsg).not.toMatch('useLoader exec with params: 100');
-    expect(logMsg).not.toMatch('useLoader success: 100');
+    expect(logMsg).toMatch('useLoader exec with params: 100');
+    expect(logMsg).toMatch('useLoader success 100');
   });
 });

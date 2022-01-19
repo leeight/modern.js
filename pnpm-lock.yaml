@@ -48,7 +48,7 @@ importers:
       '@modern-js/babel-preset-base': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash.get': ^4.4.6
       '@types/node': ^14
@@ -75,7 +75,7 @@ importers:
       semver: 7.3.5
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash.get': 4.4.6
       '@types/node': 14.18.4
@@ -107,7 +107,7 @@ importers:
       '@modern-js/babel-chain': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash.get': ^4.4.6
       '@types/node': ^14
@@ -152,7 +152,7 @@ importers:
       babel-plugin-transform-react-remove-prop-types: 0.4.24
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash.get': 4.4.6
       '@types/node': 14.18.4
@@ -168,7 +168,7 @@ importers:
       '@modern-js/babel-preset-base': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/jest': ^26
       '@types/node': ^14
@@ -192,7 +192,7 @@ importers:
     devDependencies:
       '@babel/core': 7.16.7
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -214,7 +214,7 @@ importers:
       '@modern-js/babel-preset-lib': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/fs-extra': ^9.0.12
       '@types/jest': ^26
@@ -236,7 +236,7 @@ importers:
     devDependencies:
       '@babel/core': 7.16.7
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/fs-extra': 9.0.13
       '@types/jest': 26.0.24
@@ -255,7 +255,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__code-frame': ^7.0.3
       '@types/jest': ^26
       '@types/lodash.clonedeep': ^4.5.6
@@ -302,7 +302,7 @@ importers:
     devDependencies:
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__code-frame': 7.0.3
       '@types/jest': 26.0.24
       '@types/lodash.clonedeep': 4.5.6
@@ -321,7 +321,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react-dom': ^17
@@ -352,7 +352,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react-dom': 17.0.11
@@ -364,7 +364,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -373,7 +373,7 @@ importers:
       '@babel/runtime': 7.16.7
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -391,7 +391,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@rollup/pluginutils': ^4.1.1
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__traverse': ^7.14.2
       '@types/fs-extra': ^9.0.12
       '@types/jest': ^26
@@ -415,7 +415,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__traverse': 7.14.2
       '@types/fs-extra': 9.0.13
       '@types/jest': 26.0.24
@@ -441,7 +441,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/fs-extra': ^9.0.13
       '@types/jest': ^26
@@ -476,7 +476,7 @@ importers:
       '@modern-js/server-plugin': link:../../server/plugin
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/fs-extra': 9.0.13
       '@types/jest': 26.0.24
@@ -496,7 +496,7 @@ importers:
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/inquirer': ^8.1.3
       '@types/jest': ^26.0.9
       '@types/js-yaml': ^4.0.4
@@ -521,7 +521,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/inquirer': 8.1.3
       '@types/jest': 26.0.24
       '@types/js-yaml': 4.0.5
@@ -539,7 +539,7 @@ importers:
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/ali-oss': ^6
       '@types/jest': ^26.0.9
       '@types/js-yaml': ^4.0.4
@@ -561,7 +561,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/ali-oss': 6.16.2
       '@types/jest': 26.0.24
       '@types/js-yaml': 4.0.5
@@ -581,7 +581,7 @@ importers:
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       execa: ^5.1.1
@@ -598,7 +598,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -615,7 +615,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/core-js': ^2.5.5
       '@types/github-slugger': ^1.3.0
       '@types/glob': ^7.1.4
@@ -682,7 +682,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/module-tools-hooks': link:../../toolkit/module-tools-hooks
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/core-js': 2.5.5
       '@types/github-slugger': 1.3.0
       '@types/glob': 7.2.0
@@ -701,7 +701,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.13.13
@@ -718,7 +718,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -732,7 +732,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@pmmmwh/react-refresh-webpack-plugin': ^0.4.3
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.13.13
@@ -751,7 +751,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -765,7 +765,7 @@ importers:
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@testing-library/react': ^12.0.0
       '@types/jest': ^26
       '@types/node': ^14
@@ -783,7 +783,7 @@ importers:
     devDependencies:
       '@modern-js/runtime-core': link:../../runtime
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -798,7 +798,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.126
       '@types/node': ^14
@@ -810,7 +810,7 @@ importers:
       lodash: 4.17.21
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -828,7 +828,7 @@ importers:
       '@modern-js/tsconfig': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/cross-spawn': ^6.0.2
       '@types/jest': ^26
       '@types/minimist': ^1.2.2
@@ -891,7 +891,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/cross-spawn': 6.0.2
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -908,7 +908,7 @@ importers:
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/js-yaml': ^4.0.4
       '@types/node': ^14
@@ -924,7 +924,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/js-yaml': 4.0.5
       '@types/node': 14.18.4
@@ -938,7 +938,7 @@ importers:
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@serverless/components': ^3.18.0
       '@types/inquirer': ^8.1.3
       '@types/jest': ^26.0.9
@@ -957,7 +957,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/inquirer': 8.1.3
       '@types/jest': 26.0.24
       '@types/js-yaml': 4.0.5
@@ -974,7 +974,7 @@ importers:
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/less': ^3.0.3
       '@types/node': ^14
@@ -998,7 +998,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/style-compiler': link:../../toolkit/compiler/style
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/less': 3.0.3
       '@types/node': 14.18.4
@@ -1016,7 +1016,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^26
       '@types/node': ^14
@@ -1038,7 +1038,7 @@ importers:
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -1055,7 +1055,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
@@ -1068,7 +1068,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       del-cli: 4.0.1
@@ -1083,7 +1083,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/body-parser': ^1.19.1
       '@types/cors': ^2.8.12
       '@types/express': ^4.17.13
@@ -1149,7 +1149,7 @@ importers:
     devDependencies:
       '@modern-js/module-tools-hooks': link:../../toolkit/module-tools-hooks
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/body-parser': 1.19.2
       '@types/cors': 2.8.12
       '@types/express': 4.17.13
@@ -1172,7 +1172,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -1185,7 +1185,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -1200,7 +1200,7 @@ importers:
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@testing-library/react': ^12.0.0
       '@types/history': ^4.7.9
       '@types/hoist-non-react-statics': ^3.3.1
@@ -1231,7 +1231,7 @@ importers:
       '@modern-js/plugin-analyze': link:../plugin-analyze
       '@modern-js/runtime-core': link:../../runtime
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
       '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 26.0.24
@@ -1257,7 +1257,7 @@ importers:
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/loadable__component': ^5.13.4
       '@types/node': ^14
@@ -1284,7 +1284,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/loadable__component': 5.13.4
       '@types/node': 14.18.4
@@ -1303,7 +1303,7 @@ importers:
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.13.13
@@ -1324,7 +1324,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/style-compiler': link:../../toolkit/compiler/style
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -1341,7 +1341,7 @@ importers:
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/jest': ^26
       '@types/node': ^14
@@ -1361,7 +1361,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/plugin-analyze': link:../plugin-analyze
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -1377,7 +1377,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -1402,7 +1402,7 @@ importers:
       '@modern-js/server': link:../../server/server
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -1425,7 +1425,7 @@ importers:
       '@modern-js/server': workspace:^1.3.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/loadable__component': ^5.13.4
       '@types/loadable__webpack-plugin': ^5.7.3
@@ -1461,7 +1461,7 @@ importers:
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/server': link:../../server/server
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/loadable__component': 5.13.4
       '@types/loadable__webpack-plugin': 5.7.3
@@ -1489,7 +1489,7 @@ importers:
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^26
       '@types/node': ^14
@@ -1518,7 +1518,7 @@ importers:
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/utils': link:../../toolkit/utils
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -1541,7 +1541,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@storybook/addon-actions': ^6.3.8
       '@storybook/addon-essentials': ^6.3.8
       '@storybook/addon-links': ^6.3.8
@@ -1604,7 +1604,7 @@ importers:
       '@modern-js/runtime': link:../plugin-runtime
       '@modern-js/runtime-core': link:../../runtime
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@storybook/addons': 6.4.9
       '@types/findup-sync': 4.0.2
       '@types/fs-extra': 9.0.13
@@ -1627,7 +1627,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash.clonedeep': ^4.5.6
       '@types/lodash.merge': ^4.6.6
@@ -1646,7 +1646,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash.clonedeep': 4.5.6
       '@types/lodash.merge': 4.6.6
@@ -1672,7 +1672,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@testing-library/jest-dom': ^5.14.1
       '@testing-library/react': ^12.0.0
       '@types/jest': ^26
@@ -1703,7 +1703,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/runtime-core': link:../../runtime
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -1735,7 +1735,7 @@ importers:
       '@rollup/plugin-alias': ^3.1.2
       '@rollup/pluginutils': ^4.1.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@svgr/core': ^5.5.0
       '@svgr/plugin-jsx': ^5.5.0
       '@types/babel__code-frame': ^7.0.2
@@ -1865,7 +1865,7 @@ importers:
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__code-frame': 7.0.3
       '@types/babel__core': 7.1.18
       '@types/es-module-lexer': 0.3.0
@@ -1898,7 +1898,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
@@ -1912,7 +1912,7 @@ importers:
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       del-cli: 4.0.1
@@ -1929,7 +1929,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@svgr/webpack': ^5.5.0
       '@types/case-sensitive-paths-webpack-plugin': ^2.1.6
       '@types/copy-webpack-plugin': ^8.0.1
@@ -2019,7 +2019,7 @@ importers:
       '@modern-js/core': link:../core
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/case-sensitive-paths-webpack-plugin': 2.1.6
       '@types/copy-webpack-plugin': 8.0.1
       '@types/css-minimizer-webpack-plugin': 3.2.1_esbuild@0.13.15+webpack@5.65.0
@@ -2039,7 +2039,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/generator-common': workspace:^1.3.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       covertable: ^2.2.2
@@ -2053,7 +2053,7 @@ importers:
       execa: 5.1.1
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2065,7 +2065,7 @@ importers:
       '@modern-js/easy-form-core': ^1.0.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2076,7 +2076,7 @@ importers:
       '@modern-js/plugin-i18n': link:../../cli/plugin-i18n
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2096,7 +2096,7 @@ importers:
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/lodash': ^4.14.126
       '@types/node': ^14
@@ -2130,7 +2130,7 @@ importers:
     devDependencies:
       '@modern-js/plugin-jarvis': link:../../cli/plugin-jarvis
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2148,7 +2148,7 @@ importers:
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       execa: ^5.1.1
@@ -2164,7 +2164,7 @@ importers:
     devDependencies:
       '@modern-js/codesmith': 1.0.8
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2178,7 +2178,7 @@ importers:
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/generator-common': workspace:^1.3.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2190,7 +2190,7 @@ importers:
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/generator-common': link:../../generator-common
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2206,7 +2206,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2221,7 +2221,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2236,7 +2236,7 @@ importers:
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/generator-common': workspace:^1.3.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2249,7 +2249,7 @@ importers:
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/generator-common': link:../../generator-common
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2264,7 +2264,7 @@ importers:
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/generator-common': workspace:^1.3.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2277,7 +2277,7 @@ importers:
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/generator-common': link:../../generator-common
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2296,7 +2296,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
@@ -2313,7 +2313,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-jarvis': link:../../../cli/plugin-jarvis
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       del-cli: 4.0.1
@@ -2330,7 +2330,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2345,7 +2345,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2362,7 +2362,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       jest: ^27
@@ -2376,7 +2376,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2393,7 +2393,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2408,7 +2408,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2424,7 +2424,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2438,7 +2438,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2456,7 +2456,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.172
       '@types/node': ^14
@@ -2474,7 +2474,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2491,7 +2491,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2505,7 +2505,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2524,7 +2524,7 @@ importers:
       '@modern-js/module-generator': workspace:^1.3.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/fs-extra': ^9.0.12
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
@@ -2544,7 +2544,7 @@ importers:
       '@modern-js/module-generator': link:../module-generator
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/fs-extra': 9.0.13
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
@@ -2568,7 +2568,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2586,7 +2586,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2604,7 +2604,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2620,7 +2620,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2641,7 +2641,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -2660,7 +2660,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -2680,7 +2680,7 @@ importers:
       '@modern-js/monorepo-generator': workspace:^1.3.0
       '@modern-js/mwa-generator': workspace:^1.3.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2703,7 +2703,7 @@ importers:
       '@modern-js/monorepo-generator': link:../monorepo-generator
       '@modern-js/mwa-generator': link:../mwa-generator
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2721,7 +2721,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2736,7 +2736,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2754,7 +2754,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2770,7 +2770,7 @@ importers:
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2790,7 +2790,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2808,7 +2808,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2824,7 +2824,7 @@ importers:
       '@modern-js/dependence-generator': workspace:^1.2.0
       '@modern-js/generator-common': workspace:^1.3.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2838,7 +2838,7 @@ importers:
       '@modern-js/dependence-generator': link:../dependence-generator
       '@modern-js/generator-common': link:../../generator-common
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2857,7 +2857,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2874,7 +2874,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2893,7 +2893,7 @@ importers:
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2910,7 +2910,7 @@ importers:
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2925,7 +2925,7 @@ importers:
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2943,7 +2943,7 @@ importers:
       lodash: 4.17.21
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -2958,7 +2958,7 @@ importers:
       '@modern-js/generator-plugin': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
@@ -2974,7 +2974,7 @@ importers:
       '@modern-js/generator-plugin': link:../../generator-plugin
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.4
@@ -3016,7 +3016,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/lodash.merge': ^4.6.6
       '@types/node': ^14
       '@types/react': ^17
@@ -3049,7 +3049,7 @@ importers:
       yargs: 17.3.1
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/lodash.merge': 4.6.6
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -3103,7 +3103,7 @@ importers:
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@testing-library/react': ^12.0.0
       '@testing-library/react-hooks': ^7.0.1
       '@types/hoist-non-react-statics': ^3.3.1
@@ -3133,7 +3133,7 @@ importers:
     devDependencies:
       '@loadable/component': 5.15.2_react@17.0.2
       '@scripts/build': link:../../scripts/build
-      '@scripts/jest-config': link:../../scripts/jest-config
+      '@scripts/test': link:../../scripts/test
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@types/hoist-non-react-statics': 3.3.1
@@ -3153,7 +3153,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.15.4
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^27.0.1
       '@types/node': ^14
       '@types/supertest': ^2.0.11
@@ -3165,7 +3165,7 @@ importers:
       supertest: 6.2.0
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 27.4.0
       '@types/node': 14.18.4
       '@types/supertest': 2.0.11
@@ -3177,7 +3177,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/server-utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -3198,7 +3198,7 @@ importers:
       farrow-schema: 1.11.0
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -3214,7 +3214,7 @@ importers:
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/fs-extra': ^9.0.13
       '@types/jest': ^26
       '@types/node': ^14
@@ -3238,7 +3238,7 @@ importers:
       globby: 11.0.4
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/fs-extra': 9.0.13
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -3254,7 +3254,7 @@ importers:
       '@modern-js/plugin-ssr': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^27.0.3
       '@types/node': ^14
       '@types/node-fetch': ^2.5.12
@@ -3274,7 +3274,7 @@ importers:
     devDependencies:
       '@modern-js/plugin-ssr': link:../../cli/plugin-ssr
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 27.4.0
       '@types/node': 14.18.4
       '@types/node-fetch': 2.5.12
@@ -3290,7 +3290,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.13.13
@@ -3309,7 +3309,7 @@ importers:
       url: 0.11.0
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -3323,7 +3323,7 @@ importers:
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/types': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -3338,7 +3338,7 @@ importers:
       '@modern-js/core': link:../../cli/core
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -3357,7 +3357,7 @@ importers:
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/formidable': ^1.2.3
       '@types/jest': ^27.0.1
       '@types/koa': ^2.13.4
@@ -3386,7 +3386,7 @@ importers:
       '@modern-js/core': link:../../cli/core
       '@modern-js/server-plugin': link:../plugin
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/formidable': 1.2.5
       '@types/jest': 27.4.0
       '@types/koa': 2.13.4
@@ -3411,7 +3411,7 @@ importers:
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/cookie-parser': ^1.4.2
       '@types/express': ^4.17.13
       '@types/finalhandler': ^1.1.1
@@ -3443,7 +3443,7 @@ importers:
       '@modern-js/server-plugin': link:../plugin
       '@modern-js/server-utils': link:../utils
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/cookie-parser': 1.4.2
       '@types/express': 4.17.13
       '@types/finalhandler': 1.1.1
@@ -3467,7 +3467,7 @@ importers:
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/formidable': ^1.2.3
       '@types/jest': ^27.0.1
       '@types/koa': ^2.13.4
@@ -3497,7 +3497,7 @@ importers:
       '@modern-js/core': link:../../cli/core
       '@modern-js/server-plugin': link:../plugin
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/formidable': 1.2.5
       '@types/jest': 27.4.0
       '@types/koa': 2.13.4
@@ -3524,7 +3524,7 @@ importers:
       '@nestjs/core': ^8.0.6
       '@nestjs/platform-express': ^8.0.6
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__traverse': ^7.14.2
       '@types/body-parser': ^1.19.1
       '@types/express': ^4.17.13
@@ -3570,7 +3570,7 @@ importers:
       '@nestjs/common': 8.2.4_88a789cb3f20cca25c3f70fe96f41643
       '@nestjs/core': 8.2.4_8b22effdebed417d7c9b4d391c70f023
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__traverse': 7.14.2
       '@types/body-parser': 1.19.2
       '@types/express': 4.17.13
@@ -3597,7 +3597,7 @@ importers:
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/types': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lru-cache': ^5.1.1
       '@types/mime-types': ^2.1.1
@@ -3621,7 +3621,7 @@ importers:
       '@modern-js/core': link:../../cli/core
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lru-cache': 5.1.1
       '@types/mime-types': 2.1.1
@@ -3642,7 +3642,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
@@ -3658,7 +3658,7 @@ importers:
       '@modern-js/core': link:../../cli/core
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       del-cli: 4.0.1
@@ -3681,7 +3681,7 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash.clone': ^4
       '@types/lru-cache': ^5.1.1
@@ -3762,7 +3762,7 @@ importers:
     devDependencies:
       '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash.clone': 4.5.6
       '@types/lru-cache': 5.1.1
@@ -3798,7 +3798,7 @@ importers:
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/jest': ^26
       '@types/node': ^14
@@ -3827,7 +3827,7 @@ importers:
     devDependencies:
       '@modern-js/core': link:../../cli/core
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
@@ -3852,7 +3852,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -3878,7 +3878,7 @@ importers:
       webpack: 5.65.0_esbuild@0.13.15
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -3909,7 +3909,7 @@ importers:
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/babel__generator': ^7.6.3
       '@types/babel__traverse': ^7.14.2
@@ -3976,7 +3976,7 @@ importers:
       '@babel/preset-typescript': 7.16.7
       '@modern-js/babel-chain': link:../../toolkit/babel-chain
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/babel__generator': 7.6.4
       '@types/babel__traverse': 7.14.2
@@ -4003,7 +4003,7 @@ importers:
       '@rushstack/node-core-library': ^3.39.1
       '@rushstack/package-deps-hash': ^3.0.54
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/js-yaml': ^4.0.2
       '@types/md5': ^2.3.1
@@ -4046,7 +4046,7 @@ importers:
       signale: 1.4.0
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/js-yaml': 4.0.5
       '@types/md5': 2.3.1
@@ -4062,7 +4062,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.16
       '@types/jest': ^26
       '@types/node': ^14
@@ -4073,7 +4073,7 @@ importers:
       '@types/babel__core': 7.1.18
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -4087,7 +4087,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/glob': ^7.1.4
       '@types/jest': ^26
@@ -4107,7 +4107,7 @@ importers:
       '@babel/plugin-transform-classes': 7.16.7_@babel+core@7.16.7
       '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/glob': 7.2.0
       '@types/jest': 26.0.24
@@ -4120,7 +4120,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/glob': ^7.1.4
       '@types/jest': ^26
@@ -4133,7 +4133,7 @@ importers:
       esbuild: 0.14.10
     devDependencies:
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/glob': 7.2.0
       '@types/jest': 26.0.24
@@ -4146,7 +4146,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/glob': ^7.1.4
       '@types/jest': ^26
       '@types/less': ^3.0.3
@@ -4179,7 +4179,7 @@ importers:
       sass: 1.45.2
     devDependencies:
       '@scripts/build': link:../../../../scripts/build
-      '@scripts/jest-config': link:../../../../scripts/jest-config
+      '@scripts/test': link:../../../../scripts/test
       '@types/glob': 7.2.0
       '@types/jest': 26.0.24
       '@types/less': 3.0.3
@@ -4205,7 +4205,7 @@ importers:
       '@modern-js/repo-generator': workspace:^1.3.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -4224,7 +4224,7 @@ importers:
       '@modern-js/repo-generator': link:../../generator/generators/repo-generator
       '@modern-js/utils': link:../utils
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -4238,7 +4238,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -4249,7 +4249,7 @@ importers:
       '@babel/runtime': 7.16.7
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -4274,7 +4274,7 @@ importers:
       '@rollup/plugin-replace': ~2.3.4
       '@rollup/plugin-wasm': ~5.1.1
       '@rollup/pluginutils': ~4.1.0
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/autoprefixer': ~9.7.2
       '@types/babel__core': ~7.1.12
       '@types/babel__traverse': ~7.14.2
@@ -4369,7 +4369,7 @@ importers:
       tapable: 2.2.1
       validate-npm-package-name: 3.0.0
     devDependencies:
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/babel__traverse': 7.14.2
       '@types/es-module-lexer': 0.3.0
@@ -4410,7 +4410,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       jest: ^27
@@ -4419,7 +4419,7 @@ importers:
       '@babel/runtime': 7.16.7
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -4431,7 +4431,7 @@ importers:
       '@modern-js/node-bundle-require': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.13.8
@@ -4444,7 +4444,7 @@ importers:
       esbuild: 0.13.15
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -4457,7 +4457,7 @@ importers:
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/style-compiler': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       jest: ^27
       typescript: ^4
     dependencies:
@@ -4467,7 +4467,7 @@ importers:
     devDependencies:
       '@modern-js/style-compiler': link:../compiler/style
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       jest: 27.4.5
       typescript: 4.5.4
 
@@ -4476,7 +4476,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       esbuild: ^0.13.8
@@ -4488,7 +4488,7 @@ importers:
     devDependencies:
       '@modern-js/utils': link:../utils
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -4498,7 +4498,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       farrow-pipeline: ^1.10.6
@@ -4509,7 +4509,7 @@ importers:
       farrow-pipeline: 1.11.3
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       jest: 27.4.5
@@ -4519,7 +4519,7 @@ importers:
     specifiers:
       '@modern-js/plugin': workspace:^1.2.0
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -4533,7 +4533,7 @@ importers:
       webpack: 5.65.0_esbuild@0.13.15
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -4544,7 +4544,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
@@ -4555,7 +4555,7 @@ importers:
       '@babel/runtime': 7.16.7
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.4
       '@types/react': 17.0.38
@@ -4567,7 +4567,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@scripts/build': workspace:*
-      '@scripts/jest-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/debug': ^4.1.7
       '@types/fs-extra': ^9.0.12
       '@types/glob': ^7.1.4
@@ -4615,7 +4615,7 @@ importers:
       yaml: 1.10.2
     devDependencies:
       '@scripts/build': link:../../../scripts/build
-      '@scripts/jest-config': link:../../../scripts/jest-config
+      '@scripts/test': link:../../../scripts/test
       '@types/debug': 4.1.7
       '@types/glob': 7.2.0
       '@types/jest': 26.0.24
@@ -4650,7 +4650,7 @@ importers:
       btsm: 2.2.2
       glob: 7.2.0
 
-  scripts/jest-config:
+  scripts/test:
     specifiers:
       '@types/jest': ^26
       '@types/node': ^14
@@ -4672,29 +4672,37 @@ importers:
       '@modern-js/core': workspace:^1.2.0
       '@modern-js/plugin-polyfill': workspace:^1.1.1
       '@modern-js/plugin-testing': workspace:^1.2.2
+      '@types/cross-spawn': ^6.0.2
+      '@types/fs-extra': ^9.0.13
+      '@types/node': ^14
       axios: ^0.21.4
       cross-spawn: ^7.0.3
+      encoding: ^0.1.13
       fs-extra: ^10.0.0
-      jest: ^27.3.1
-      jest-puppeteer: ^6.0.0
       portfinder: ^1.0.28
       puppeteer: ^10.4.0
       rimraf: ^3.0.2
       tree-kill: ^1.2.2
+      vite: ^2.7.12
+      vitest: ^0.1.19
     devDependencies:
       '@modern-js/app-tools': link:../packages/solutions/app-tools
       '@modern-js/core': link:../packages/cli/core
       '@modern-js/plugin-polyfill': link:../packages/server/plugin-polyfill
       '@modern-js/plugin-testing': link:../packages/cli/plugin-testing
+      '@types/cross-spawn': 6.0.2
+      '@types/fs-extra': 9.0.13
+      '@types/node': 14.18.4
       axios: 0.21.4
       cross-spawn: 7.0.3
+      encoding: 0.1.13
       fs-extra: 10.0.0
-      jest: 27.4.5
-      jest-puppeteer: 6.0.3_puppeteer@10.4.0
       portfinder: 1.0.28
       puppeteer: 10.4.0
       rimraf: 3.0.2
       tree-kill: 1.2.2
+      vite: 2.7.13
+      vitest: 0.1.23
 
   tests/integration/alias-set:
     specifiers:
@@ -11921,6 +11929,16 @@ packages:
     resolution: {integrity: sha512-6ckxMjBBD8URvjB6J3NcnuAn5Pkl7t3TizAg+xdlzzQGSPSmBcXf8KoIH0ua/i+tio+ZRUHEXp0HEmvaR4kt0w==}
     dev: false
 
+  /@types/chai-subset/1.3.3:
+    resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
+    dependencies:
+      '@types/chai': 4.3.0
+    dev: true
+
+  /@types/chai/4.3.0:
+    resolution: {integrity: sha512-/ceqdqeRraGolFTcfoXNiqjyQhZzbINDngeoAq9GoHa8PPK1yNzTaxWjA6BFWp5Ua9JpXEMSS4s5i9tS0hOJtw==}
+    dev: true
+
   /@types/color-convert/2.0.0:
     resolution: {integrity: sha512-m7GG7IKKGuJUXvkZ1qqG3ChccdIM/qBBo913z+Xft0nKCX4hAU/IxKwZBU4cpRZ7GS5kV4vOblUkILtSShCPXQ==}
     dependencies:
@@ -14011,6 +14029,10 @@ packages:
       util: 0.12.4
     dev: false
 
+  /assertion-error/1.1.0:
+    resolution: {integrity: sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==}
+    dev: true
+
   /assign-symbols/1.0.0:
     resolution: {integrity: sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=}
     engines: {node: '>=0.10.0'}
@@ -15456,6 +15478,18 @@ packages:
       utility: 1.17.0
     dev: true
 
+  /chai/4.3.4:
+    resolution: {integrity: sha512-yS5H68VYOCtN1cjfwumDSuzn/9c+yza4f3reKXlE5rUg7SFcCEy90gJvydNgOYtblyf4Zi6jIWRnXOgErta0KA==}
+    engines: {node: '>=4'}
+    dependencies:
+      assertion-error: 1.1.0
+      check-error: 1.0.2
+      deep-eql: 3.0.1
+      get-func-name: 2.0.0
+      pathval: 1.1.1
+      type-detect: 4.0.8
+    dev: true
+
   /chainsaw/0.1.0:
     resolution: {integrity: sha1-XqtQsor+WAdNDVgpE4iCi15fvJg=}
     dependencies:
@@ -15537,6 +15571,10 @@ packages:
     resolution: {integrity: sha1-it02cVOm2aWBMxBSxAkJkdqZXjU=}
     dependencies:
       inherits: 2.0.4
+    dev: true
+
+  /check-error/1.0.2:
+    resolution: {integrity: sha1-V00xLt2Iu13YkS6Sht1sCu1KrII=}
     dev: true
 
   /check-more-types/2.24.0:
@@ -17321,6 +17359,13 @@ packages:
     resolution: {integrity: sha1-wB3mPvsO7JeYgB1Ax+Da4ltYLIQ=}
     dev: false
 
+  /deep-eql/3.0.1:
+    resolution: {integrity: sha512-+QeIQyN5ZuO+3Uk5DYh6/1eKO0m0YmJFGNmFHGACpf1ClL1nmlV/p4gNgbl2pJGxgXb4faqo6UE+M5ACEMyVcw==}
+    engines: {node: '>=0.12'}
+    dependencies:
+      type-detect: 4.0.8
+    dev: true
+
   /deep-equal/1.0.1:
     resolution: {integrity: sha1-9dJgKStmDghO/0zbyfCK0yR0SLU=}
 
@@ -18347,6 +18392,12 @@ packages:
   /encodeurl/1.0.2:
     resolution: {integrity: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=}
     engines: {node: '>= 0.8'}
+
+  /encoding/0.1.13:
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    dependencies:
+      iconv-lite: 0.6.3
+    dev: true
 
   /end-of-stream/1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
@@ -20663,6 +20714,10 @@ packages:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
     engines: {node: 6.* || 8.* || >= 10.*}
 
+  /get-func-name/2.0.0:
+    resolution: {integrity: sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=}
+    dev: true
+
   /get-intrinsic/1.1.1:
     resolution: {integrity: sha512-kWZrnVM42QCiEA2Ig1bG8zjoIMOgxWwYCEeNdwY6Tv/cOSeGpcoX4pXHfKUxNKVoArnrEr2e9srnAxxGIraS9Q==}
     dependencies:
@@ -21789,7 +21844,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       safer-buffer: 2.1.2
-    dev: false
 
   /icss-replace-symbols/1.1.0:
     resolution: {integrity: sha1-Bupvg2ead0njhs/h/oEq5dsiPe0=}
@@ -24281,6 +24335,11 @@ packages:
     engines: {node: '>= 12.13.0'}
     dev: false
 
+  /local-pkg/0.4.1:
+    resolution: {integrity: sha512-lL87ytIGP2FU5PWwNDo0w3WhIo2gopIAxPg9RxDYF7m4rr5ahuZxP22xnJHIvaLTe4Z9P6uKKY2UHiwyB4pcrw==}
+    engines: {node: '>=14'}
+    dev: true
+
   /locate-path/2.0.0:
     resolution: {integrity: sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=}
     engines: {node: '>=4'}
@@ -26398,6 +26457,10 @@ packages:
   /path-type/4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
+
+  /pathval/1.1.1:
+    resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
+    dev: true
 
   /pause-stream/0.0.11:
     resolution: {integrity: sha1-/lo0sMvOErWqaitAPuLnO2AvFEU=}
@@ -29418,7 +29481,6 @@ packages:
     engines: {node: '>=10.0.0'}
     optionalDependencies:
       fsevents: 2.3.2
-    dev: false
 
   /rsvp/4.8.5:
     resolution: {integrity: sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA==}
@@ -31640,6 +31702,16 @@ packages:
     resolution: {integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==}
     dev: false
 
+  /tinypool/0.1.1:
+    resolution: {integrity: sha512-sW2fQZ2BRb/GX5v55NkHiTrbMLx0eX0xNpP+VGhOe2f7Oo04+LeClDyM19zCE/WCy7jJ8kzIJ0Ojrxj3UhN9Sg==}
+    engines: {node: '>=14.0.0'}
+    dev: true
+
+  /tinyspy/0.2.8:
+    resolution: {integrity: sha512-4VXqQzzh9gC5uOLk77cLr9R3wqJq07xJlgM9IUdCNJCet139r+046ETKbU1x7mGs7B0k7eopyH5U6yflbBXNyA==}
+    engines: {node: '>=14.0.0'}
+    dev: true
+
   /tmp/0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
     engines: {node: '>=0.6.0'}
@@ -32782,6 +32854,62 @@ packages:
       unist-util-stringify-position: 2.0.3
       vfile-message: 2.0.4
     dev: false
+
+  /vite/2.7.13:
+    resolution: {integrity: sha512-Mq8et7f3aK0SgSxjDNfOAimZGW9XryfHRa/uV0jseQSilg+KhYDSoNb9h1rknOy6SuMkvNDLKCYAYYUMCE+IgQ==}
+    engines: {node: '>=12.2.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+    dependencies:
+      esbuild: 0.13.15
+      postcss: 8.4.5
+      resolve: 1.21.0
+      rollup: 2.62.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /vitest/0.1.23:
+    resolution: {integrity: sha512-Aq/hPNlyMPWqrkSuTzyvUOLcifnXY0IoVnqmhOhUJLEyNVvnPofsThe9r7M7jAkJu/EpqNZwPdOD2HFyZ5biIA==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      chai: 4.3.4
+      local-pkg: 0.4.1
+      tinypool: 0.1.1
+      tinyspy: 0.2.8
+      vite: 2.7.13
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
 
   /vlq/1.0.1:
     resolution: {integrity: sha512-gQpnTgkubC6hQgdIcRdYGDSDc+SaujOdyesZQMv6JlfQee/9Mp0Qhnys6WxDWvQnL5WZdT7o2Ul187aSt0Rq+w==}
