@@ -1,5 +1,5 @@
 {
-  "name": "@scripts/jest-config",
+  "name": "@scripts/test",
   "private": true,
   "version": "0.0.0",
   "main": "jest.config.js",
@@ -9,6 +9,8 @@
   "devDependencies": {
     "@types/jest": "^26",
     "@types/node": "^14",
+    "vite": "^2.7.12",
+    "vitest": "^0.1.19",
     "jest": "^27",
     "esbuild": "^0.13.8",
     "esbuild-jest": "0.5.0",

@@ -1,16 +1,17 @@
-const fs = require('fs');
-const path = require('path');
-const puppeteer = require('puppeteer');
-const {
+import fs from 'fs';
+import path from 'path';
+import puppeteer from 'puppeteer';
+import { describe, it, expect } from 'vitest';
+import {
   launchApp,
   killApp,
   getPort,
   modernBuild,
-} = require('../../../utils/modernTestUtils');
+} from '../../../utils/modernTestUtils';
 
 const appDir = path.resolve(__dirname, '../');
 
-function existsSync(filePath) {
+function existsSync(filePath: string) {
   return fs.existsSync(path.join(appDir, 'dist', filePath));
 }
 
@@ -34,13 +35,13 @@ describe('test build', () => {
         FAST_REFRESH: 'false',
       },
     );
-    const logs = [];
-    const errors = [];
+    const logs: string[] = [];
+    const errors: string[] = [];
 
     const browser = await puppeteer.launch({ headless: true, dumpio: true });
     const page = await browser.newPage();
     page.on('console', msg => logs.push(msg.text()));
-    page.on('pageerror', error => errors.push(error.text));
+    page.on('pageerror', error => errors.push(error.message));
     await page.goto(`http://localhost:${appPort}`, {
       waitUntil: ['networkidle0'],
     });

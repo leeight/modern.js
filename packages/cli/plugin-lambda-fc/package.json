@@ -54,7 +54,7 @@
     "@types/node": "^14",
     "@types/js-yaml": "^4.0.4",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*",
+    "@scripts/test": "workspace:*",
     "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "sideEffects": [

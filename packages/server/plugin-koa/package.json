@@ -65,7 +65,7 @@
     "@modern-js/server-core": "workspace:^1.2.2",
     "@scripts/build": "workspace:*",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*",
+    "@scripts/test": "workspace:*",
     "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "modernConfig": {

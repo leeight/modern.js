@@ -242,10 +242,7 @@ function fixWorkspacePackagesVersions(file: string) {
     return;
   }
 
-  const ignoredPkg = new Set<string>([
-    '@scripts/build',
-    '@scripts/jest-config',
-  ]);
+  const ignoredPkg = new Set<string>(['@scripts/build', '@scripts/test']);
 
   const { dependencies = {}, devDependencies = {} } = c;
   for (const key of Object.keys(dependencies)) {
@@ -282,7 +279,7 @@ function fixPluginTesting(file: string) {
   if (devDependencies['@modern-js/plugin-testing']) {
     delete devDependencies['@modern-js/plugin-testing'];
     devDependencies.jest = '^27';
-    devDependencies['@scripts/jest-config'] = 'workspace:*';
+    devDependencies['@scripts/test'] = 'workspace:*';
 
     if (c.scripts) {
       c.scripts.test = 'jest --passWithNoTests';

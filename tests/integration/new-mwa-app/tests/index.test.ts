@@ -1,18 +1,17 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable no-undef */
-const fs = require('fs');
-const path = require('path');
-const {
+import fs from 'fs';
+import path from 'path';
+import puppeteer from 'puppeteer';
+import { describe, it, expect } from 'vitest';
+import {
   launchApp,
   killApp,
   getPort,
   modernBuild,
-  modernStart,
-} = require('../../../utils/modernTestUtils');
+} from '../../../utils/modernTestUtils';
 
 const appDir = path.resolve(__dirname, '../');
 
-function existsSync(filePath) {
+function existsSync(filePath: string) {
   return fs.existsSync(path.join(appDir, 'dist', filePath));
 }
 
@@ -20,8 +19,8 @@ describe('test dev', () => {
   it(`should render page correctly`, async () => {
     const appPort = await getPort();
     const app = await launchApp(appDir, appPort, {}, {});
-    const logs = [];
-    const errors = [];
+    const logs: string[] = [];
+    const errors: string[] = [];
 
     page.on('console', msg => {
       logs.push(msg.text());

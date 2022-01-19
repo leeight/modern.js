@@ -56,7 +56,7 @@
     "webpack-chain": "^6.5.1",
     "@scripts/build": "workspace:*",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*",
+    "@scripts/test": "workspace:*",
     "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "sideEffects": false,

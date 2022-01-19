@@ -878,8 +878,8 @@
     "projectFolder": "scripts/build"
   },
   {
-    "packageName": "@scripts/jest-config",
-    "projectFolder": "scripts/jest-config"
+    "packageName": "@scripts/test",
+    "projectFolder": "scripts/test"
   },
   {
     "packageName": "@scripts/codemod",

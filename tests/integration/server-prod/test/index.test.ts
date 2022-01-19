@@ -1,21 +1,20 @@
-const path = require('path');
-const fs = require('fs');
-const axios = require('axios');
-const {
+import path from 'path';
+import fs from 'fs';
+import axios from 'axios';
+import { describe, beforeAll, afterAll, it, expect } from 'vitest';
+import {
   modernBuild,
-  installDeps,
-  clearBuildDist,
   modernStart,
   getPort,
   killApp,
-} = require('../../../utils/modernTestUtils');
+} from '../../../utils/modernTestUtils';
 
 const appPath = path.resolve(__dirname, '../');
 const successStatus = 200;
-let app, appPort;
+let app;
+let appPort;
 
 beforeAll(async () => {
-  await installDeps(appPath);
   await modernBuild(appPath);
   appPort = await getPort();
 });
@@ -24,7 +23,6 @@ afterAll(async () => {
   if (app) {
     await killApp(app);
   }
-  clearBuildDist(appPath);
 });
 
 describe('test basic usage', () => {
