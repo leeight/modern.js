@@ -19,7 +19,7 @@
     "/dist/js/node/main.js"
   ],
   "scripts": {
-    "prepare": "pnpm build && pnpm build:csmith",
+    "_prepare": "pnpm build && pnpm build:csmith",
     "build": "modern build",
     "build:csmith": "csmith-tools build",
     "new": "modern new",

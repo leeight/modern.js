@@ -12,6 +12,9 @@
     "modern",
     "modern.js"
   ],
+  "scripts": {
+    "build": "exit"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"

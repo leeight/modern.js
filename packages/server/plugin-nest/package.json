@@ -37,7 +37,7 @@
     }
   },
   "scripts": {
-    "prepare": "pnpm build",
+    "_prepare": "pnpm build",
     "prepublishOnly": "pnpm build -- --platform",
     "new": "modern new",
     "build": "tsc",

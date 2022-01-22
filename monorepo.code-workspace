@@ -443,6 +443,7 @@
       "stylelintrc": "jsonc",
       ".htmlhintrc": "jsonc",
       "htmlhintrc": "jsonc",
+      "*.json": "jsonc",
       "Procfile*": "shellscript",
       "README": "markdown"
     },

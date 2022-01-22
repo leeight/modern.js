@@ -24,7 +24,7 @@
     "type": "module"
   },
   "scripts": {
-    "prepare": "pnpm build && pnpm build:csmith",
+    "_prepare": "pnpm build && pnpm build:csmith",
     "prepublishOnly": "pnpm build --platform",
     "new": "modern new",
     "build": "modern build",

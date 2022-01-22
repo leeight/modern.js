@@ -35,7 +35,7 @@
     }
   },
   "scripts": {
-    "prepare": "pnpm build && pnpm build:csmith",
+    "_prepare": "pnpm build && pnpm build:csmith",
     "new": "modern new",
     "build": "modern build",
     "build:csmith": "csmith-tools build",
