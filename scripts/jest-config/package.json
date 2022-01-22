@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "main": "jest.config.js",
+  "scripts": {
+    "build": "exit"
+  },
   "devDependencies": {
     "@types/jest": "^26",
     "@types/node": "^14",

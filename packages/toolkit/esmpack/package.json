@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "npm run build",
+    "_prepare": "npm run build",
     "build": "del-cli ./dist && tsc -p tsconfig.build.json",
     "build:watch": "tsc -p ./tsconfig.build.json",
     "prepublishOnly": "npm run build",

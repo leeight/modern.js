@@ -6,6 +6,9 @@
   "bin": {
     "modern": "./bin/modern.js"
   },
+  "scripts": {
+    "build": "exit"
+  },
   "devDependencies": {
     "btsm": "2.2.2",
     "@types/jest": "^26",
