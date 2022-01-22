@@ -86,7 +86,8 @@
     "nock": "^13.2.1",
     "typescript": "^4",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "peerDependencies": {
     "@modern-js/plugin-ssr": "workspace:^1.2.0"

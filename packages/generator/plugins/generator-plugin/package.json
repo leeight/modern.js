@@ -46,7 +46,8 @@
     "@scripts/build": "workspace:*",
     "@modern-js/codesmith-tools": "^1.0.7",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "sideEffects": false,
   "modernConfig": {

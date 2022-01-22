@@ -53,7 +53,8 @@
     "@types/jest": "^26.0.9",
     "@types/node": "^14",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "sideEffects": [
     "*.css",

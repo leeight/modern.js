@@ -87,7 +87,8 @@
     "webpack": "^5.54.0",
     "webpack-chain": "^6.5.1",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "peerDependencies": {
     "@modern-js/bff-utils": "workspace:^1.2.0",

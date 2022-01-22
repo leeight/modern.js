@@ -93,7 +93,8 @@
     "portfinder": "^1.0.28",
     "jest": "^27",
     "@scripts/jest-config": "workspace:*",
-    "websocket": "^1"
+    "websocket": "^1",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "peerDependencies": {
     "webpack": "^5.54.0"

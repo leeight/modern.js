@@ -48,7 +48,8 @@
     "webpack": "^5.54.0",
     "@scripts/build": "workspace:*",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "sideEffects": false,
   "modernConfig": {

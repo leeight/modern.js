@@ -24,7 +24,8 @@
     "@types/react-dom": "^17",
     "@types/node": "^14",
     "@modern-js/plugin-testing": "workspace:^1.2.2",
-    "@types/jest": "^26.0.9"
+    "@types/jest": "^26.0.9",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "modernConfig": {
     "runtime": {

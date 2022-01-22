@@ -59,7 +59,8 @@
     "ts-node": "^10.1.0",
     "typescript": "^4",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*"
   },
   "modernConfig": {
     "output": {
