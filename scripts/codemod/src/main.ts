@@ -336,12 +336,38 @@ function fixTypesField(file: string) {
   fs.writeFileSync(p, `${JSON.stringify(c, null, 2)}\n`);
 }
 
+function addMissingDeps(file: string) {
+  const p = `${kProjectDir}/${file}`;
+  const d = fs.readFileSync(p, 'utf8');
+  let c: any;
+  try {
+    c = JSON.parse(d);
+  } catch (e) {
+    return;
+  }
+
+  const tsConfigFile = p.replace('package.json', 'tsconfig.json');
+  if (!fs.existsSync(tsConfigFile)) {
+    return;
+  }
+  const tsConfigText = fs.readFileSync(tsConfigFile, 'utf-8');
+  if (tsConfigText.includes('@modern-js/tsconfig')) {
+    const { devDependencies = {} } = c;
+    if (!devDependencies['@modern-js/tsconfig']) {
+      devDependencies['@modern-js/tsconfig'] = 'workspace:*';
+    }
+    c.devDependencies = devDependencies;
+    fs.writeFileSync(p, `${JSON.stringify(c, null, 2)}\n`);
+  }
+}
+
 function main() {
   const files = glob.sync('**/package.json', {
     cwd: kProjectDir,
     nodir: true,
     ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
   });
+  // files.forEach(addMissingDeps);
   // files.forEach(fixTypesField);
   files.forEach(getWorkspacePackages);
   files.forEach(fixWorkspacePackagesVersions);

@@ -24,7 +24,7 @@
     "type": "module"
   },
   "scripts": {
-    "prepare": "pnpm build && pnpm build:csmith",
+    "_prepare": "pnpm build && pnpm build:csmith",
     "prepublishOnly": "pnpm build --platform",
     "new": "modern new",
     "build": "modern build",
@@ -46,7 +46,8 @@
     "@scripts/build": "workspace:*",
     "@modern-js/codesmith-tools": "^1.0.7",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "sideEffects": false,
   "modernConfig": {

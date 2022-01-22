@@ -32,7 +32,7 @@
     }
   },
   "scripts": {
-    "prepare": "pnpm build",
+    "_prepare": "pnpm build",
     "prepublishOnly": "pnpm build -- --platform",
     "new": "modern new",
     "build": "modern build --no-tsc",
@@ -82,7 +82,8 @@
     "typescript": "^4",
     "webpack-chain": "^6.5.1",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "sideEffects": false,
   "modernConfig": {

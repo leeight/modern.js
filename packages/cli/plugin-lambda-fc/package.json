@@ -32,7 +32,7 @@
     }
   },
   "scripts": {
-    "prepare": "modern build",
+    "_prepare": "modern build",
     "prepublishOnly": "modern build --platform",
     "dev": "modern dev",
     "build": "modern build",
@@ -54,7 +54,8 @@
     "@types/node": "^14",
     "@types/js-yaml": "^4.0.4",
     "jest": "^27",
-    "@scripts/jest-config": "workspace:*"
+    "@scripts/jest-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "sideEffects": [
     "*.css",

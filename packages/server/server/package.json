@@ -28,7 +28,7 @@
     }
   },
   "scripts": {
-    "prepare": "pnpm build",
+    "_prepare": "pnpm build",
     "prepublishOnly": "pnpm build --platform",
     "new": "modern new",
     "build": "modern build",
@@ -93,7 +93,8 @@
     "portfinder": "^1.0.28",
     "jest": "^27",
     "@scripts/jest-config": "workspace:*",
-    "websocket": "^1"
+    "websocket": "^1",
+    "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "peerDependencies": {
     "webpack": "^5.54.0"
