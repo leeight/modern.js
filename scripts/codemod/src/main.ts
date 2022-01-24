@@ -367,10 +367,10 @@ function main() {
     nodir: true,
     ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
   });
-  files.forEach(addMissingDeps);
+  // files.forEach(addMissingDeps);
   // files.forEach(fixTypesField);
-  // files.forEach(getWorkspacePackages);
-  // files.forEach(fixWorkspacePackagesVersions);
+  files.forEach(getWorkspacePackages);
+  files.forEach(fixWorkspacePackagesVersions);
   // files.forEach(addPublishConfig);
   // console.log([...kWorkspace]);
 

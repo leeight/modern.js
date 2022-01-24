@@ -44,7 +44,7 @@
     "@types/react-dom": "^17",
     "jest": "^27",
     "@scripts/jest-config": "workspace:*",
-    "@modern-js/tsconfig": "workspace:*"
+    "@modern-js/tsconfig": "workspace:^1.2.0"
   },
   "sideEffects": [
     "*.css",
