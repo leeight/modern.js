@@ -1,7 +1,5 @@
-module.exports = {
-  extends: ['@modern-js'],
-  parserOptions: {
-    project: require.resolve('./tsconfig.json'),
-  },
-  ignorePatterns: ['type.d.ts'],
-};
+const { defineConfig } = require('@scripts/eslint-config');
+
+module.exports = defineConfig({
+  rootDir: __dirname,
+});

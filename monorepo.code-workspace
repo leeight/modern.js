@@ -433,6 +433,10 @@
       "path": "scripts/codemod"
     },
     {
+      "name": "@scripts/eslint-config",
+      "path": "scripts/eslint-config"
+    },
+    {
       "name": "Integration Tests",
       "path": "tests"
     },
@@ -461,6 +465,7 @@
       "**/coverage": true,
       "**/dist": true
     },
+    "search.followSymlinks": false,
     "search.useIgnoreFiles": true,
     "search.exclude": {
       "**/.git": true,

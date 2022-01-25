@@ -65,7 +65,9 @@
     "@scripts/build": "workspace:*",
     "jest": "^27",
     "@scripts/test": "workspace:*",
-    "@modern-js/tsconfig": "workspace:^1.2.0"
+    "@modern-js/tsconfig": "workspace:*",
+    "eslint": "^7.32.0",
+    "@scripts/eslint-config": "workspace:*"
   },
   "peerDependencies": {
     "@modern-js/core": "workspace:^1.4.0"
