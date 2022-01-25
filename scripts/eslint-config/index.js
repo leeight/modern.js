@@ -16,9 +16,7 @@ function defineConfig(options) {
   }
 
   return {
-    extends: [
-      require.resolve('@modern-js/eslint-config')
-    ],
+    extends: [require.resolve('@modern-js/eslint-config')],
     parserOptions,
   };
 }
