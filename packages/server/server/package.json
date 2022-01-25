@@ -94,7 +94,10 @@
     "jest": "^27",
     "@scripts/test": "workspace:*",
     "websocket": "^1",
-    "@modern-js/tsconfig": "workspace:*"
+    "@modern-js/tsconfig": "workspace:*",
+    "@modern-js/eslint-config": "workspace:*",
+    "@rushstack/eslint-config": "^2.5.1",
+    "eslint": "^7.32.0"
   },
   "peerDependencies": {
     "webpack": "^5.54.0"

@@ -4,11 +4,13 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 import glob from 'glob';
+import JSON5 from 'json5';
 
 const kProjectDir = path.resolve(__dirname, '../../../');
 const kRoot =
   os.platform() === 'win32' ? process.cwd().split(path.sep)[0] : '/';
 const kWorkspace = new Map<string, string>();
+const { projects: kProjects } = JSON5.parse(fs.readFileSync(`${kProjectDir}/rush.json`, 'utf8'));
 
 function resolveSourceFile(str: string): string {
   if (!str.startsWith('./dist/js/')) {
@@ -242,7 +244,7 @@ function fixWorkspacePackagesVersions(file: string) {
     return;
   }
 
-  const ignoredPkg = new Set<string>(['@scripts/build', '@scripts/test']);
+  const ignoredPkg = new Set<string>(['@scripts/build', '@scripts/test', '@modern-js/tsconfig', '@modern-js/eslint-config']);
 
   const { dependencies = {}, devDependencies = {} } = c;
   for (const key of Object.keys(dependencies)) {
@@ -358,16 +360,55 @@ function addMissingDeps(file: string) {
   }
 }
 
+function addMissingEslintConfig() {
+  const eslintrc = fs.readFileSync(`${kProjectDir}/packages/cli/core/.eslintrc.js`, 'utf8');
+
+  for (const project of kProjects) {
+    const { packageName, projectFolder } = project;
+    if (packageName === '@modern-js/core') {
+      continue;
+    }
+    // console.log(project);
+
+
+    const p = `${kProjectDir}/${projectFolder}/package.json`;
+    const d = fs.readFileSync(p, 'utf8');
+    const c = JSON.parse(d);
+    const { devDependencies = {} } = c;
+    devDependencies['@modern-js/eslint-config'] = 'workspace:*';
+    devDependencies['@rushstack/eslint-config'] = '^2.5.1';
+    devDependencies['eslint'] = '^7.32.0';
+    c.devDependencies = devDependencies;
+    fs.writeFileSync(p, `${JSON.stringify(c, null, 2)}\n`);
+    fs.writeFileSync(`${kProjectDir}/${projectFolder}/.eslintrc.js`, eslintrc);
+  }
+
+  // const tsConfigFile = p.replace('package.json', 'tsconfig.json');
+  // if (!fs.existsSync(tsConfigFile)) {
+  //   return;
+  // }
+  // const tsConfigText = fs.readFileSync(tsConfigFile, 'utf-8');
+  // if (tsConfigText.includes('@modern-js/tsconfig')) {
+  //   const { devDependencies = {} } = c;
+  //   if (!devDependencies['@modern-js/tsconfig']) {
+  //     devDependencies['@modern-js/tsconfig'] = 'workspace:*';
+  //   }
+  //   c.devDependencies = devDependencies;
+  //   fs.writeFileSync(p, `${JSON.stringify(c, null, 2)}\n`);
+  // }
+}
+
 function main() {
-  const files = glob.sync('**/package.json', {
-    cwd: kProjectDir,
-    nodir: true,
-    ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
-  });
+  // const files = glob.sync('**/package.json', {
+  //   cwd: kProjectDir,
+  //   nodir: true,
+  //   ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
+  // });
   // files.forEach(addMissingDeps);
   // files.forEach(fixTypesField);
-  files.forEach(getWorkspacePackages);
-  files.forEach(fixWorkspacePackagesVersions);
+  // files.forEach(getWorkspacePackages);
+  // files.forEach(fixWorkspacePackagesVersions);
+  addMissingEslintConfig();
   // files.forEach(addPublishConfig);
   // console.log([...kWorkspace]);
 

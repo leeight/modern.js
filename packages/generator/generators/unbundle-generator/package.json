@@ -43,7 +43,10 @@
     "@scripts/build": "workspace:*",
     "jest": "^27",
     "@scripts/test": "workspace:*",
-    "@modern-js/tsconfig": "workspace:*"
+    "@modern-js/tsconfig": "workspace:*",
+    "@modern-js/eslint-config": "workspace:*",
+    "@rushstack/eslint-config": "^2.5.1",
+    "eslint": "^7.32.0"
   },
   "sideEffects": false,
   "modernConfig": {

@@ -15,8 +15,10 @@ importers:
       '@babel/types': ^7.15.6
       '@modern-js/babel-chain': workspace:^1.2.0
       '@modern-js/babel-preset-base': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -24,6 +26,7 @@ importers:
       '@types/node': ^14
       '@types/semver': ^7.3.8
       core-js: ^3.6.4
+      eslint: ^7.32.0
       jest: ^27
       lodash.get: ^4.4.2
       regenerator-runtime: ^0.13.9
@@ -44,13 +47,16 @@ importers:
       regenerator-runtime: 0.13.9
       semver: 7.3.5
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash.get': 4.4.6
       '@types/node': 14.18.9
       '@types/semver': 7.3.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -76,8 +82,10 @@ importers:
       '@babel/preset-typescript': ^7.15.0
       '@babel/runtime': ^7.15.4
       '@modern-js/babel-chain': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -91,6 +99,7 @@ importers:
       babel-plugin-styled-components: ^1.10.7
       babel-plugin-transform-modern-regexp: ^0.0.6
       babel-plugin-transform-react-remove-prop-types: 0.4.24
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -123,13 +132,16 @@ importers:
       babel-plugin-transform-modern-regexp: 0.0.6
       babel-plugin-transform-react-remove-prop-types: 0.4.24
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash.get': 4.4.6
       '@types/node': 14.18.9
       '@types/semver': 7.3.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -139,8 +151,10 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/babel-chain': workspace:^1.2.0
       '@modern-js/babel-preset-base': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -151,6 +165,7 @@ importers:
       babel-plugin-module-resolver: ^4.0.0
       babel-plugin-transform-define: ^2
       babel-plugin-transform-inline-environment-variables: ^0.4.3
+      eslint: ^7.32.0
       jest: ^27
       tsconfig-paths: ^3.10.1
       typescript: ^4
@@ -165,7 +180,9 @@ importers:
       tsconfig-paths: 3.12.0
     devDependencies:
       '@babel/core': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
@@ -173,6 +190,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -187,8 +205,10 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/babel-chain': workspace:^1.2.0
       '@modern-js/babel-preset-lib': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -197,6 +217,7 @@ importers:
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -211,7 +232,9 @@ importers:
       '@modern-js/utils': link:../../toolkit/utils
     devDependencies:
       '@babel/core': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
@@ -220,6 +243,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -304,14 +328,17 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react-dom': ^17
       autoprefixer: ^10.3.1
+      eslint: ^7.32.0
       jest: ^27
       postcss: ^8.3.8
       postcss-custom-properties: ^11.0.0
@@ -337,12 +364,15 @@ importers:
       postcss-page-break: 3.0.4_postcss@8.4.5
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       sass: 1.49.0
       typescript: 4.5.5
@@ -350,21 +380,27 @@ importers:
   ../../packages/cli/i18n-cli-language-detector:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -375,11 +411,13 @@ importers:
       '@babel/traverse': ^7.15.0
       '@babel/types': ^7.15.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@rollup/pluginutils': ^4.1.1
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__traverse': ^7.14.2
@@ -387,6 +425,7 @@ importers:
       '@types/jest': ^26
       '@types/node': ^14
       '@types/url-join': ^4.0.1
+      eslint: ^7.32.0
       fs-extra: ^10.0.0
       jest: ^27
       typescript: ^4
@@ -403,8 +442,10 @@ importers:
       url-join: 4.0.1
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__traverse': 7.14.2
@@ -412,6 +453,7 @@ importers:
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/url-join': 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -425,6 +467,7 @@ importers:
       '@modern-js/bff-utils': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/create-request': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-analyze': workspace:^1.2.0
       '@modern-js/runtime': workspace:^1.2.0
       '@modern-js/server-plugin': workspace:^1.2.0
@@ -432,6 +475,7 @@ importers:
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -439,6 +483,7 @@ importers:
       '@types/jest': ^26
       '@types/loader-utils': ^2.0.3
       '@types/node': ^14
+      eslint: ^7.32.0
       fs-extra: ^10.0.0
       jest: ^27
       loader-utils: ^2.0.0
@@ -461,11 +506,13 @@ importers:
     devDependencies:
       '@modern-js/bff-utils': link:../../server/bff-utils
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-analyze': link:../plugin-analyze
       '@modern-js/runtime': link:../plugin-runtime
       '@modern-js/server-plugin': link:../../server/plugin
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
@@ -473,6 +520,7 @@ importers:
       '@types/jest': 26.0.24
       '@types/loader-utils': 2.0.3
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       memfs: 3.4.1
       ts-jest: 27.1.3_fa684e6c6ef64ff9005a42089a50fb5f
@@ -484,9 +532,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/inquirer': ^8.1.3
@@ -497,6 +547,7 @@ importers:
       '@types/walk': ^2.3.1
       cos-nodejs-sdk-v5: ^2.10.10
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       js-yaml: ^4.1.0
       mime-types: ^2.1.34
@@ -511,8 +562,10 @@ importers:
       walk: 2.3.15
     devDependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/inquirer': 8.1.3
@@ -522,6 +575,7 @@ importers:
       '@types/node': 14.18.9
       '@types/walk': 2.3.1
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -529,9 +583,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/ali-oss': ^6
@@ -541,6 +597,7 @@ importers:
       '@types/walk': ^2.3.1
       ali-oss: ^6
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       js-yaml: ^4.1.0
       typescript: ^4
@@ -553,8 +610,10 @@ importers:
       walk: 2.3.15
     devDependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/ali-oss': 6.16.2
@@ -563,6 +622,7 @@ importers:
       '@types/node': 14.18.9
       '@types/walk': 2.3.1
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -572,14 +632,17 @@ importers:
       '@changesets/cli': 2.16.0
       '@changesets/git': ^1.1.2
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/i18n-cli-language-detector': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       execa: ^5.1.1
       jest: ^27
       typescript: ^4
@@ -593,11 +656,14 @@ importers:
       execa: 5.1.1
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -608,10 +674,12 @@ importers:
       '@mdx-js/mdx': ^1.6.22
       '@mdx-js/react': ^1.6.22
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/module-tools-hooks': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/core-js': ^2.5.5
@@ -626,6 +694,7 @@ importers:
       antd: ^4.16.13
       chokidar: ^3.5.2
       core-js: ^3.17.2
+      eslint: ^7.32.0
       github-slugger: ^1.4.0
       glob: ^7.1.6
       gray-matter: ^4.0.3
@@ -676,8 +745,10 @@ importers:
       webpack-dev-server: 4.7.3_webpack@5.67.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/module-tools-hooks': link:../../toolkit/module-tools-hooks
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/core-js': 2.5.5
@@ -689,6 +760,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/webpack-dev-server': 4.7.2_webpack@5.67.0
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -696,13 +768,16 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.12.22
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
       webpack: ^5.54.0
@@ -713,11 +788,14 @@ importers:
       esbuild: 0.12.29
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack: 5.67.0_esbuild@0.12.29
@@ -727,14 +805,17 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/hmr-client': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@pmmmwh/react-refresh-webpack-plugin': ^0.4.3
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       react-refresh: ^0.9.0
       typescript: ^4
@@ -748,11 +829,14 @@ importers:
       react-refresh: 0.9.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack: 5.67.0
@@ -761,9 +845,11 @@ importers:
   ../../packages/cli/plugin-fetch:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@testing-library/react': ^12.0.0
@@ -771,6 +857,7 @@ importers:
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       isomorphic-fetch: ^3.0.0
       jest: ^27
       react: ^17.0.2
@@ -781,8 +868,10 @@ importers:
       '@modern-js/utils': link:../../toolkit/utils
       isomorphic-fetch: 3.0.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
@@ -790,6 +879,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -798,12 +888,15 @@ importers:
   ../../packages/cli/plugin-i18n:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.126
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       lodash: ^4.17.11
       typescript: ^4
@@ -811,12 +904,15 @@ importers:
       '@babel/runtime': 7.16.7
       lodash: 4.17.21
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -830,6 +926,7 @@ importers:
       '@modern-js/eslint-config': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/cross-spawn': ^6.0.2
@@ -893,6 +990,7 @@ importers:
       prettier: 2.5.1
     devDependencies:
       '@modern-js/core': link:../core
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/cross-spawn': 6.0.2
@@ -908,14 +1006,17 @@ importers:
       '@alicloud/fun': 3.6.24
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/js-yaml': ^4.0.4
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       js-yaml: ^4.1.0
       typescript: ^4
@@ -926,13 +1027,16 @@ importers:
       js-yaml: 4.1.0
     devDependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/js-yaml': 4.0.5
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -940,9 +1044,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@serverless/components': ^3.18.0
@@ -951,6 +1057,7 @@ importers:
       '@types/js-yaml': ^4.0.4
       '@types/node': ^14
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       js-yaml: ^4.1.0
       typescript: ^4
@@ -961,8 +1068,10 @@ importers:
       js-yaml: 4.1.0
     devDependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/inquirer': 8.1.3
@@ -970,6 +1079,7 @@ importers:
       '@types/js-yaml': 4.0.5
       '@types/node': 14.18.9
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -978,14 +1088,17 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/css-config': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/less': ^3.0.3
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       less: ^4.1.1
       less-loader: ^10.0.1
@@ -1002,13 +1115,16 @@ importers:
       less-plugin-npm-import: 2.1.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/style-compiler': link:../../toolkit/compiler/style
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/less': 3.0.3
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack: 5.67.0
@@ -1018,11 +1134,13 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-router': workspace:^1.2.0
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/hoist-non-react-statics': ^3.3.1
@@ -1030,6 +1148,7 @@ importers:
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       garfish: ^0.1.8
       hoist-non-react-statics: ^3.3.2
       jest: ^27
@@ -1042,10 +1161,12 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-router': link:../plugin-router
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/hoist-non-react-statics': 3.3.1
@@ -1053,6 +1174,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack-chain: 6.5.1
@@ -1060,15 +1182,18 @@ importers:
   ../../packages/cli/plugin-multiprocess:
     specifiers:
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -1076,13 +1201,16 @@ importers:
       '@modern-js/utils': link:../../toolkit/utils
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -1090,10 +1218,12 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/module-tools-hooks': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/body-parser': ^1.19.1
@@ -1114,6 +1244,7 @@ importers:
       chalk: '4'
       chokidar: ^3.5.2
       cors: ^2.8.5
+      eslint: ^7.32.0
       execa: '5'
       express: ^4.17.1
       glob: ^7.2.0
@@ -1157,8 +1288,10 @@ importers:
       webpack: 5.67.0
       webpack-sources: 3.2.3
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/module-tools-hooks': link:../../toolkit/module-tools-hooks
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/body-parser': 1.19.2
@@ -1173,6 +1306,7 @@ importers:
       '@types/opener': 1.4.0
       '@types/semver': 7.3.9
       '@types/uuid': 8.3.4
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack-chain: 6.5.1
@@ -1181,12 +1315,15 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
       whistle: ^2.7.18
@@ -1196,11 +1333,14 @@ importers:
       whistle: 2.9.1
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -1208,11 +1348,13 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/plugin-analyze': workspace:^1.2.0
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@testing-library/react': ^12.0.0
@@ -1223,6 +1365,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       '@types/react-router-dom': ^5.1.8
+      eslint: ^7.32.0
       history: ^4.7.9
       hoist-non-react-statics: ^3.3.2
       jest: ^27
@@ -1241,10 +1384,12 @@ importers:
       react-router-dom: 5.3.0_react@17.0.2
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin': link:../../toolkit/plugin
       '@modern-js/plugin-analyze': link:../plugin-analyze
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
@@ -1253,6 +1398,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -1266,12 +1412,14 @@ importers:
       '@modern-js/bff-runtime': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/create-request': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-router': workspace:^1.2.0
       '@modern-js/plugin-ssr': workspace:^1.2.0
       '@modern-js/plugin-state': workspace:^1.2.0
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -1281,6 +1429,7 @@ importers:
       '@types/react-dom': ^17
       '@types/react-helmet': ^6.1.2
       '@types/styled-components': ^5.1.13
+      eslint: ^7.32.0
       jest: ^27
       react-helmet: ^6.1.0
       styled-components: ^5.3.1
@@ -1299,7 +1448,9 @@ importers:
       styled-components: 5.3.3
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -1309,6 +1460,7 @@ importers:
       '@types/react-dom': 17.0.11
       '@types/react-helmet': 6.1.5
       '@types/styled-components': 5.1.21
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -1317,13 +1469,16 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/css-config': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       sass: ^1.45.0
       sass-loader: ^12.4.0
@@ -1338,12 +1493,15 @@ importers:
       sass-loader: 12.4.0_sass@1.49.0+webpack@5.67.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/style-compiler': link:../../toolkit/compiler/style
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack: 5.67.0
@@ -1354,15 +1512,18 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/babel-compiler': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-analyze': workspace:^1.2.0
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       globby: ^12.0.2
       jest: ^27
       json5: ^2.2.0
@@ -1377,13 +1538,16 @@ importers:
       json5: 2.2.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-analyze': link:../plugin-analyze
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       ts-jest: 27.1.3_82caadf70f123987d51964cd326d3e5d
       typescript: 4.5.5
@@ -1392,10 +1556,12 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -1404,6 +1570,7 @@ importers:
       '@types/react-dom': ^17
       '@types/react-router': ^5.1.16
       '@types/react-router-dom': ^5.1.8
+      eslint: ^7.32.0
       jest: ^27
       node-mocks-http: ^1.10.1
       normalize-path: ^3.0.0
@@ -1419,9 +1586,11 @@ importers:
       react-router-dom: 5.3.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/server': link:../../server/server
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -1430,6 +1599,7 @@ importers:
       '@types/react-dom': 17.0.11
       '@types/react-router': 5.1.18
       '@types/react-router-dom': 5.3.3
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -1442,10 +1612,12 @@ importers:
       '@loadable/webpack-plugin': ^5.15.1
       '@modern-js/babel-chain': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/server': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -1457,6 +1629,7 @@ importers:
       '@types/react-helmet': ^6.1.2
       '@types/react-side-effect': ^1.1.1
       '@types/serialize-javascript': ^5.0.1
+      eslint: ^7.32.0
       jest: ^27
       react: ^17
       react-dom: ^17
@@ -1480,9 +1653,11 @@ importers:
       '@loadable/component': 5.15.2_react@17.0.2
       '@modern-js/babel-chain': link:../../toolkit/babel-chain
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/server': link:../../server/server
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -1494,6 +1669,7 @@ importers:
       '@types/react-helmet': 6.1.5
       '@types/react-side-effect': 1.1.1
       '@types/serialize-javascript': 5.0.2
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack-chain: 6.5.1
@@ -1508,10 +1684,12 @@ importers:
       '@modern-js-reduck/react': ^1.0.0
       '@modern-js-reduck/store': ^1.0.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/hoist-non-react-statics': ^3.3.1
@@ -1520,6 +1698,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       '@types/redux-logger': ^3.0.9
+      eslint: ^7.32.0
       hoist-non-react-statics: ^3.3.2
       jest: ^27
       react: ^17.0.2
@@ -1538,10 +1717,12 @@ importers:
       redux-logger: 3.0.6
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin': link:../../toolkit/plugin
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/utils': link:../../toolkit/utils
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/hoist-non-react-statics': 3.3.1
@@ -1549,6 +1730,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       react: 17.0.2
       typescript: 4.5.5
@@ -1558,6 +1740,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/esbuild-compiler': workspace:^0.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/module-tools-hooks': workspace:^1.2.0
       '@modern-js/plugin-router': workspace:^1.2.0
       '@modern-js/plugin-state': workspace:^1.2.0
@@ -1566,6 +1749,7 @@ importers:
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@storybook/addon-actions': ^6.3.8
@@ -1587,6 +1771,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       commander: ^8.1.0
+      eslint: ^7.32.0
       findup-sync: ^4.0.0
       fs-extra: ^10.0.0
       glob: ^7.1.7
@@ -1607,13 +1792,13 @@ importers:
       '@modern-js/utils': link:../../toolkit/utils
       '@modern-js/webpack': link:../webpack
       '@storybook/addon-actions': 6.4.14_@types+react@17.0.38
-      '@storybook/addon-essentials': 6.4.14_768fb80cec318c4f6269a7e0ddaacd77
+      '@storybook/addon-essentials': 6.4.14_259ed30129e8e5e80cee5ecc1f6729b2
       '@storybook/addon-links': 6.4.14
       '@storybook/addon-storysource': 6.4.14_@types+react@17.0.38
-      '@storybook/builder-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
-      '@storybook/core': 6.4.14_75ca0cb70de7ae58083137484338cb43
-      '@storybook/manager-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
-      '@storybook/react': 6.4.14_1a65f3e6e51319e3864f4c8a436931e0
+      '@storybook/builder-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
+      '@storybook/core': 6.4.14_002553ebe1a22afcf5acd943a9f23cf9
+      '@storybook/manager-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
+      '@storybook/react': 6.4.14_ac83ed41e683fe849537313ca1157eff
       findup-sync: 4.0.0
       fs-extra: 10.0.0
       glob: 7.2.0
@@ -1624,10 +1809,12 @@ importers:
       process.argv: 0.6.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/module-tools-hooks': link:../../toolkit/module-tools-hooks
       '@modern-js/runtime': link:../plugin-runtime
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@storybook/addons': 6.4.14
@@ -1641,6 +1828,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       commander: 8.3.0
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack: 5.67.0
@@ -1650,8 +1838,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -1659,6 +1849,7 @@ importers:
       '@types/lodash.merge': ^4.6.6
       '@types/node': ^14
       '@types/tailwindcss': ^2.2.1
+      eslint: ^7.32.0
       jest: ^27
       lodash.clonedeep: ^4.5.0
       lodash.merge: ^4.6.2
@@ -1671,7 +1862,9 @@ importers:
       lodash.merge: 4.6.2
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -1679,6 +1872,7 @@ importers:
       '@types/lodash.merge': 4.6.6
       '@types/node': 14.18.9
       '@types/tailwindcss': 2.2.4
+      eslint: 7.32.0
       jest: 27.4.7
       tailwindcss: 2.2.19
       typescript: 4.5.5
@@ -1693,12 +1887,14 @@ importers:
       '@modern-js-reduck/store': ^1.0.0
       '@modern-js/babel-compiler': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/testing': workspace:^1.3.0
       '@modern-js/testing-plugin-bff': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@testing-library/jest-dom': ^5.14.1
@@ -1708,6 +1904,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       enhanced-resolve: ^5.8.3
+      eslint: ^7.32.0
       jest: ^27
       react: ^17
       react-dom: ^17
@@ -1729,14 +1926,17 @@ importers:
       '@modern-js-reduck/plugin-immutable': 1.0.1_@modern-js-reduck+store@1.0.1
       '@modern-js-reduck/store': 1.0.1
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/runtime-core': link:../../runtime
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -1756,6 +1956,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/create-request': workspace:^1.2.0
       '@modern-js/css-config': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/esmpack': workspace:^1.2.0
       '@modern-js/server': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
@@ -1763,6 +1964,7 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@rollup/plugin-alias': ^3.1.2
       '@rollup/pluginutils': ^4.1.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@svgr/core': ^5.5.0
@@ -1798,6 +2000,7 @@ importers:
       enhanced-resolve: ^5.8.3
       es-module-lexer: ^0.4.1
       esbuild: ^0.12.9
+      eslint: ^7.32.0
       etag: ^1.8.1
       fast-glob: ^3.2.5
       find-node-modules: ^2.1.2
@@ -1891,8 +2094,10 @@ importers:
     devDependencies:
       '@modern-js/bff-utils': link:../../server/bff-utils
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__code-frame': 7.0.3
@@ -1915,6 +2120,7 @@ importers:
       '@types/ws': 7.4.7
       copy-and-watch: 0.1.6
       del-cli: 4.0.1
+      eslint: 7.32.0
       fs-extra: 9.1.0
       jest: 27.4.7
       typescript: 4.5.5
@@ -1923,15 +2129,18 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -1939,14 +2148,17 @@ importers:
       '@modern-js/utils': link:../../toolkit/utils
     devDependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -1957,9 +2169,11 @@ importers:
       '@modern-js/babel-preset-app': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/css-config': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@svgr/webpack': ^5.5.0
@@ -1980,6 +2194,7 @@ importers:
       css-loader: ^6.2.0
       css-minimizer-webpack-plugin: ^3.0.2
       css-modules-typescript-loader: ^4.0.1
+      eslint: ^7.32.0
       file-loader: ^6.2.0
       html-loader: ^2.1.2
       html-webpack-plugin: ^5.3.2
@@ -2047,8 +2262,10 @@ importers:
       yaml-loader: 0.6.0
     devDependencies:
       '@modern-js/core': link:../core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/case-sensitive-paths-webpack-plugin': 2.1.6
@@ -2061,6 +2278,7 @@ importers:
       '@types/react-dom': 17.0.11
       '@types/webpack-bundle-analyzer': 4.4.1
       '@types/webpack-node-externals': 2.5.3
+      eslint: 7.32.0
       jest: 27.4.7
       tapable: 2.2.1
       typescript: 4.5.5
@@ -2068,13 +2286,16 @@ importers:
   ../../packages/generator/generator-cases:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       covertable: ^2.2.2
+      eslint: ^7.32.0
       execa: ^5.1.1
       jest: ^27
       typescript: ^4
@@ -2084,11 +2305,14 @@ importers:
       covertable: 2.2.5
       execa: 5.1.1
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2096,12 +2320,15 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/easy-form-core': ^1.0.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -2109,11 +2336,14 @@ importers:
       '@modern-js/easy-form-core': 1.0.7
       '@modern-js/plugin-i18n': link:../../cli/plugin-i18n
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2125,12 +2355,14 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-api-npm': ^1.0.7
       '@modern-js/easy-form-core': ^1.0.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/new-action': workspace:^1.3.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
@@ -2139,6 +2371,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       globby: ^11.0.2
       handlebars: ^4.7.7
       jest: ^27
@@ -2164,8 +2397,10 @@ importers:
       package-json: 7.0.0
       vm2: 3.9.5
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-jarvis': link:../../cli/plugin-jarvis
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -2174,6 +2409,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       react: 17.0.2
       typescript: 4.5.5
@@ -2182,13 +2418,16 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/codesmith': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       execa: ^5.1.1
       jest: ^27
       ora: ^5.4.1
@@ -2201,11 +2440,14 @@ importers:
       ora: 5.4.1
     devDependencies:
       '@modern-js/codesmith': 1.0.8
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2215,12 +2457,15 @@ importers:
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2228,12 +2473,15 @@ importers:
       '@modern-js/codesmith': 1.0.8
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2244,14 +2492,17 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2260,14 +2511,17 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2277,13 +2531,16 @@ importers:
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2291,13 +2548,16 @@ importers:
       '@modern-js/codesmith': 1.0.8
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2307,13 +2567,16 @@ importers:
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2321,13 +2584,16 @@ importers:
       '@modern-js/codesmith': 1.0.8
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2339,15 +2605,18 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-jarvis': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2357,15 +2626,18 @@ importers:
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-jarvis': link:../../../cli/plugin-jarvis
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2376,14 +2648,17 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2392,14 +2667,17 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2410,13 +2688,16 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2425,13 +2706,16 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2443,13 +2727,16 @@ importers:
       '@modern-js/codesmith-api-fs': ^1.0.0
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2459,13 +2746,16 @@ importers:
       '@modern-js/codesmith-api-fs': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2476,13 +2766,16 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2491,13 +2784,16 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2509,15 +2805,18 @@ importers:
       '@modern-js/codesmith-api-handlebars': ^1.0.0
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.172
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       lodash: ^4.17.21
       typescript: ^4
@@ -2528,15 +2827,18 @@ importers:
       '@modern-js/codesmith-api-handlebars': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       lodash: 4.17.21
       typescript: 4.5.5
@@ -2547,14 +2849,17 @@ importers:
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2562,14 +2867,17 @@ importers:
       '@modern-js/codesmith': 1.0.8
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2580,17 +2888,20 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/module-generator': workspace:^1.3.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/fs-extra': ^9.0.12
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       fs-extra: ^10.0.0
       jest: ^27
       lodash: ^4.17.21
@@ -2601,17 +2912,20 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/module-generator': link:../module-generator
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/fs-extra': 9.0.13
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       fs-extra: 10.0.0
       jest: 27.4.7
       lodash: 4.17.21
@@ -2627,14 +2941,17 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2646,14 +2963,17 @@ importers:
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2666,13 +2986,16 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2683,13 +3006,16 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2704,14 +3030,17 @@ importers:
       '@modern-js/dependence-generator': workspace:^1.2.0
       '@modern-js/electron-generator': workspace:^1.2.0
       '@modern-js/entry-generator': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2724,14 +3053,17 @@ importers:
       '@modern-js/dependence-generator': link:../dependence-generator
       '@modern-js/electron-generator': link:../electron-generator
       '@modern-js/entry-generator': link:../entry-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2742,6 +3074,7 @@ importers:
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-plugin': workspace:^1.2.0
       '@modern-js/generator-utils': workspace:^1.2.0
@@ -2749,11 +3082,13 @@ importers:
       '@modern-js/monorepo-generator': workspace:^1.3.0
       '@modern-js/mwa-generator': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       lodash: ^4.17.21
       typescript: ^4
@@ -2766,6 +3101,7 @@ importers:
       '@modern-js/codesmith': 1.0.8
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-plugin': link:../../generator-plugin
       '@modern-js/generator-utils': link:../../generator-utils
@@ -2773,11 +3109,13 @@ importers:
       '@modern-js/monorepo-generator': link:../monorepo-generator
       '@modern-js/mwa-generator': link:../mwa-generator
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       lodash: 4.17.21
       typescript: 4.5.5
@@ -2789,14 +3127,17 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2805,14 +3146,17 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2824,14 +3168,17 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2841,14 +3188,17 @@ importers:
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2860,16 +3210,19 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/eslint-generator': workspace:^1.2.0
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2879,16 +3232,19 @@ importers:
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/eslint-generator': link:../eslint-generator
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2899,13 +3255,16 @@ importers:
       '@modern-js/codesmith-api-app': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2914,13 +3273,16 @@ importers:
       '@modern-js/codesmith-api-app': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2932,15 +3294,18 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2950,15 +3315,18 @@ importers:
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -2970,15 +3338,18 @@ importers:
       '@modern-js/codesmith-api-json': ^1.0.7
       '@modern-js/codesmith-tools': ^1.0.8
       '@modern-js/dependence-generator': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     devDependencies:
@@ -2988,15 +3359,18 @@ importers:
       '@modern-js/codesmith-api-json': 1.0.7
       '@modern-js/codesmith-tools': 1.0.8
       '@modern-js/dependence-generator': link:../dependence-generator
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-utils': link:../../generator-utils
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -3005,14 +3379,17 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-api-app': ^1.0.7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       json5: ^2.2.0
       lodash: ^4.17.21
@@ -3026,12 +3403,15 @@ importers:
       json5: 2.2.0
       lodash: 4.17.21
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -3039,15 +3419,18 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/codesmith-tools': ^1.0.7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-common': workspace:^1.3.0
       '@modern-js/generator-plugin': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/lodash': ^4.14.168
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
       vm2: ^3.9.2
@@ -3056,27 +3439,34 @@ importers:
     devDependencies:
       '@babel/runtime': 7.16.7
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/generator-common': link:../../generator-common
       '@modern-js/generator-plugin': link:../../generator-plugin
       '@modern-js/plugin-i18n': link:../../../cli/plugin-i18n
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/jest': 26.0.24
       '@types/lodash': 4.14.178
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/review/eslint-config:
     specifiers:
       '@modern-js-app/eslint-config': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       eslint: ^7.32.0
       eslint-find-rules: ^3.4.0
       eslint-index: ^1.5.0
     dependencies:
       '@modern-js-app/eslint-config': link:../eslint-config-app
     devDependencies:
+      '@modern-js/eslint-config': 'link:'
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
       eslint: 7.32.0
       eslint-find-rules: 3.6.1_eslint@7.32.0
       eslint-index: 1.5.0
@@ -3084,12 +3474,16 @@ importers:
   ../../packages/review/eslint-config-app:
     specifiers:
       '@modern-js/babel-preset-app': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       eslint: ^7.32.0
       eslint-find-rules: ^3.4.0
       eslint-index: ^1.5.0
     dependencies:
       '@modern-js/babel-preset-app': link:../../cli/babel-preset-app
     devDependencies:
+      '@modern-js/eslint-config': link:../eslint-config
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
       eslint: 7.32.0
       eslint-find-rules: 3.6.1_eslint@7.32.0
       eslint-index: 1.5.0
@@ -3099,10 +3493,12 @@ importers:
       '@babel/runtime': ^7
       '@jest/types': ^27.0.6
       '@modern-js/babel-preset-app': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/lodash.merge': ^4.6.6
@@ -3113,6 +3509,7 @@ importers:
       '@types/yargs': ^17.0.2
       babel-jest: ^27.0.6
       chalk: ^4.1.2
+      eslint: ^7.32.0
       identity-obj-proxy: ^3.0.0
       jest: ^27.0.6
       lodash.merge: ^4.6.2
@@ -3136,7 +3533,9 @@ importers:
       ts-jest: 27.1.3_f5ee9eb4bbe65a36cc193999bd5a17f5
       yargs: 17.3.1
     devDependencies:
+      '@modern-js/eslint-config': link:../eslint-config
       '@modern-js/tsconfig': link:../tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/lodash.merge': 4.6.6
@@ -3145,22 +3544,26 @@ importers:
       '@types/react-dom': 17.0.11
       '@types/semver': 7.3.9
       '@types/yargs': 17.0.8
+      eslint: 7.32.0
       typescript: 4.5.5
 
   ../../packages/review/testing-plugin-bff:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/bff-utils': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server': workspace:^1.3.0
       '@modern-js/testing': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
       '@types/supertest': ^2.0.11
+      eslint: ^7.32.0
       jest-environment-node: ^27.2.2
       path-to-regexp: ^6.2.0
       supertest: ^6.1.6
@@ -3174,26 +3577,38 @@ importers:
       supertest: 6.2.2
     devDependencies:
       '@modern-js/bff-utils': link:../../server/bff-utils
+      '@modern-js/eslint-config': link:../eslint-config
       '@modern-js/testing': link:../testing
       '@modern-js/tsconfig': link:../tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/supertest': 2.0.11
+      eslint: 7.32.0
       typescript: 4.5.5
 
   ../../packages/review/tsconfig:
-    specifiers: {}
+    specifiers:
+      '@modern-js/eslint-config': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
+      eslint: ^7.32.0
+    devDependencies:
+      '@modern-js/eslint-config': link:../eslint-config
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
+      eslint: 7.32.0
 
   ../../packages/runtime:
     specifiers:
       '@babel/runtime': ^7
       '@loadable/component': ^5.15.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@testing-library/react': ^12.0.0
@@ -3206,6 +3621,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       '@types/styled-components': ^5.1.14
+      eslint: ^7.32.0
       hoist-non-react-statics: ^3.3.2
       invariant: ^2.2.4
       jest: ^27
@@ -3224,7 +3640,9 @@ importers:
       styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
     devDependencies:
       '@loadable/component': 5.15.2_react@17.0.2
+      '@modern-js/eslint-config': link:../review/eslint-config
       '@modern-js/tsconfig': link:../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../scripts/build
       '@scripts/test': link:../../scripts/test
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
@@ -3236,6 +3654,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -3245,12 +3664,15 @@ importers:
   ../../packages/server/adapter-helpers:
     specifiers:
       '@babel/runtime': ^7.15.4
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^27.0.1
       '@types/node': ^14
       '@types/supertest': ^2.0.11
+      eslint: ^7.32.0
       jest: ^27
       supertest: ^6.1.6
       typescript: ^4
@@ -3258,26 +3680,32 @@ importers:
       '@babel/runtime': 7.16.7
       supertest: 6.2.2
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 27.4.0
       '@types/node': 14.18.9
       '@types/supertest': 2.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/server/bff-runtime:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       farrow-api: ^1.10.8
       farrow-http: ^1.10.8
       farrow-pipeline: ^1.10.6
@@ -3293,13 +3721,16 @@ importers:
       farrow-pipeline: 1.11.3
       farrow-schema: 1.11.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       ts-jest: 27.1.3_82caadf70f123987d51964cd326d3e5d
       typescript: 4.5.5
@@ -3308,9 +3739,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/bff-runtime': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/fs-extra': ^9.0.13
@@ -3319,6 +3752,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       es-module-lexer: ^0.4.1
+      eslint: ^7.32.0
       farrow-api: ^1.10.9
       fs-extra: ^10.0.0
       globby: ^11.0.2
@@ -3335,7 +3769,9 @@ importers:
       fs-extra: 10.0.0
       globby: 11.1.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/fs-extra': 9.0.13
@@ -3343,6 +3779,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       ts-jest: 27.1.3_82caadf70f123987d51964cd326d3e5d
       typescript: 4.5.5
@@ -3350,9 +3787,11 @@ importers:
   ../../packages/server/create-request:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin-ssr': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^27.0.3
@@ -3360,6 +3799,7 @@ importers:
       '@types/node-fetch': ^2.5.12
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       isomorphic-fetch: ^3.0.0
       jest: ^27
       nock: ^13.2.1
@@ -3372,8 +3812,10 @@ importers:
       node-fetch: 2.6.7
       path-to-regexp: 6.2.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/plugin-ssr': link:../../cli/plugin-ssr
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 27.4.0
@@ -3381,6 +3823,7 @@ importers:
       '@types/node-fetch': 2.5.12
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       isomorphic-fetch: 3.0.0
       jest: 27.4.7
       nock: 13.2.2
@@ -3389,12 +3832,15 @@ importers:
   ../../packages/server/hmr-client:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       react-error-overlay: 6.0.9
       strip-ansi: ^7.0.0
@@ -3408,11 +3854,14 @@ importers:
       strip-ansi: 7.0.1
       url: 0.11.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
       webpack: 5.67.0
@@ -3421,15 +3870,18 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       jest: ^27
       ts-jest: ^27.0.4
       typescript: ^4
@@ -3438,14 +3890,17 @@ importers:
       '@modern-js/plugin': link:../../toolkit/plugin
     devDependencies:
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       ts-jest: 27.1.3_82caadf70f123987d51964cd326d3e5d
       typescript: 4.5.5
@@ -3457,9 +3912,11 @@ importers:
       '@modern-js/bff-runtime': workspace:^1.2.0
       '@modern-js/bff-utils': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/formidable': ^1.2.3
@@ -3471,6 +3928,7 @@ importers:
       egg: ^2.29.4
       egg-mock: ^3.26.0
       egg-ts-helper: ^1.29.1
+      eslint: ^7.32.0
       formidable: ^1.2.2
       jest: ^27
       koa: ^2.13.1
@@ -3488,8 +3946,10 @@ importers:
       '@modern-js/bff-runtime': link:../bff-runtime
       '@modern-js/bff-utils': link:../bff-utils
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/server-plugin': link:../plugin
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/formidable': 1.2.5
@@ -3500,6 +3960,7 @@ importers:
       '@types/type-is': 1.6.3
       egg: 2.33.1
       egg-mock: 3.26.0
+      eslint: 7.32.0
       jest: 27.4.7
       koa: 2.13.4
       supertest: 6.2.2
@@ -3512,10 +3973,12 @@ importers:
       '@modern-js/bff-runtime': workspace:^1.2.0
       '@modern-js/bff-utils': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/cookie-parser': ^1.4.2
@@ -3527,6 +3990,7 @@ importers:
       '@types/supertest': ^2.0.11
       '@types/type-is': ^1.6.3
       cookie-parser: ^1.4.5
+      eslint: ^7.32.0
       express: ^4.17.1
       finalhandler: ^1.1.2
       formidable: ^1.2.2
@@ -3546,9 +4010,11 @@ importers:
       '@modern-js/bff-runtime': link:../bff-runtime
       '@modern-js/bff-utils': link:../bff-utils
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/server-plugin': link:../plugin
       '@modern-js/server-utils': link:../utils
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/cookie-parser': 1.4.2
@@ -3559,6 +4025,7 @@ importers:
       '@types/node': 14.18.9
       '@types/supertest': 2.0.11
       '@types/type-is': 1.6.3
+      eslint: 7.32.0
       express: 4.17.2
       jest: 27.4.7
       supertest: 6.2.2
@@ -3571,9 +4038,11 @@ importers:
       '@modern-js/bff-runtime': workspace:^1.2.0
       '@modern-js/bff-utils': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/formidable': ^1.2.3
@@ -3583,6 +4052,7 @@ importers:
       '@types/node': ^14
       '@types/supertest': ^2.0.11
       '@types/type-is': ^1.6.3
+      eslint: ^7.32.0
       formidable: ^1.2.2
       jest: ^27
       koa: ^2.13.3
@@ -3603,8 +4073,10 @@ importers:
       '@modern-js/bff-runtime': link:../bff-runtime
       '@modern-js/bff-utils': link:../bff-utils
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/server-plugin': link:../plugin
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/formidable': 1.2.5
@@ -3614,6 +4086,7 @@ importers:
       '@types/node': 14.18.9
       '@types/supertest': 2.0.11
       '@types/type-is': 1.6.3
+      eslint: 7.32.0
       jest: 27.4.7
       koa: 2.13.4
       supertest: 6.2.2
@@ -3625,6 +4098,7 @@ importers:
       '@modern-js/bff-runtime': workspace:^1.2.0
       '@modern-js/bff-utils': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/runtime': workspace:^1.2.0
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/server-utils': workspace:^1.2.0
@@ -3633,6 +4107,7 @@ importers:
       '@nestjs/common': ^8.0.6
       '@nestjs/core': ^8.0.6
       '@nestjs/platform-express': ^8.0.6
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__traverse': ^7.14.2
@@ -3647,6 +4122,7 @@ importers:
       '@types/supertest': ^2.0.11
       '@types/type-is': ^1.6.3
       body-parser: ^1.19.0
+      eslint: ^7.32.0
       express: ^4.17.1
       fastify: ^3.20.1
       finalhandler: ^1.1.2
@@ -3674,12 +4150,14 @@ importers:
       '@modern-js/bff-runtime': link:../bff-runtime
       '@modern-js/bff-utils': link:../bff-utils
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/runtime': link:../../cli/plugin-runtime
       '@modern-js/server-plugin': link:../plugin
       '@modern-js/server-utils': link:../utils
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@nestjs/common': 8.2.6_88a789cb3f20cca25c3f70fe96f41643
       '@nestjs/core': 8.2.6_2d4ee36c4446df4873bb38fb1c4583da
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__traverse': 7.14.2
@@ -3692,6 +4170,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/supertest': 2.0.11
+      eslint: 7.32.0
       express: 4.17.2
       fastify: 3.27.0
       jest: 27.4.7
@@ -3704,10 +4183,12 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/polyfill-lib': ^1.0.0
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -3717,6 +4198,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       '@types/ua-parser-js': ^0.7.36
+      eslint: ^7.32.0
       jest: ^27
       lru-cache: ^6.0.0
       mime-types: ^2.1.32
@@ -3731,8 +4213,10 @@ importers:
       ua-parser-js: 0.7.31
     devDependencies:
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -3742,6 +4226,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/ua-parser-js': 0.7.36
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -3750,16 +4235,19 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/babel-compiler': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       del-cli: ^4.0.1
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -3770,13 +4258,16 @@ importers:
       '@modern-js/utils': link:../../toolkit/utils
     devDependencies:
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       del-cli: 4.0.1
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -3790,12 +4281,14 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/bff-utils': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/hmr-client': workspace:^1.2.0
       '@modern-js/server-plugin': workspace:^1.2.0
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -3817,6 +4310,7 @@ importers:
       chokidar: ^3.5.2
       compare-versions: ^3.6.0
       devcert: ^1.1.3
+      eslint: ^7.32.0
       fs-extra: ^10.0.0
       http-proxy-middleware: ^2.0.1
       ignore-styles: ^5.0.1
@@ -3874,8 +4368,10 @@ importers:
       webpack-dev-middleware: 5.3.0_webpack@5.67.0
       ws: 8.4.2
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/types': link:../../toolkit/types
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -3892,6 +4388,7 @@ importers:
       '@types/ua-parser-js': 0.7.36
       '@types/webpack-dev-middleware': 5.3.0_webpack@5.67.0
       '@types/ws': 7.4.7
+      eslint: 7.32.0
       jest: 27.4.7
       node-mocks-http: 1.11.0
       portfinder: 1.0.28
@@ -3910,9 +4407,11 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/babel-preset-lib': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -3922,6 +4421,7 @@ importers:
       '@types/react-dom': ^17
       babel-plugin-module-resolver: ^4.1.0
       babel-plugin-transform-typescript-metadata: ^0.3.2
+      eslint: ^7.32.0
       jest: ^27
       json5: ^2.2.0
       ts-jest: ^27.0.4
@@ -3942,7 +4442,9 @@ importers:
       json5: 2.2.0
     devDependencies:
       '@modern-js/core': link:../../cli/core
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
@@ -3950,6 +4452,7 @@ importers:
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       ts-jest: 27.1.3_fa684e6c6ef64ff9005a42089a50fb5f
       typescript: 4.5.5
@@ -3958,6 +4461,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/i18n-cli-language-detector': workspace:^1.2.0
       '@modern-js/new-action': workspace:^1.3.0
       '@modern-js/plugin': workspace:^1.2.0
@@ -3969,12 +4473,14 @@ importers:
       '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
       webpack: ^5.54.0
@@ -3993,13 +4499,16 @@ importers:
       '@modern-js/webpack': link:../../cli/webpack
       webpack: 5.67.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -4016,6 +4525,7 @@ importers:
       '@modern-js/babel-preset-module': workspace:^1.2.0
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/css-config': workspace:^1.2.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/i18n-cli-language-detector': workspace:^1.2.0
       '@modern-js/module-tools-hooks': workspace:^1.2.0
       '@modern-js/new-action': workspace:^1.3.0
@@ -4026,6 +4536,7 @@ importers:
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -4042,6 +4553,7 @@ importers:
       chokidar: ^3.5.2
       commander: ^8.1.0
       dotenv: ^10.0.0
+      eslint: ^7.32.0
       execa: ^5.1.1
       fast-glob: ^3.2.5
       glob: ^7.1.7
@@ -4093,7 +4605,9 @@ importers:
     devDependencies:
       '@babel/preset-typescript': 7.16.7
       '@modern-js/babel-chain': link:../../toolkit/babel-chain
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
@@ -4107,6 +4621,7 @@ importers:
       '@types/normalize-path': 3.0.0
       '@types/signale': 1.4.4
       commander: 8.3.0
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -4114,12 +4629,14 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/i18n-cli-language-detector': workspace:^1.2.0
       '@modern-js/new-action': workspace:^1.3.0
       '@modern-js/plugin-changeset': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@rushstack/node-core-library': ^3.39.1
       '@rushstack/package-deps-hash': ^3.0.54
       '@scripts/build': workspace:*
@@ -4136,6 +4653,7 @@ importers:
       chokidar: ^3.5.2
       commander: ^8.1.0
       cross-spawn: ^7.0.3
+      eslint: ^7.32.0
       execa: ^5.1.1
       globby: ^11.0.0
       jest: ^27
@@ -4165,7 +4683,9 @@ importers:
       p-map: 4.0.0
       signale: 1.4.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -4175,6 +4695,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/signale': 1.4.4
+      eslint: 7.32.0
       execa: 5.1.1
       jest: 27.4.7
       typescript: 4.5.5
@@ -4182,23 +4703,29 @@ importers:
   ../../packages/toolkit/babel-chain:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.16
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
       '@types/babel__core': 7.1.18
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -4208,8 +4735,10 @@ importers:
       '@babel/plugin-transform-classes': ^7.14.9
       '@babel/preset-typescript': ^7
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -4217,6 +4746,7 @@ importers:
       '@types/jest': ^26
       '@types/node': ^14
       chokidar: ^3.5.2
+      eslint: ^7.32.0
       glob: ^7.1.6
       jest: ^27
       jest-jasmine2: ^27.2.2
@@ -4230,13 +4760,16 @@ importers:
     devDependencies:
       '@babel/plugin-transform-classes': 7.16.7_@babel+core@7.16.7
       '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/glob': 7.2.0
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       jest-jasmine2: 27.4.6
       typescript: 4.5.5
@@ -4244,7 +4777,9 @@ importers:
   ../../packages/toolkit/compiler/esbuild:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/babel__core': ^7.1.15
@@ -4252,27 +4787,33 @@ importers:
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.14.5
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
       esbuild: 0.14.12
     devDependencies:
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/glob': 7.2.0
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/toolkit/compiler/style:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/glob': ^7.1.4
@@ -4287,6 +4828,7 @@ importers:
       '@types/react-dom': ^17
       '@types/tailwindcss': ^2.2.1
       chokidar: ^3.5.2
+      eslint: ^7.32.0
       glob: ^7.1.6
       jest: ^27
       less: ^4.1.1
@@ -4306,7 +4848,9 @@ importers:
       postcss-import: 14.0.2_postcss@8.4.5
       sass: 1.49.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../../review/eslint-config
       '@modern-js/tsconfig': link:../../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../../scripts/build
       '@scripts/test': link:../../../../scripts/test
       '@types/glob': 7.2.0
@@ -4320,6 +4864,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/tailwindcss': 2.2.4
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -4328,12 +4873,14 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/codesmith': ^1.0.8
       '@modern-js/codesmith-tools': ^1.0.8
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/generator-plugin-plugin': workspace:^1.1.0
       '@modern-js/i18n-cli-language-detector': workspace:^1.2.0
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/repo-generator': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
@@ -4341,6 +4888,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       commander: ^8.0.0
+      eslint: ^7.32.0
       jest: ^27
       ts-node: ^10.1.0
       typescript: ^4
@@ -4348,12 +4896,14 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/codesmith': 1.0.8
       '@modern-js/codesmith-tools': 1.0.8
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/generator-plugin-plugin': link:../../generator/plugins/generator-plugin
       '@modern-js/i18n-cli-language-detector': link:../../cli/i18n-cli-language-detector
       '@modern-js/plugin-i18n': link:../../cli/plugin-i18n
       '@modern-js/repo-generator': link:../../generator/generators/repo-generator
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/utils': link:../utils
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
@@ -4361,6 +4911,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       commander: 8.3.0
+      eslint: 7.32.0
       jest: 27.4.7_ts-node@10.4.0
       ts-node: 10.4.0_c7aa03196a4d62e8dc844e3ce73ee619
       typescript: 4.5.5
@@ -4368,25 +4919,31 @@ importers:
   ../../packages/toolkit/doctor:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -4398,6 +4955,7 @@ importers:
       '@babel/preset-react': ^7.12.7
       '@babel/traverse': ~7.12.12
       '@babel/types': ~7.12.12
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/utils': workspace:^1.2.0
       '@rollup/plugin-babel': ^5.2.1
       '@rollup/plugin-commonjs': ^19.0.0
@@ -4407,6 +4965,7 @@ importers:
       '@rollup/plugin-replace': ~2.3.4
       '@rollup/plugin-wasm': ~5.1.1
       '@rollup/pluginutils': ~4.1.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/test': workspace:*
       '@types/autoprefixer': ~9.7.2
       '@types/babel__core': ~7.1.12
@@ -4434,6 +4993,7 @@ importers:
       del-cli: ^4.0.1
       enhanced-resolve: ^5.8.3
       es-module-lexer: ~0.3.26
+      eslint: ^7.32.0
       execa: ~5.0.0
       expect-puppeteer: ~4.4.0
       find-up: ~5.0.0
@@ -4502,6 +5062,8 @@ importers:
       tapable: 2.2.1
       validate-npm-package-name: 3.0.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/test': link:../../../scripts/test
       '@types/babel__core': 7.1.18
       '@types/babel__traverse': 7.14.2
@@ -4523,6 +5085,7 @@ importers:
       '@types/validate-npm-package-name': 3.0.3
       axios: 0.21.4
       del-cli: 4.0.1
+      eslint: 7.32.0
       execa: 5.0.1
       expect-puppeteer: 4.4.0
       gunzip-maybe: 1.4.2
@@ -4542,35 +5105,44 @@ importers:
   ../../packages/toolkit/freeze:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/toolkit/load-config:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/node-bundle-require': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       esbuild: ^0.13.8
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -4579,11 +5151,14 @@ importers:
       '@modern-js/utils': link:../utils
       esbuild: 0.13.15
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
@@ -4591,11 +5166,14 @@ importers:
     specifiers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
@@ -4603,46 +5181,58 @@ importers:
       '@modern-js/core': link:../../cli/core
       '@modern-js/plugin': link:../plugin
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/style-compiler': link:../compiler/style
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/toolkit/node-bundle-require:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
       '@modern-js/utils': workspace:^1.2.0
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26.0.9
       '@types/node': ^14
       esbuild: ^0.13.8
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
       esbuild: 0.13.15
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@modern-js/utils': link:../utils
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/toolkit/plugin:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
+      eslint: ^7.32.0
       farrow-pipeline: ^1.10.6
       jest: ^27
       typescript: ^4
@@ -4650,68 +5240,85 @@ importers:
       '@babel/runtime': 7.16.7
       farrow-pipeline: 1.11.3
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/toolkit/types:
     specifiers:
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       jest: ^27
       webpack: ^5.54.0
     dependencies:
       '@modern-js/plugin': link:../plugin
       webpack: 5.67.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
 
   ../../packages/toolkit/update:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
+      eslint: ^7.32.0
       jest: ^27
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
+      eslint: 7.32.0
       jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/toolkit/utils:
     specifiers:
       '@babel/runtime': ^7
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@scripts/test': workspace:*
       '@types/debug': ^4.1.7
@@ -4724,6 +5331,7 @@ importers:
       chalk: ^4.1.2
       chokidar: ^3.5.2
       debug: ^4.3.2
+      eslint: ^7.32.0
       execa: '5'
       filesize: ^7.0.0
       fs-extra: ^10.0.0
@@ -4758,7 +5366,9 @@ importers:
       upath: 2.0.1
       yaml: 1.10.2
     devDependencies:
+      '@modern-js/eslint-config': link:../../review/eslint-config
       '@modern-js/tsconfig': link:../../review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0+typescript@4.5.5
       '@scripts/build': link:../../../scripts/build
       '@scripts/test': link:../../../scripts/test
       '@types/debug': 4.1.7
@@ -4766,51 +5376,72 @@ importers:
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/recursive-readdir': 2.2.0
+      eslint: 7.32.0
       jest: 27.4.7
       webpack: 5.67.0
 
   ../../scripts/build:
     specifiers:
+      '@modern-js/eslint-config': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@types/jest': ^26
       '@types/node': ^14
       btsm: 2.2.2
+      eslint: ^7.32.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../packages/review/eslint-config
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       btsm: 2.2.2
+      eslint: 7.32.0
 
   ../../scripts/codemod:
     specifiers:
+      '@modern-js/eslint-config': workspace:*
       '@modern-js/tsconfig': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@scripts/build': workspace:*
       '@types/glob': ^7.1.4
       '@types/node': ^14
       btsm: 2.2.2
+      eslint: ^7.32.0
       glob: ^7.2.0
+      json5: 2.2.0
     devDependencies:
+      '@modern-js/eslint-config': link:../../packages/review/eslint-config
       '@modern-js/tsconfig': link:../../packages/review/tsconfig
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
       '@scripts/build': link:../build
       '@types/glob': 7.2.0
       '@types/node': 14.18.9
       btsm: 2.2.2
+      eslint: 7.32.0
       glob: 7.2.0
+      json5: 2.2.0
 
   ../../scripts/test:
     specifiers:
+      '@modern-js/eslint-config': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
       '@types/jest': ^26
       '@types/node': ^14
       enhanced-resolve: ^5.8.3
       esbuild: ^0.13.8
       esbuild-jest: 0.5.0
+      eslint: ^7.32.0
       jest: ^27
       vite: ^2.7.12
       vitest: ^0.1.19
     devDependencies:
+      '@modern-js/eslint-config': link:../../packages/review/eslint-config
+      '@rushstack/eslint-config': 2.5.1_eslint@7.32.0
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       enhanced-resolve: 5.8.3
       esbuild: 0.13.15
       esbuild-jest: 0.5.0_esbuild@0.13.15
+      eslint: 7.32.0
       jest: 27.4.7
       vite: 2.7.13
       vitest: 0.1.27
@@ -9180,6 +9811,28 @@ packages:
       picomatch: 2.3.1
     dev: false
 
+  /@rushstack/eslint-config/2.5.1_eslint@7.32.0:
+    resolution: {integrity: sha512-pcDQ/fmJEIqe5oZiP84bYZ1N7QoDfd+5G+e7GIobOwM793dX/SdRKqcJvGlzyBB92eo6rG7/qRnP2VVQN2pdbQ==}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      typescript: '>=3.0.0'
+    dependencies:
+      '@rushstack/eslint-patch': 1.1.0
+      '@rushstack/eslint-plugin': 0.8.4_eslint@7.32.0
+      '@rushstack/eslint-plugin-packlets': 0.3.4_eslint@7.32.0
+      '@rushstack/eslint-plugin-security': 0.2.4_eslint@7.32.0
+      '@typescript-eslint/eslint-plugin': 5.6.0_a8d6e4147a400955d580224aab00bde0
+      '@typescript-eslint/experimental-utils': 5.6.0_eslint@7.32.0
+      '@typescript-eslint/parser': 5.6.0_eslint@7.32.0
+      '@typescript-eslint/typescript-estree': 5.6.0
+      eslint: 7.32.0
+      eslint-plugin-promise: 6.0.0_eslint@7.32.0
+      eslint-plugin-react: 7.27.1_eslint@7.32.0
+      eslint-plugin-tsdoc: 0.2.14
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@rushstack/eslint-config/2.5.1_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-pcDQ/fmJEIqe5oZiP84bYZ1N7QoDfd+5G+e7GIobOwM793dX/SdRKqcJvGlzyBB92eo6rG7/qRnP2VVQN2pdbQ==}
     peerDependencies:
@@ -9207,6 +9860,19 @@ packages:
     resolution: {integrity: sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==}
     dev: true
 
+  /@rushstack/eslint-plugin-packlets/0.3.4_eslint@7.32.0:
+    resolution: {integrity: sha512-OSA58EZCx4Dw15UDdvNYGGHziQmhiozKQiOqDjn8ZkrCM3oyJmI6dduSJi57BGlb/C4SpY7+/88MImId7Y5cxA==}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@rushstack/tree-pattern': 0.2.2
+      '@typescript-eslint/experimental-utils': 5.3.1_eslint@7.32.0
+      eslint: 7.32.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
   /@rushstack/eslint-plugin-packlets/0.3.4_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-OSA58EZCx4Dw15UDdvNYGGHziQmhiozKQiOqDjn8ZkrCM3oyJmI6dduSJi57BGlb/C4SpY7+/88MImId7Y5cxA==}
     peerDependencies:
@@ -9220,6 +9886,19 @@ packages:
       - typescript
     dev: true
 
+  /@rushstack/eslint-plugin-security/0.2.4_eslint@7.32.0:
+    resolution: {integrity: sha512-MWvM7H4vTNHXIY/SFcFSVgObj5UD0GftBM8UcIE1vXrPwdVYXDgDYXrSXdx7scWS4LYKPLBVoB3v6/Trhm2wug==}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@rushstack/tree-pattern': 0.2.2
+      '@typescript-eslint/experimental-utils': 5.3.1_eslint@7.32.0
+      eslint: 7.32.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
   /@rushstack/eslint-plugin-security/0.2.4_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-MWvM7H4vTNHXIY/SFcFSVgObj5UD0GftBM8UcIE1vXrPwdVYXDgDYXrSXdx7scWS4LYKPLBVoB3v6/Trhm2wug==}
     peerDependencies:
@@ -9227,6 +9906,19 @@ packages:
     dependencies:
       '@rushstack/tree-pattern': 0.2.2
       '@typescript-eslint/experimental-utils': 5.3.1_eslint@7.32.0+typescript@4.5.5
+      eslint: 7.32.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
+  /@rushstack/eslint-plugin/0.8.4_eslint@7.32.0:
+    resolution: {integrity: sha512-c8cY9hvak+1EQUGlJxPihElFB/5FeQCGyULTGRLe5u6hSKKtXswRqc23DTo87ZMsGd4TaScPBRNKSGjU5dORkg==}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@rushstack/tree-pattern': 0.2.2
+      '@typescript-eslint/experimental-utils': 5.3.1_eslint@7.32.0
       eslint: 7.32.0
     transitivePeerDependencies:
       - supports-color
@@ -9501,7 +10193,7 @@ packages:
       - '@types/react'
     dev: false
 
-  /@storybook/addon-controls/6.4.14_35938b10e7deab78d9647e453a3ed250:
+  /@storybook/addon-controls/6.4.14_97ee40f471206c91382aca2c9a91ac33:
     resolution: {integrity: sha512-12d0Bw0TsueyaQOKMzWTm+G4d78yKXRdX7NP6q6h0HWdqGFdcsuZ60QcQh+GExR9z/M2laDSIijTBZtEJggWGQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -9516,7 +10208,7 @@ packages:
       '@storybook/api': 6.4.14
       '@storybook/client-logger': 6.4.14
       '@storybook/components': 6.4.14_@types+react@17.0.38
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/csf': 0.0.2--canary.87bc651.0
       '@storybook/node-logger': 6.4.14
       '@storybook/store': 6.4.14
@@ -9534,7 +10226,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/addon-docs/6.4.14_768fb80cec318c4f6269a7e0ddaacd77:
+  /@storybook/addon-docs/6.4.14_259ed30129e8e5e80cee5ecc1f6729b2:
     resolution: {integrity: sha512-MIZWfDG80kolo1lOGfMOzQlE3d0I3PBvz04u8v2UMB6k99msC55ZigZcyaKRQs3lwlVM6uUflNVnpTVuTUZNHA==}
     peerDependencies:
       '@storybook/angular': 6.4.14
@@ -9592,17 +10284,17 @@ packages:
       '@mdx-js/react': 1.6.22
       '@storybook/addons': 6.4.14
       '@storybook/api': 6.4.14
-      '@storybook/builder-webpack4': 6.4.14_1a2c8374bfade17f9b0f563ea5f3b905
+      '@storybook/builder-webpack4': 6.4.14_2a1b1eeeb2368d084ea3f19d9dd05912
       '@storybook/client-logger': 6.4.14
       '@storybook/components': 6.4.14_@types+react@17.0.38
-      '@storybook/core': 6.4.14_dbf696de3d8a2a8d3c6d37d01996abca
+      '@storybook/core': 6.4.14_1a72131917d88c59c2ac6ec015aaa024
       '@storybook/core-events': 6.4.14
       '@storybook/csf': 0.0.2--canary.87bc651.0
       '@storybook/csf-tools': 6.4.14
       '@storybook/node-logger': 6.4.14
       '@storybook/postinstall': 6.4.14
       '@storybook/preview-web': 6.4.14
-      '@storybook/react': 6.4.14_1a65f3e6e51319e3864f4c8a436931e0
+      '@storybook/react': 6.4.14_ac83ed41e683fe849537313ca1157eff
       '@storybook/source-loader': 6.4.14
       '@storybook/store': 6.4.14
       '@storybook/theming': 6.4.14
@@ -9644,7 +10336,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/addon-essentials/6.4.14_768fb80cec318c4f6269a7e0ddaacd77:
+  /@storybook/addon-essentials/6.4.14_259ed30129e8e5e80cee5ecc1f6729b2:
     resolution: {integrity: sha512-ndjVkGRBkCI6Tw/lAHoeD8GmnhRUUpTl2Iv9oiD0AEIpetYl0osfHLqHpMtrgem1Mq6uGiGWNdVhwFnPixkWPg==}
     peerDependencies:
       '@babel/core': ^7.9.6
@@ -9671,8 +10363,8 @@ packages:
     dependencies:
       '@storybook/addon-actions': 6.4.14_@types+react@17.0.38
       '@storybook/addon-backgrounds': 6.4.14_@types+react@17.0.38
-      '@storybook/addon-controls': 6.4.14_35938b10e7deab78d9647e453a3ed250
-      '@storybook/addon-docs': 6.4.14_768fb80cec318c4f6269a7e0ddaacd77
+      '@storybook/addon-controls': 6.4.14_97ee40f471206c91382aca2c9a91ac33
+      '@storybook/addon-docs': 6.4.14_259ed30129e8e5e80cee5ecc1f6729b2
       '@storybook/addon-measure': 6.4.14_@types+react@17.0.38
       '@storybook/addon-outline': 6.4.14_@types+react@17.0.38
       '@storybook/addon-toolbars': 6.4.14_@types+react@17.0.38
@@ -9898,7 +10590,7 @@ packages:
       ts-dedent: 2.2.0
       util-deprecate: 1.0.2
 
-  /@storybook/builder-webpack4/6.4.14_1a2c8374bfade17f9b0f563ea5f3b905:
+  /@storybook/builder-webpack4/6.4.14_2a1b1eeeb2368d084ea3f19d9dd05912:
     resolution: {integrity: sha512-hRzwdNNLxuyb0XPpvbTSkQuqG2frhog2SsjgPVXorsSMPr95owo9Nq9hp+TnywpvaR9lrPlESzhhv2sSR3blTw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -9936,7 +10628,7 @@ packages:
       '@storybook/client-api': 6.4.14
       '@storybook/client-logger': 6.4.14
       '@storybook/components': 6.4.14_@types+react@17.0.38
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/core-events': 6.4.14
       '@storybook/node-logger': 6.4.14
       '@storybook/preview-web': 6.4.14
@@ -9988,7 +10680,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/builder-webpack4/6.4.14_35938b10e7deab78d9647e453a3ed250:
+  /@storybook/builder-webpack4/6.4.14_97ee40f471206c91382aca2c9a91ac33:
     resolution: {integrity: sha512-hRzwdNNLxuyb0XPpvbTSkQuqG2frhog2SsjgPVXorsSMPr95owo9Nq9hp+TnywpvaR9lrPlESzhhv2sSR3blTw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -10026,7 +10718,7 @@ packages:
       '@storybook/client-api': 6.4.14
       '@storybook/client-logger': 6.4.14
       '@storybook/components': 6.4.14_@types+react@17.0.38
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/core-events': 6.4.14
       '@storybook/node-logger': 6.4.14
       '@storybook/preview-web': 6.4.14
@@ -10078,7 +10770,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/builder-webpack5/6.4.14_35938b10e7deab78d9647e453a3ed250:
+  /@storybook/builder-webpack5/6.4.14_97ee40f471206c91382aca2c9a91ac33:
     resolution: {integrity: sha512-kQ3kMEaVhOJt9bAISLkJTzNjD5moNFtHkAKcC+KJwl7rP/AjG/uoct9WuP/XQacv1udyfYPZG63WDkHJbu/ARQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -10115,7 +10807,7 @@ packages:
       '@storybook/client-api': 6.4.14
       '@storybook/client-logger': 6.4.14
       '@storybook/components': 6.4.14_@types+react@17.0.38
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/core-events': 6.4.14
       '@storybook/node-logger': 6.4.14
       '@storybook/preview-web': 6.4.14
@@ -10130,7 +10822,7 @@ packages:
       case-sensitive-paths-webpack-plugin: 2.4.0
       core-js: 3.20.3
       css-loader: 5.2.7_webpack@5.67.0
-      fork-ts-checker-webpack-plugin: 6.5.0_typescript@4.5.5+webpack@5.67.0
+      fork-ts-checker-webpack-plugin: 6.5.0_42b4eda6f3379abe5550f128332b6615
       glob: 7.2.0
       glob-promise: 3.4.0_glob@7.2.0
       html-webpack-plugin: 5.5.0_webpack@5.67.0
@@ -10330,7 +11022,7 @@ packages:
       - '@types/react'
     dev: false
 
-  /@storybook/core-common/6.4.14_typescript@4.5.5:
+  /@storybook/core-common/6.4.14_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-7NRmtcY2INmobsmUUX4afO78RHpyQMO8vboy6H8HRtfcw6fy4zaHoCb7gZZfvvn8gtBWNmwip8I9XK5BpRrh3Q==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -10373,7 +11065,7 @@ packages:
       express: 4.17.2
       file-system-cache: 1.0.5
       find-up: 5.0.0
-      fork-ts-checker-webpack-plugin: 6.5.0_typescript@4.5.5+webpack@4.46.0
+      fork-ts-checker-webpack-plugin: 6.5.0_8e9646a45d8cde5071abb7ad158fe49f
       fs-extra: 9.1.0
       glob: 7.2.0
       handlebars: 4.7.7
@@ -10403,7 +11095,7 @@ packages:
     dependencies:
       core-js: 3.20.3
 
-  /@storybook/core-server/6.4.14_1a65f3e6e51319e3864f4c8a436931e0:
+  /@storybook/core-server/6.4.14_27ec67a26339bd2f53be55d6996fc441:
     resolution: {integrity: sha512-SzO8SaLTZ36Q4PNhJD4XJjlnonbR2Os0gzTknDBbwyIRPUtFUdk6isSG14RM5yYWPM0QQIs9og5ztSPX58YZlw==}
     peerDependencies:
       '@storybook/builder-webpack5': 6.4.14
@@ -10420,15 +11112,15 @@ packages:
         optional: true
     dependencies:
       '@discoveryjs/json-ext': 0.5.6
-      '@storybook/builder-webpack4': 6.4.14_35938b10e7deab78d9647e453a3ed250
-      '@storybook/builder-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
+      '@storybook/builder-webpack4': 6.4.14_2a1b1eeeb2368d084ea3f19d9dd05912
+      '@storybook/builder-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
       '@storybook/core-client': 6.4.14_472907794047659b0170a9f240c6996e
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/core-events': 6.4.14
       '@storybook/csf': 0.0.2--canary.87bc651.0
       '@storybook/csf-tools': 6.4.14
-      '@storybook/manager-webpack4': 6.4.14_35938b10e7deab78d9647e453a3ed250
-      '@storybook/manager-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
+      '@storybook/manager-webpack4': 6.4.14_2a1b1eeeb2368d084ea3f19d9dd05912
+      '@storybook/manager-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
       '@storybook/node-logger': 6.4.14
       '@storybook/semver': 7.3.2
       '@storybook/store': 6.4.14
@@ -10477,7 +11169,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/core-server/6.4.14_666914ba5ebf51d525d6bed732595e0e:
+  /@storybook/core-server/6.4.14_ac83ed41e683fe849537313ca1157eff:
     resolution: {integrity: sha512-SzO8SaLTZ36Q4PNhJD4XJjlnonbR2Os0gzTknDBbwyIRPUtFUdk6isSG14RM5yYWPM0QQIs9og5ztSPX58YZlw==}
     peerDependencies:
       '@storybook/builder-webpack5': 6.4.14
@@ -10494,15 +11186,15 @@ packages:
         optional: true
     dependencies:
       '@discoveryjs/json-ext': 0.5.6
-      '@storybook/builder-webpack4': 6.4.14_1a2c8374bfade17f9b0f563ea5f3b905
-      '@storybook/builder-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
+      '@storybook/builder-webpack4': 6.4.14_97ee40f471206c91382aca2c9a91ac33
+      '@storybook/builder-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
       '@storybook/core-client': 6.4.14_472907794047659b0170a9f240c6996e
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/core-events': 6.4.14
       '@storybook/csf': 0.0.2--canary.87bc651.0
       '@storybook/csf-tools': 6.4.14
-      '@storybook/manager-webpack4': 6.4.14_1a2c8374bfade17f9b0f563ea5f3b905
-      '@storybook/manager-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
+      '@storybook/manager-webpack4': 6.4.14_97ee40f471206c91382aca2c9a91ac33
+      '@storybook/manager-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
       '@storybook/node-logger': 6.4.14
       '@storybook/semver': 7.3.2
       '@storybook/store': 6.4.14
@@ -10551,7 +11243,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/core/6.4.14_75ca0cb70de7ae58083137484338cb43:
+  /@storybook/core/6.4.14_002553ebe1a22afcf5acd943a9f23cf9:
     resolution: {integrity: sha512-41WNDXKMZuCKnvbLBBYCd1+ip4uJ4AGeCOhmp/KZK7TgkitJ0JrvyRgnbpXR8bAMiOv2Hh9t9Vmi5D3QZ8COlg==}
     peerDependencies:
       '@storybook/builder-webpack5': 6.4.14
@@ -10565,9 +11257,9 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@storybook/builder-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
+      '@storybook/builder-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
       '@storybook/core-client': 6.4.14_63a0818d66f7da124a9652b7f3dbc10d
-      '@storybook/core-server': 6.4.14_1a65f3e6e51319e3864f4c8a436931e0
+      '@storybook/core-server': 6.4.14_ac83ed41e683fe849537313ca1157eff
       typescript: 4.5.5
       webpack: 5.67.0
     transitivePeerDependencies:
@@ -10584,7 +11276,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/core/6.4.14_c5b1238436fc29488a99de31386a5796:
+  /@storybook/core/6.4.14_1a72131917d88c59c2ac6ec015aaa024:
     resolution: {integrity: sha512-41WNDXKMZuCKnvbLBBYCd1+ip4uJ4AGeCOhmp/KZK7TgkitJ0JrvyRgnbpXR8bAMiOv2Hh9t9Vmi5D3QZ8COlg==}
     peerDependencies:
       '@storybook/builder-webpack5': 6.4.14
@@ -10598,44 +11290,44 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@storybook/builder-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
+      '@storybook/builder-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
+      '@storybook/core-client': 6.4.14_63a0818d66f7da124a9652b7f3dbc10d
+      '@storybook/core-server': 6.4.14_27ec67a26339bd2f53be55d6996fc441
+      typescript: 4.5.5
+      webpack: 5.67.0
+    transitivePeerDependencies:
+      - '@storybook/manager-webpack5'
+      - '@types/react'
+      - acorn
+      - bufferutil
+      - encoding
+      - eslint
+      - supports-color
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-command
+    dev: false
+
+  /@storybook/core/6.4.14_95051de4cf1bd2aa7e6506fc8702cf18:
+    resolution: {integrity: sha512-41WNDXKMZuCKnvbLBBYCd1+ip4uJ4AGeCOhmp/KZK7TgkitJ0JrvyRgnbpXR8bAMiOv2Hh9t9Vmi5D3QZ8COlg==}
+    peerDependencies:
+      '@storybook/builder-webpack5': 6.4.14
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+      typescript: '*'
+      webpack: '*'
+    peerDependenciesMeta:
+      '@storybook/builder-webpack5':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@storybook/builder-webpack5': 6.4.14_97ee40f471206c91382aca2c9a91ac33
       '@storybook/core-client': 6.4.14_472907794047659b0170a9f240c6996e
-      '@storybook/core-server': 6.4.14_1a65f3e6e51319e3864f4c8a436931e0
+      '@storybook/core-server': 6.4.14_ac83ed41e683fe849537313ca1157eff
       typescript: 4.5.5
       webpack: 4.46.0
-    transitivePeerDependencies:
-      - '@storybook/manager-webpack5'
-      - '@types/react'
-      - acorn
-      - bufferutil
-      - encoding
-      - eslint
-      - supports-color
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-command
-    dev: false
-
-  /@storybook/core/6.4.14_dbf696de3d8a2a8d3c6d37d01996abca:
-    resolution: {integrity: sha512-41WNDXKMZuCKnvbLBBYCd1+ip4uJ4AGeCOhmp/KZK7TgkitJ0JrvyRgnbpXR8bAMiOv2Hh9t9Vmi5D3QZ8COlg==}
-    peerDependencies:
-      '@storybook/builder-webpack5': 6.4.14
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-      typescript: '*'
-      webpack: '*'
-    peerDependenciesMeta:
-      '@storybook/builder-webpack5':
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@storybook/builder-webpack5': 6.4.14_35938b10e7deab78d9647e453a3ed250
-      '@storybook/core-client': 6.4.14_63a0818d66f7da124a9652b7f3dbc10d
-      '@storybook/core-server': 6.4.14_666914ba5ebf51d525d6bed732595e0e
-      typescript: 4.5.5
-      webpack: 5.67.0
     transitivePeerDependencies:
       - '@storybook/manager-webpack5'
       - '@types/react'
@@ -10679,7 +11371,7 @@ packages:
     dependencies:
       lodash: 4.17.21
 
-  /@storybook/manager-webpack4/6.4.14_1a2c8374bfade17f9b0f563ea5f3b905:
+  /@storybook/manager-webpack4/6.4.14_2a1b1eeeb2368d084ea3f19d9dd05912:
     resolution: {integrity: sha512-j565G7vZLBXK60J1hiZhbeZ6K48y8CMMZCcIihqsFv/4jj0kI3Ba4IhCrOkHiqiRM89mRu5/Ga3DnHTBvIYIEA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -10694,7 +11386,7 @@ packages:
       '@babel/preset-react': 7.16.7_@babel+core@7.16.7
       '@storybook/addons': 6.4.14
       '@storybook/core-client': 6.4.14_472907794047659b0170a9f240c6996e
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/node-logger': 6.4.14
       '@storybook/theming': 6.4.14
       '@storybook/ui': 6.4.14_@types+react@17.0.38
@@ -10737,7 +11429,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/manager-webpack4/6.4.14_35938b10e7deab78d9647e453a3ed250:
+  /@storybook/manager-webpack4/6.4.14_97ee40f471206c91382aca2c9a91ac33:
     resolution: {integrity: sha512-j565G7vZLBXK60J1hiZhbeZ6K48y8CMMZCcIihqsFv/4jj0kI3Ba4IhCrOkHiqiRM89mRu5/Ga3DnHTBvIYIEA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -10752,7 +11444,7 @@ packages:
       '@babel/preset-react': 7.16.7_@babel+core@7.16.7
       '@storybook/addons': 6.4.14
       '@storybook/core-client': 6.4.14_472907794047659b0170a9f240c6996e
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/node-logger': 6.4.14
       '@storybook/theming': 6.4.14
       '@storybook/ui': 6.4.14_@types+react@17.0.38
@@ -10795,7 +11487,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/manager-webpack5/6.4.14_35938b10e7deab78d9647e453a3ed250:
+  /@storybook/manager-webpack5/6.4.14_97ee40f471206c91382aca2c9a91ac33:
     resolution: {integrity: sha512-9a2iUUKldGmWH455GmGF/Bvjwk0kb8bGcsCfMIsk7fPbBv16ebMZcOth+ApHrwINTgy9a58j+zL1vie7oNlxhA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -10810,7 +11502,7 @@ packages:
       '@babel/preset-react': 7.16.7_@babel+core@7.16.7
       '@storybook/addons': 6.4.14
       '@storybook/core-client': 6.4.14_63a0818d66f7da124a9652b7f3dbc10d
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/node-logger': 6.4.14
       '@storybook/theming': 6.4.14
       '@storybook/ui': 6.4.14_@types+react@17.0.38
@@ -10912,7 +11604,7 @@ packages:
       - supports-color
     dev: false
 
-  /@storybook/react/6.4.14_1a65f3e6e51319e3864f4c8a436931e0:
+  /@storybook/react/6.4.14_ac83ed41e683fe849537313ca1157eff:
     resolution: {integrity: sha512-wlPjE5Xcarc5NTgnHchvGE56EVYioAyRZoYvb/YyiCX1+A8sQkwS2qTTH8e/pdG539A4NMrciMosvjvEPZcEvg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -10931,8 +11623,8 @@ packages:
       '@babel/preset-react': 7.16.7
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.4_06cd85ae30adde416cafc06517ba554d
       '@storybook/addons': 6.4.14
-      '@storybook/core': 6.4.14_c5b1238436fc29488a99de31386a5796
-      '@storybook/core-common': 6.4.14_typescript@4.5.5
+      '@storybook/core': 6.4.14_95051de4cf1bd2aa7e6506fc8702cf18
+      '@storybook/core-common': 6.4.14_eslint@7.32.0+typescript@4.5.5
       '@storybook/csf': 0.0.2--canary.87bc651.0
       '@storybook/node-logger': 6.4.14
       '@storybook/react-docgen-typescript-plugin': 1.0.2-canary.253f8c1.0_typescript@4.5.5+webpack@4.46.0
@@ -12452,6 +13144,31 @@ packages:
       - supports-color
     dev: true
 
+  /@typescript-eslint/eslint-plugin/5.6.0_a8d6e4147a400955d580224aab00bde0:
+    resolution: {integrity: sha512-MIbeMy5qfLqtgs1hWd088k1hOuRsN9JrHUPwVVKCD99EOUqScd7SrwoZl4Gso05EAP9w1kvLWUVGJOVpRPkDPA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      '@typescript-eslint/parser': ^5.0.0
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/experimental-utils': 5.6.0_eslint@7.32.0
+      '@typescript-eslint/parser': 5.6.0_eslint@7.32.0
+      '@typescript-eslint/scope-manager': 5.6.0
+      debug: 4.3.3
+      eslint: 7.32.0
+      functional-red-black-tree: 1.0.1
+      ignore: 5.2.0
+      regexpp: 3.2.0
+      semver: 7.3.5
+      tsutils: 3.21.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@typescript-eslint/experimental-utils/4.33.0_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-zeQjOoES5JFjTnAhI5QY7ZviczMzDptls15GFsI6jyUOq0kOf9+WonkhtlIhh0RgHRnqj5gdNxW5j1EvAyYg6Q==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -12470,6 +13187,24 @@ packages:
       - typescript
     dev: false
 
+  /@typescript-eslint/experimental-utils/5.3.1_eslint@7.32.0:
+    resolution: {integrity: sha512-RgFn5asjZ5daUhbK5Sp0peq0SSMytqcrkNfU4pnDma2D8P3ElZ6JbYjY8IMSFfZAJ0f3x3tnO3vXHweYg0g59w==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '*'
+    dependencies:
+      '@types/json-schema': 7.0.9
+      '@typescript-eslint/scope-manager': 5.3.1
+      '@typescript-eslint/types': 5.3.1
+      '@typescript-eslint/typescript-estree': 5.3.1
+      eslint: 7.32.0
+      eslint-scope: 5.1.1
+      eslint-utils: 3.0.0_eslint@7.32.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
   /@typescript-eslint/experimental-utils/5.3.1_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-RgFn5asjZ5daUhbK5Sp0peq0SSMytqcrkNfU4pnDma2D8P3ElZ6JbYjY8IMSFfZAJ0f3x3tnO3vXHweYg0g59w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -12480,6 +13215,24 @@ packages:
       '@typescript-eslint/scope-manager': 5.3.1
       '@typescript-eslint/types': 5.3.1
       '@typescript-eslint/typescript-estree': 5.3.1_typescript@4.5.5
+      eslint: 7.32.0
+      eslint-scope: 5.1.1
+      eslint-utils: 3.0.0_eslint@7.32.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
+  /@typescript-eslint/experimental-utils/5.6.0_eslint@7.32.0:
+    resolution: {integrity: sha512-VDoRf3Qj7+W3sS/ZBXZh3LBzp0snDLEgvp6qj0vOAIiAPM07bd5ojQ3CTzF/QFl5AKh7Bh1ycgj6lFBJHUt/DA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '*'
+    dependencies:
+      '@types/json-schema': 7.0.9
+      '@typescript-eslint/scope-manager': 5.6.0
+      '@typescript-eslint/types': 5.6.0
+      '@typescript-eslint/typescript-estree': 5.6.0
       eslint: 7.32.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0_eslint@7.32.0
@@ -12525,6 +13278,25 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /@typescript-eslint/parser/5.6.0_eslint@7.32.0:
+    resolution: {integrity: sha512-YVK49NgdUPQ8SpCZaOpiq1kLkYRPMv9U5gcMrywzI8brtwZjr/tG3sZpuHyODt76W/A0SufNjYt9ZOgrC4tLIQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/scope-manager': 5.6.0
+      '@typescript-eslint/types': 5.6.0
+      '@typescript-eslint/typescript-estree': 5.6.0
+      debug: 4.3.3
+      eslint: 7.32.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@typescript-eslint/parser/5.6.0_eslint@7.32.0+typescript@4.5.5:
     resolution: {integrity: sha512-YVK49NgdUPQ8SpCZaOpiq1kLkYRPMv9U5gcMrywzI8brtwZjr/tG3sZpuHyODt76W/A0SufNjYt9ZOgrC4tLIQ==}
@@ -12606,6 +13378,26 @@ packages:
       - supports-color
     dev: false
 
+  /@typescript-eslint/typescript-estree/5.3.1:
+    resolution: {integrity: sha512-PwFbh/PKDVo/Wct6N3w+E4rLZxUDgsoII/GrWM2A62ETOzJd4M6s0Mu7w4CWsZraTbaC5UQI+dLeyOIFF1PquQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/types': 5.3.1
+      '@typescript-eslint/visitor-keys': 5.3.1
+      debug: 4.3.3
+      globby: 11.1.0
+      is-glob: 4.0.3
+      semver: 7.3.5
+      tsutils: 3.21.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@typescript-eslint/typescript-estree/5.3.1_typescript@4.5.5:
     resolution: {integrity: sha512-PwFbh/PKDVo/Wct6N3w+E4rLZxUDgsoII/GrWM2A62ETOzJd4M6s0Mu7w4CWsZraTbaC5UQI+dLeyOIFF1PquQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -12623,6 +13415,26 @@ packages:
       semver: 7.3.5
       tsutils: 3.21.0_typescript@4.5.5
       typescript: 4.5.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@typescript-eslint/typescript-estree/5.6.0:
+    resolution: {integrity: sha512-92vK5tQaE81rK7fOmuWMrSQtK1IMonESR+RJR2Tlc7w4o0MeEdjgidY/uO2Gobh7z4Q1hhS94Cr7r021fMVEeA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/types': 5.6.0
+      '@typescript-eslint/visitor-keys': 5.6.0
+      debug: 4.3.3
+      globby: 11.1.0
+      is-glob: 4.0.3
+      semver: 7.3.5
+      tsutils: 3.21.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -19914,7 +20726,7 @@ packages:
       worker-rpc: 0.1.1
     dev: false
 
-  /fork-ts-checker-webpack-plugin/6.5.0_typescript@4.5.5+webpack@4.46.0:
+  /fork-ts-checker-webpack-plugin/6.5.0_42b4eda6f3379abe5550f128332b6615:
     resolution: {integrity: sha512-cS178Y+xxtIjEUorcHddKS7yCMlrDPV31mt47blKKRfMd70Kxu5xruAFE2o9sDY6wVC5deuob/u/alD04YYHnw==}
     engines: {node: '>=10', yarn: '>=1.0.0'}
     peerDependencies:
@@ -19934,37 +20746,7 @@ packages:
       chokidar: 3.5.3
       cosmiconfig: 6.0.0
       deepmerge: 4.2.2
-      fs-extra: 9.1.0
-      glob: 7.2.0
-      memfs: 3.4.1
-      minimatch: 3.0.4
-      schema-utils: 2.7.0
-      semver: 7.3.5
-      tapable: 1.1.3
-      typescript: 4.5.5
-      webpack: 4.46.0
-    dev: false
-
-  /fork-ts-checker-webpack-plugin/6.5.0_typescript@4.5.5+webpack@5.67.0:
-    resolution: {integrity: sha512-cS178Y+xxtIjEUorcHddKS7yCMlrDPV31mt47blKKRfMd70Kxu5xruAFE2o9sDY6wVC5deuob/u/alD04YYHnw==}
-    engines: {node: '>=10', yarn: '>=1.0.0'}
-    peerDependencies:
-      eslint: '>= 6'
-      typescript: '>= 2.7'
-      vue-template-compiler: '*'
-      webpack: '>= 4'
-    peerDependenciesMeta:
-      eslint:
-        optional: true
-      vue-template-compiler:
-        optional: true
-    dependencies:
-      '@babel/code-frame': 7.16.7
-      '@types/json-schema': 7.0.9
-      chalk: 4.1.2
-      chokidar: 3.5.3
-      cosmiconfig: 6.0.0
-      deepmerge: 4.2.2
+      eslint: 7.32.0
       fs-extra: 9.1.0
       glob: 7.2.0
       memfs: 3.4.1
@@ -19974,6 +20756,38 @@ packages:
       tapable: 1.1.3
       typescript: 4.5.5
       webpack: 5.67.0
+    dev: false
+
+  /fork-ts-checker-webpack-plugin/6.5.0_8e9646a45d8cde5071abb7ad158fe49f:
+    resolution: {integrity: sha512-cS178Y+xxtIjEUorcHddKS7yCMlrDPV31mt47blKKRfMd70Kxu5xruAFE2o9sDY6wVC5deuob/u/alD04YYHnw==}
+    engines: {node: '>=10', yarn: '>=1.0.0'}
+    peerDependencies:
+      eslint: '>= 6'
+      typescript: '>= 2.7'
+      vue-template-compiler: '*'
+      webpack: '>= 4'
+    peerDependenciesMeta:
+      eslint:
+        optional: true
+      vue-template-compiler:
+        optional: true
+    dependencies:
+      '@babel/code-frame': 7.16.7
+      '@types/json-schema': 7.0.9
+      chalk: 4.1.2
+      chokidar: 3.5.3
+      cosmiconfig: 6.0.0
+      deepmerge: 4.2.2
+      eslint: 7.32.0
+      fs-extra: 9.1.0
+      glob: 7.2.0
+      memfs: 3.4.1
+      minimatch: 3.0.4
+      schema-utils: 2.7.0
+      semver: 7.3.5
+      tapable: 1.1.3
+      typescript: 4.5.5
+      webpack: 4.46.0
     dev: false
 
   /form-data/2.3.3:
@@ -31487,6 +32301,15 @@ packages:
   /tsscmp/1.0.6:
     resolution: {integrity: sha1-hbmVg6w1iexL/vgltQAKqRHWBes=}
     engines: {node: '>=0.6.x'}
+
+  /tsutils/3.21.0:
+    resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
+    engines: {node: '>= 6'}
+    peerDependencies:
+      typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
+    dependencies:
+      tslib: 1.14.1
+    dev: true
 
   /tsutils/3.21.0_typescript@4.5.5:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
