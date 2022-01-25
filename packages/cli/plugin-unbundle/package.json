@@ -101,7 +101,7 @@
     "@modern-js/bff-utils": "workspace:^1.2.0",
     "@modern-js/core": "workspace:^1.3.0",
     "@modern-js/types": "workspace:^1.2.0",
-    "@modern-js/tsconfig": "workspace:^1.2.0",
+    "@modern-js/tsconfig": "workspace:*",
     "@types/babel__code-frame": "^7.0.2",
     "@types/babel__core": "^7.1.12",
     "@types/es-module-lexer": "^0.3.0",
@@ -126,7 +126,9 @@
     "typescript": "^4",
     "jest": "^27",
     "@scripts/build": "workspace:*",
-    "@scripts/test": "workspace:*"
+    "@scripts/test": "workspace:*",
+    "eslint": "^7.32.0",
+    "@scripts/eslint-config": "workspace:*"
   },
   "peerDependencies": {
     "@modern-js/bff-utils": "workspace:^1.2.0",
