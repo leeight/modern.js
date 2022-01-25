@@ -431,6 +431,10 @@
     {
       "name": "Integration Tests",
       "path": "tests"
+    },
+    {
+      "name": "Rush Config",
+      "path": "common/config/rush"
     }
   ],
   "settings": {
