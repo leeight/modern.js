@@ -20,9 +20,5 @@
     "access": "public"
   },
   "main": "./base.json",
-  "devDependencies": {
-    "@modern-js/eslint-config": "workspace:*",
-    "@rushstack/eslint-config": "^2.5.1",
-    "eslint": "^7.32.0"
-  }
+  "devDependencies": {}
 }

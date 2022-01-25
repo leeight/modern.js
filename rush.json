@@ -884,6 +884,10 @@
   {
     "packageName": "@scripts/codemod",
     "projectFolder": "scripts/codemod"
+  },
+  {
+    "packageName": "@scripts/eslint-config",
+    "projectFolder": "scripts/eslint-config"
   }
   ]
 }
