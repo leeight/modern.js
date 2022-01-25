@@ -52,7 +52,7 @@
     "@modern-js/testing": "workspace:^1.3.0",
     "typescript": "^4",
     "@scripts/build": "workspace:*",
-    "@modern-js/tsconfig": "workspace:^1.2.0"
+    "@modern-js/tsconfig": "workspace:*"
   },
   "peerDependencies": {
     "@modern-js/bff-utils": "workspace:^1.2.0",

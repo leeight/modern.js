@@ -34,18 +34,18 @@
   "engines": {
     "node": ">=14.17.6"
   },
-  "husky": {
+  "//husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "commitlint": {
+  "//commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
-  "lint-staged": {
+  "//lint-staged": {
     "*.{ts,tsx}": [
       "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet",
       "git add"
@@ -55,20 +55,20 @@
       "git add"
     ]
   },
-  "eslintConfig": {
+  "//eslintConfig": {
     "root": true,
     "extends": [
       "@modern-js"
     ]
   },
-  "eslintIgnore": [
+  "//eslintIgnore": [
     "node_modules/",
     "dist/",
     "lib/",
     ".rpt2_cache/",
     "coverage/"
   ],
-  "devDependencies": {
+  "//devDependencies": {
     "btsm": "2.2.2",
     "jest": "^27",
     "esbuild": "^0.13.8",

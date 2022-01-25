@@ -49,7 +49,7 @@
     "@types/react": "^17",
     "@types/react-dom": "^17",
     "@types/node": "^14",
-    "@modern-js/tsconfig": "workspace:^1.2.0"
+    "@modern-js/tsconfig": "workspace:*"
   },
   "modernConfig": {
     "runtime": {

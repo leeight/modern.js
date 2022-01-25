@@ -49,7 +49,7 @@
     "@scripts/build": "workspace:*",
     "jest": "^27",
     "@scripts/test": "workspace:*",
-    "@modern-js/tsconfig": "workspace:^1.2.0"
+    "@modern-js/tsconfig": "workspace:*"
   },
   "sideEffects": false,
   "modernConfig": {
