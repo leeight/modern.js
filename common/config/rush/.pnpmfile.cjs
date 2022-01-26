@@ -26,6 +26,11 @@ module.exports = {
  * The `context` parameter provides a log() function.
  * The return value is the updated object.
  */
+const depAndDevDep = ['dependencies', 'devDependencies'];
+const resolutions = {
+  '@eslint/eslintrc': '0.4.3',
+}
+
 function readPackage(packageJson, context) {
 
   // // The karma types have a missing dependency on typings from the log4js package.
@@ -33,6 +38,22 @@ function readPackage(packageJson, context) {
   //  context.log('Fixed up dependencies for @types/karma');
   //  packageJson.dependencies['log4js'] = '0.6.38';
   // }
+
+  for (const [k, v] of Object.entries(resolutions)) {
+    // force resolution version
+    modifyPackageJsonWithKeys(depAndDevDep, (obj) => {
+      if (obj[k]) {
+        obj[k] = v;
+      }
+    });
+  }
+  function modifyPackageJsonWithKeys(keys, cb) {
+    for (const key of keys) {
+      if (packageJson[key]) {
+        cb(packageJson[key]);
+      }
+    }
+  }
 
   return packageJson;
 }
