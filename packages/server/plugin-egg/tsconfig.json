@@ -7,6 +7,5 @@
     "isolatedModules": true,
     "sourceMap": true
   },
-  "include": ["src"],
-  "exclude": ["src/__test__/fixtures/**"]
+  "include": ["src", "types.d.ts"]
 }

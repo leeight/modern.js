@@ -8,5 +8,5 @@
     "paths": {},
     "types": ["jest"]
   },
-  "include": ["src"]
+  "include": ["src", "types.d.ts"]
 }

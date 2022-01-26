@@ -1,12 +1,10 @@
-/// <reference path="./dist/types/index.d.ts" />
-
 declare module '@modern-js/runtime/server' {
-  import type { Next } from 'koa'
-  import type { Context } from 'egg'
+  import type { Next } from 'koa';
+  import type { Context } from 'egg';
 
   export function useContext(): Context;
 
-  type RequestHandler = () => (ctx: Context, next: Next) => Promise<void>
+  type RequestHandler = () => (ctx: Context, next: Next) => Promise<void>;
 
   type EggOptions = {
     addMiddleware: (...input: RequestHandler[]) => void;

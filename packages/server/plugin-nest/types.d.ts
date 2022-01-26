@@ -7,9 +7,7 @@ declare module '@modern-js/runtime/server' {
     response: Response;
   };
   export function useContext(): NestContext;
-  interface Interface {
-    new (...input: any): any;
-  }
+  type Interface = new (...input: any) => any;
   type NestOptions = {
     addMiddleware: (...input: (Interface | RequestHandler)[]) => void;
   };

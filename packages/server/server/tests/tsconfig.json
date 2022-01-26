@@ -5,8 +5,8 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "isolatedModules": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "paths": {}
   },
-  "paths": {},
-  "exclude": ["src/__test__/fixtures/**"]
+  "exclude": ["fixtures"]
 }
