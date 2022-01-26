@@ -1,12 +1,9 @@
-const sharedConfig = require('@scripts/test');
+const { defineConfig } = require('@scripts/test');
 
-/** @type {import('@jest/types').Config.InitialOptions} */
-module.exports = {
-  // eslint-disable-next-line node/no-unsupported-features/es-syntax
-  ...sharedConfig,
+module.exports = defineConfig({
   rootDir: __dirname,
   modulePathIgnorePatterns: [
     // TODO: 很容易超时导致失败，暂时先绕过
     'tests/index.test.ts',
   ],
-};
+});

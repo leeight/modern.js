@@ -2,7 +2,7 @@
   "name": "@scripts/test",
   "private": true,
   "version": "0.0.0",
-  "main": "jest.config.js",
+  "main": "index.js",
   "scripts": {
     "build": "exit"
   },

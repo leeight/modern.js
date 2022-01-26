@@ -3427,12 +3427,14 @@ importers:
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
+      '@scripts/test': workspace:*
       '@types/jest': ^26
       '@types/node': ^14
       '@types/react': ^17
       '@types/react-dom': ^17
       '@types/supertest': ^2.0.11
       eslint: ^7.32.0
+      jest: ^27
       jest-environment-node: ^27.2.2
       path-to-regexp: ^6.2.0
       supertest: ^6.1.6
@@ -3450,12 +3452,14 @@ importers:
       '@modern-js/tsconfig': link:../tsconfig
       '@scripts/build': link:../../../scripts/build
       '@scripts/eslint-config': link:../../../scripts/eslint-config
+      '@scripts/test': link:../../../scripts/test
       '@types/jest': 26.0.24
       '@types/node': 14.18.9
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@types/supertest': 2.0.11
       eslint: 7.32.0
+      jest: 27.4.7
       typescript: 4.5.5
 
   ../../packages/review/tsconfig:

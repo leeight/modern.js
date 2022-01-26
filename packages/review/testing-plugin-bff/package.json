@@ -53,8 +53,10 @@
     "@types/react-dom": "^17",
     "@types/supertest": "^2.0.11",
     "typescript": "^4",
-    "@modern-js/tsconfig": "workspace:*",
+    "jest": "^27",
     "eslint": "^7.32.0",
+    "@modern-js/tsconfig": "workspace:*",
+    "@scripts/test": "workspace:*",
     "@scripts/eslint-config": "workspace:*"
   },
   "peerDependencies": {
