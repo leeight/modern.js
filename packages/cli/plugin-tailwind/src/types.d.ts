@@ -1,6 +1,6 @@
-import '@modern-js/core';
+import '@modern-js/types';
 
-declare module '@modern-js/core' {
+declare module '@modern-js/types' {
   interface ToolsConfig {
     tailwind?:
       | Record<string, any>

@@ -15,7 +15,8 @@ import {
   prettyInstructions,
   clearConsole,
 } from '@modern-js/utils';
-import { IAppContext, mountHook, NormalizedConfig } from '@modern-js/core';
+import { mountHook } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 // FIXME: 很奇怪，换了名字之后就可以编译通过了，可能 `macro` 这个名字有啥特殊的含义？
 import { macrosPlugin } from './plugins/_macro';
 import { lanuchEditorMiddleware } from './middlewares/lanuch-editor';

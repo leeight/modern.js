@@ -1,5 +1,5 @@
 import { Import, fs } from '@modern-js/utils';
-import type { NormalizedConfig, CoreOptions } from '@modern-js/core';
+import type { NormalizedConfig, CoreOptions } from '@modern-js/types';
 import type { ICompilerResult, IVirtualDist } from '@modern-js/babel-compiler';
 import type { ITsconfig } from '../types';
 import { initEnv } from '../utils/init-env';

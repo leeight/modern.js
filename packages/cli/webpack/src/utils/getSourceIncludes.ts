@@ -4,7 +4,7 @@ import {
   getMonorepoPackages,
   isModernjsMonorepo,
 } from '@modern-js/utils';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { memoize } from './memoize';
 
 const shouldIncludePackage = (

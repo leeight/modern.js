@@ -1,4 +1,4 @@
-import type { IAppContext, CoreOptions } from '@modern-js/core';
+import type { IAppContext, CoreOptions } from '@modern-js/types';
 import { Import } from '@modern-js/utils';
 
 const core: typeof import('@modern-js/core') = Import.lazy(

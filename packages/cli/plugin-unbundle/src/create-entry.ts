@@ -8,8 +8,11 @@ import {
   generateMetaTags,
   getEntryOptions,
 } from '@modern-js/utils';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
-import type { Entrypoint } from '@modern-js/types';
+import type {
+  Entrypoint,
+  IAppContext,
+  NormalizedConfig,
+} from '@modern-js/types';
 import { DEV_CLIENT_PATH_ALIAS, DEV_CLIENT_URL } from './constants';
 
 const debug = createDebugger('esm:create-entry');

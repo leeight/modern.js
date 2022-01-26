@@ -6,175 +6,41 @@ import {
   createDebugger,
   getPort,
   isDev,
-  MetaOptions,
+  // MetaOptions,
   PLUGIN_SCHEMAS,
   chalk,
 } from '@modern-js/utils';
 import mergeWith from 'lodash.mergewith';
 import betterAjvErrors from 'better-ajv-errors';
 import { codeFrameColumns } from '@babel/code-frame';
-import { PluginConfig } from '../loadPlugins';
+import type {
+  NormalizedConfig,
+  ConfigParam,
+  LoadedConfig,
+  UserConfig,
+} from '@modern-js/types';
+// import { PluginConfig } from '../loadPlugins';
 import { repeatKeyWarning } from '../utils/repeatKeyWarning';
 import { defaults } from './defaults';
-import { mergeConfig, NormalizedConfig } from './mergeConfig';
+import { mergeConfig } from './mergeConfig';
 import { patchSchema, PluginValidateSchema } from './schema';
+
+export type { NormalizedConfig, ConfigParam, LoadedConfig, UserConfig };
+export type {
+  SourceConfig,
+  OutputConfig,
+  ServerConfig,
+  DevConfig,
+  DeployConfig,
+  ToolsConfig,
+  RuntimeConfig,
+  RuntimeByEntriesConfig,
+} from '@modern-js/types';
 
 const debug = createDebugger('resolve-config');
 
 export { defaults as defaultsConfig };
 export { mergeConfig };
-
-interface SourceConfig {
-  entries?: Record<
-    string,
-    | string
-    | {
-        entry: string;
-        enableFileSystemRoutes?: boolean;
-        disableMount?: boolean;
-      }
-  >;
-  disableDefaultEntries?: boolean;
-  entriesDir?: string;
-  configDir?: string;
-  apiDir?: string;
-  envVars?: Array<string>;
-  globalVars?: Record<string, string>;
-  alias?:
-    | Record<string, string>
-    | ((aliases: Record<string, string>) => Record<string, unknown>);
-  moduleScopes?:
-    | Array<string | RegExp>
-    | ((scopes: Array<string | RegExp>) => Array<string | RegExp>);
-  include?: Array<string | RegExp>;
-}
-
-interface OutputConfig {
-  assetPrefix?: string;
-  htmlPath?: string;
-  jsPath?: string;
-  cssPath?: string;
-  mediaPath?: string;
-  path?: string;
-  title?: string;
-  titleByEntries?: Record<string, string>;
-  meta?: MetaOptions;
-  metaByEntries?: Record<string, MetaOptions>;
-  inject?: 'body' | 'head' | boolean;
-  injectByEntries?: Record<string, 'body' | 'head' | boolean>;
-  mountId?: string;
-  favicon?: string;
-  faviconByEntries?: Record<string, string | undefined>;
-  copy?: Record<string, unknown>;
-  scriptExt?: Record<string, unknown>;
-  disableHtmlFolder?: boolean;
-  disableCssModuleExtension?: boolean;
-  disableCssExtract?: boolean;
-  enableCssModuleTSDeclaration?: boolean;
-  disableMinimize?: boolean;
-  enableInlineStyles?: boolean;
-  enableInlineScripts?: boolean;
-  disableSourceMap?: boolean;
-  disableInlineRuntimeChunk?: boolean;
-  disableAssetsCache?: boolean;
-  enableLatestDecorators?: boolean;
-  polyfill?: 'off' | 'usage' | 'entry' | 'ua';
-  dataUriLimit?: number;
-  templateParameters?: Record<string, unknown>;
-  templateParametersByEntries?: Record<
-    string,
-    Record<string, unknown> | undefined
-  >;
-  cssModuleLocalIdentName?: string;
-  enableModernMode?: boolean;
-  federation?: boolean;
-  disableNodePolyfill?: boolean;
-  enableTsLoader?: boolean;
-}
-
-interface ServerConfig {
-  routes?: Record<
-    string,
-    | string
-    | {
-        route: string | string[];
-        disableSpa?: boolean;
-      }
-  >;
-  publicRoutes?: { [filepath: string]: string };
-  ssr?: boolean | Record<string, unknown>;
-  ssrByEntries?: Record<string, boolean | Record<string, unknown>>;
-  baseUrl?: string | Array<string>;
-  port?: number;
-  logger?: Record<string, any>;
-  metrics?: Record<string, any>;
-  enableMicroFrontendDebug?: boolean;
-}
-
-interface DevConfig {
-  assetPrefix?: string | boolean;
-  https?: boolean;
-}
-
-interface MicroFrontend {
-  enableHtmlEntry?: boolean;
-  externalBasicLibrary?: boolean;
-  moduleApp?: boolean;
-}
-
-interface DeployConfig {
-  microFrontend?: boolean | MicroFrontend;
-  domain?: string | Array<string>;
-  domainByEntries?: Record<string, string | Array<string>>;
-}
-
-type ConfigFunction =
-  | Record<string, unknown>
-  // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
-  | ((config: Record<string, unknown>) => Record<string, unknown> | void);
-interface ToolsConfig {
-  webpack?: ConfigFunction;
-  babel?: ConfigFunction;
-  autoprefixer?: ConfigFunction;
-  postcss?: ConfigFunction;
-  lodash?: ConfigFunction;
-  devServer?: Record<string, unknown>;
-  tsLoader?: ConfigFunction;
-  terser?: ConfigFunction;
-  minifyCss?: ConfigFunction;
-  esbuild?: Record<string, unknown>;
-}
-
-type RuntimeConfig = Record<string, any>;
-
-interface RuntimeByEntriesConfig {
-  [name: string]: RuntimeConfig;
-}
-
-interface UserConfig {
-  source?: SourceConfig;
-  output?: OutputConfig;
-  server?: ServerConfig;
-  dev?: DevConfig;
-  deploy?: DeployConfig;
-  tools?: ToolsConfig;
-  plugins?: PluginConfig;
-  runtime?: RuntimeConfig;
-  runtimeByEntries?: RuntimeByEntriesConfig;
-}
-
-type ConfigParam =
-  | UserConfig
-  | Promise<UserConfig>
-  | ((env: any) => UserConfig | Promise<UserConfig>);
-
-interface LoadedConfig {
-  config: UserConfig;
-  filePath: string | false;
-  dependencies: string[];
-  pkgConfig: UserConfig;
-  jsConfig: UserConfig;
-}
 
 export const defineConfig = (config: ConfigParam): ConfigParam => config;
 
@@ -197,7 +63,7 @@ export const loadUserConfig = async (
 
   return {
     config: mergeWith({}, config || {}, loaded?.pkgConfig || {}),
-    jsConfig: (config || {}) as any,
+    jsConfig: config || {},
     pkgConfig: (loaded?.pkgConfig || {}) as UserConfig,
     filePath: loaded?.path,
     dependencies: loaded?.dependencies || [],
@@ -312,17 +178,3 @@ export const resolveConfig = async (
   return resolved;
 };
 /* eslint-enable max-statements, max-params */
-
-export type {
-  SourceConfig,
-  OutputConfig,
-  ServerConfig,
-  DevConfig,
-  DeployConfig,
-  ToolsConfig,
-  RuntimeConfig,
-  RuntimeByEntriesConfig,
-  UserConfig,
-  ConfigParam,
-  LoadedConfig,
-};

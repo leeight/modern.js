@@ -4,7 +4,7 @@ import util from 'util';
 import path from 'path';
 import { fs, ROUTE_SPEC_FILE } from '@modern-js/utils';
 import { Adapter, APIServerStartInput } from '@modern-js/server-core';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import mime from 'mime-types';
 import axios from 'axios';
 import clone from 'lodash.clone';

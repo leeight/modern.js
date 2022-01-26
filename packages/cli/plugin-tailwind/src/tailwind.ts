@@ -1,4 +1,4 @@
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { Import, applyOptionsChain, logger } from '@modern-js/utils';
 
 const cloneDeep: typeof import('lodash.clonedeep') = Import.lazy(

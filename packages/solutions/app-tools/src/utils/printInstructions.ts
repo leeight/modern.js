@@ -1,5 +1,6 @@
 import { prettyInstructions, logger, isDev, chalk } from '@modern-js/utils';
-import { mountHook, IAppContext, NormalizedConfig } from '@modern-js/core';
+import { mountHook } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 
 export const printInstructions = async (
   appContext: IAppContext,

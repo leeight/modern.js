@@ -8,5 +8,6 @@
     "isolatedModules": true,
     "paths": {}
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/wrapper-webpack-plugin"]
 }

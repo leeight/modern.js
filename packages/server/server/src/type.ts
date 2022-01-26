@@ -1,7 +1,7 @@
 import { Buffer } from 'buffer';
 import type Webpack from 'webpack';
 import { serverManager } from '@modern-js/server-core';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import type { Metrics, Logger, NextFunction } from '@modern-js/types/server';
 import { ModernRouteInterface } from './libs/route';
 
@@ -12,7 +12,7 @@ declare module 'http' {
   }
 }
 
-declare module '@modern-js/core' {
+declare module '@modern-js/types' {
   interface UserConfig {
     bff?: {
       proxy: Record<string, any>;

@@ -1,5 +1,5 @@
 import path from 'path';
-import { IAppContext } from '@modern-js/core';
+import type { IAppContext } from '@modern-js/types';
 import { MAIN_ENTRY_NAME } from '@modern-js/utils/constants';
 import { getServerRoutes } from '../src/getServerRoutes';
 import { Entrypoint } from '../src/getFileSystemEntry';

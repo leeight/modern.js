@@ -1,6 +1,6 @@
 import * as path from 'path';
 import { fs, Import } from '@modern-js/utils';
-import type { NormalizedConfig, IAppContext } from '@modern-js/core';
+import type { NormalizedConfig, IAppContext } from '@modern-js/types';
 
 const globby: typeof import('globby') = Import.lazy('globby', require);
 const fastGlob: typeof import('fast-glob') = Import.lazy('fast-glob', require);

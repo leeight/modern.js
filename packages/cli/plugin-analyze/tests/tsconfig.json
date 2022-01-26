@@ -6,5 +6,6 @@
     "baseUrl": "./",
     "isolatedModules": true,
     "paths": {}
-  }
+  },
+  "exclude": ["fixtures"]
 }

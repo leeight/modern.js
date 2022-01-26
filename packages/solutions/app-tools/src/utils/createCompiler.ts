@@ -1,5 +1,6 @@
 import webpack, { Configuration, StatsCompilation } from 'webpack';
-import { IAppContext, NormalizedConfig, mountHook } from '@modern-js/core';
+import { mountHook } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 import {
   chalk,
   logger,

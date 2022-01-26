@@ -273,6 +273,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/load-config': link:../../toolkit/load-config
       '@modern-js/plugin': link:../../toolkit/plugin
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       address: 1.1.2
       ajv: 8.9.0
@@ -289,7 +290,6 @@ importers:
       v8-compile-cache: 2.3.0
     devDependencies:
       '@modern-js/tsconfig': link:../../review/tsconfig
-      '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
       '@scripts/eslint-config': link:../../../scripts/eslint-config
       '@scripts/test': link:../../../scripts/test
@@ -309,8 +309,8 @@ importers:
   ../../packages/cli/css-config:
     specifiers:
       '@babel/runtime': ^7
-      '@modern-js/core': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -333,6 +333,7 @@ importers:
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       autoprefixer: 10.4.2_postcss@8.4.5
       postcss: 8.4.5
@@ -344,7 +345,6 @@ importers:
       postcss-nesting: 8.0.1_postcss@8.4.5
       postcss-page-break: 3.0.4_postcss@8.4.5
     devDependencies:
-      '@modern-js/core': link:../core
       '@modern-js/tsconfig': link:../../review/tsconfig
       '@scripts/build': link:../../../scripts/build
       '@scripts/eslint-config': link:../../../scripts/eslint-config
@@ -475,6 +475,7 @@ importers:
       '@modern-js/babel-preset-lib': link:../babel-preset-lib
       '@modern-js/create-request': link:../../server/create-request
       '@modern-js/server-utils': link:../../server/utils
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       fs-extra: 10.0.0
       loader-utils: 2.0.2
@@ -485,7 +486,6 @@ importers:
       '@modern-js/runtime': link:../plugin-runtime
       '@modern-js/server-plugin': link:../../server/plugin
       '@modern-js/tsconfig': link:../../review/tsconfig
-      '@modern-js/types': link:../../toolkit/types
       '@scripts/build': link:../../../scripts/build
       '@scripts/eslint-config': link:../../../scripts/eslint-config
       '@scripts/test': link:../../../scripts/test
@@ -644,6 +644,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/module-tools-hooks': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
@@ -687,6 +688,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22_react@17.0.2
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       '@modern-js/webpack': link:../webpack
       antd: 4.18.4_react-dom@17.0.2+react@17.0.2
@@ -1044,6 +1046,7 @@ importers:
       '@modern-js/css-config': workspace:^1.2.0
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -1062,6 +1065,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.16.7
       '@modern-js/css-config': link:../css-config
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       less: 4.1.2
       less-loader: 10.2.0_less@4.1.2+webpack@5.67.0
@@ -1168,6 +1172,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/module-tools-hooks': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
@@ -1212,6 +1217,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.16.7
       '@modern-js/core': link:../core
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       '@modern-js/webpack': link:../webpack
       axios: 0.24.0
@@ -1262,6 +1268,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -1274,6 +1281,7 @@ importers:
       whistle: ^2.7.18
     dependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       whistle: 2.9.1
     devDependencies:
@@ -1411,6 +1419,7 @@ importers:
       '@modern-js/css-config': workspace:^1.2.0
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -1427,6 +1436,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.16.7
       '@modern-js/css-config': link:../css-config
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       sass: 1.49.0
       sass-loader: 12.4.0_sass@1.49.0+webpack@5.67.0
@@ -1453,6 +1463,7 @@ importers:
       '@modern-js/plugin-analyze': workspace:^1.2.0
       '@modern-js/server-utils': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -1470,6 +1481,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/babel-compiler': link:../../toolkit/compiler/babel
       '@modern-js/server-utils': link:../../server/utils
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       globby: 12.2.0
       json5: 2.2.0
@@ -1676,6 +1688,7 @@ importers:
       '@modern-js/runtime': workspace:^1.2.0
       '@modern-js/runtime-core': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
@@ -1718,6 +1731,7 @@ importers:
       '@modern-js/esbuild-compiler': link:../../toolkit/compiler/esbuild
       '@modern-js/plugin-router': link:../plugin-router
       '@modern-js/plugin-state': link:../plugin-state
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       '@modern-js/webpack': link:../webpack
       '@storybook/addon-actions': 6.4.14_@types+react@17.0.38
@@ -1767,6 +1781,7 @@ importers:
       '@babel/runtime': ^7
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -1784,6 +1799,7 @@ importers:
       typescript: ^4
     dependencies:
       '@babel/runtime': 7.16.7
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       lodash.clonedeep: 4.5.0
       lodash.merge: 4.6.2
@@ -1817,6 +1833,7 @@ importers:
       '@modern-js/testing': workspace:^1.3.0
       '@modern-js/testing-plugin-bff': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@modern-js/webpack': workspace:^1.2.0
       '@scripts/build': workspace:*
@@ -1840,6 +1857,7 @@ importers:
       '@modern-js/babel-compiler': link:../../toolkit/compiler/babel
       '@modern-js/testing': link:../../review/testing
       '@modern-js/testing-plugin-bff': link:../../review/testing-plugin-bff
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       '@modern-js/webpack': link:../webpack
       '@testing-library/jest-dom': 5.16.1
@@ -4224,6 +4242,7 @@ importers:
       '@modern-js/core': workspace:^1.3.0
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -4250,6 +4269,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/babel-preset-lib': link:../../cli/babel-preset-lib
       '@modern-js/plugin': link:../../toolkit/plugin
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       babel-plugin-module-resolver: 4.1.0
       babel-plugin-transform-typescript-metadata: 0.3.2
@@ -4345,6 +4365,7 @@ importers:
       '@modern-js/plugin-i18n': workspace:^1.2.0
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@modern-js/utils': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
@@ -4396,6 +4417,7 @@ importers:
       '@modern-js/plugin-fast-refresh': link:../../cli/plugin-fast-refresh
       '@modern-js/plugin-i18n': link:../../cli/plugin-i18n
       '@modern-js/style-compiler': link:../../toolkit/compiler/style
+      '@modern-js/types': link:../../toolkit/types
       '@modern-js/utils': link:../../toolkit/utils
       chalk: 4.1.2
       chokidar: 3.5.3
@@ -4954,6 +4976,7 @@ importers:
       '@modern-js/plugin': workspace:^1.2.0
       '@modern-js/style-compiler': workspace:^1.2.0
       '@modern-js/tsconfig': workspace:*
+      '@modern-js/types': workspace:^1.2.0
       '@scripts/build': workspace:*
       '@scripts/eslint-config': workspace:*
       '@scripts/test': workspace:*
@@ -4964,6 +4987,7 @@ importers:
       '@babel/runtime': 7.16.7
       '@modern-js/core': link:../../cli/core
       '@modern-js/plugin': link:../plugin
+      '@modern-js/types': link:../types
     devDependencies:
       '@modern-js/style-compiler': link:../compiler/style
       '@modern-js/tsconfig': link:../../review/tsconfig
@@ -8356,24 +8380,6 @@ packages:
 
   /@emotion/weak-memoize/0.2.5:
     resolution: {integrity: sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==}
-
-  /@eslint/eslintrc/0.1.3:
-    resolution: {integrity: sha512-4YVwPkANLeNtRjMekzux1ci8hIaH5eGKktGqR0d3LWsKNn5B2X/1Z6Trxy7jQXl9EBGE6Yj02O+t09FMeRllaA==}
-    engines: {node: ^10.12.0 || >=12.0.0}
-    dependencies:
-      ajv: 6.12.6
-      debug: 4.3.3
-      espree: 7.3.1
-      globals: 12.4.0
-      ignore: 4.0.6
-      import-fresh: 3.3.0
-      js-yaml: 3.14.1
-      lodash: 4.17.21
-      minimatch: 3.0.4
-      strip-json-comments: 3.1.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   /@eslint/eslintrc/0.4.3:
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
@@ -19056,7 +19062,7 @@ packages:
     peerDependencies:
       eslint: ^3.12.0 || ^4 || ^5 || ^6 || ^7
     dependencies:
-      '@eslint/eslintrc': 0.1.3
+      '@eslint/eslintrc': 0.4.3
       cliui: 3.2.0
       eslint: 7.32.0
       eslint-rule-documentation: 1.0.23
@@ -21033,13 +21039,6 @@ packages:
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
-
-  /globals/12.4.0:
-    resolution: {integrity: sha512-BWICuzzDvDoH54NHKCseDanAhE3CeDorgDL5MT6LMXXj2WCnd9UC2szdk4AWLfjdgNBCXLUanXYcpBBKOSWGwg==}
-    engines: {node: '>=8'}
-    dependencies:
-      type-fest: 0.8.1
-    dev: true
 
   /globals/13.12.0:
     resolution: {integrity: sha512-uS8X6lSKN2JumVoXrbUz+uG4BYG+eiawqm3qFcT7ammfbUHeCBoJMlHcec/S3krSk73/AE/f0szYFmgAA3kYZg==}
@@ -32018,6 +32017,7 @@ packages:
   /type-fest/0.8.1:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
+    dev: false
 
   /type-fest/1.4.0:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}

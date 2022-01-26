@@ -1,5 +1,6 @@
 import { createParallelWorkflow, createAsyncPipeline } from '@modern-js/plugin';
-import { registerHook, NormalizedConfig } from '@modern-js/core';
+import { registerHook } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { LessOption, SassOptions } from '@modern-js/style-compiler';
 
 export interface PlatformBuildOption {

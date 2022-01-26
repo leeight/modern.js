@@ -2,7 +2,7 @@ import type { ChildProcess } from 'child_process';
 import * as path from 'path';
 import * as os from 'os';
 import { Import, fs } from '@modern-js/utils';
-import type { NormalizedConfig, CoreOptions } from '@modern-js/core';
+import type { NormalizedConfig, CoreOptions } from '@modern-js/types';
 import type { ITsconfig } from '../types';
 
 const tsPathsTransform: typeof import('../utils/tspaths-transform') =

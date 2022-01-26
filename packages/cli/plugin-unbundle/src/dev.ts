@@ -1,5 +1,5 @@
 import { chalk, logger } from '@modern-js/utils';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 
 export const startTimer = {
   start: 0,

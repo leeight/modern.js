@@ -1,4 +1,4 @@
-import { NormalizedConfig } from '@modern-js/core';
+import { NormalizedConfig } from '@modern-js/types';
 import { getLessConfig, LessOptions } from '@modern-js/css-config';
 import NpmImportPlugin from 'less-plugin-npm-import';
 import { LessOption as ResolvedLessOption } from '@modern-js/style-compiler';

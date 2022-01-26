@@ -1,9 +1,9 @@
 import path from 'path';
 import { createContext } from '@modern-js/plugin';
 import address from 'address';
-import type { IAppContext } from '@modern-js/types';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 import { UserConfig } from './config';
-import { NormalizedConfig } from './config/mergeConfig';
+// import { NormalizedConfig } from './config/mergeConfig';
 
 export type { IAppContext };
 

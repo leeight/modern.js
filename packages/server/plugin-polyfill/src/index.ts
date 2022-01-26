@@ -1,6 +1,6 @@
 import { createPlugin } from '@modern-js/server-core';
 import { NextFunction, ModernServerContext } from '@modern-js/types/server';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { getPolyfillString } from '@modern-js/polyfill-lib';
 import mime from 'mime-types';
 import Parser from 'ua-parser-js';

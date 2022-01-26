@@ -41,6 +41,7 @@
   "dependencies": {
     "@babel/runtime": "^7",
     "@modern-js/utils": "workspace:^1.2.2",
+    "@modern-js/types": "workspace:^1.2.0",
     "whistle": "^2.7.18"
   },
   "devDependencies": {

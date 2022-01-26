@@ -42,6 +42,7 @@
     "@babel/runtime": "^7",
     "@modern-js/css-config": "workspace:^1.2.1",
     "@modern-js/utils": "workspace:^1.2.2",
+    "@modern-js/types": "workspace:^1.2.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
     "less-plugin-npm-import": "^2.1.0"

@@ -1,4 +1,4 @@
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { applyOptionsChain } from '@modern-js/utils';
 
 export interface LessOptions {

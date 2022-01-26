@@ -71,7 +71,7 @@ import type {
 import { Parser } from 'acorn';
 import logger from 'signale';
 import { chalk, createDebugger } from '@modern-js/utils';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 
 // FIXME: declare module 不生效的问题
 const acornClassFields = require('acorn-class-fields');

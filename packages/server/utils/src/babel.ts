@@ -5,7 +5,7 @@ import {
 } from '@modern-js/babel-preset-lib';
 import { TransformOptions } from '@babel/core';
 import { applyOptionsChain, fs, getAlias } from '@modern-js/utils';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import json5 from 'json5';
 
 export * from '@babel/core';

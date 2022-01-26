@@ -1,4 +1,4 @@
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import type { LegacyFileOptions } from 'sass';
 import { applyOptionsChain } from '@modern-js/utils';
 

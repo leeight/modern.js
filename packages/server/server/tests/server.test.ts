@@ -1,6 +1,10 @@
 import path from 'path';
-import { defaultsConfig, NormalizedConfig } from '@modern-js/core';
-import { ModernServerContext, NextFunction } from '@modern-js/types';
+import { defaultsConfig } from '@modern-js/core';
+import type {
+  ModernServerContext,
+  NextFunction,
+  NormalizedConfig,
+} from '@modern-js/types';
 import createServer, { Server } from '../src';
 import { ModernServer } from '../src/server/modern-server';
 import Watcher from '../src/dev-tools/watcher';

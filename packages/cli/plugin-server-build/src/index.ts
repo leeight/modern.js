@@ -4,8 +4,8 @@ import {
   createPlugin,
   useAppContext,
   useResolvedConfigContext,
-  NormalizedConfig,
 } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { compiler } from '@modern-js/babel-compiler';
 import { resolveBabelConfig } from '@modern-js/server-utils';
 

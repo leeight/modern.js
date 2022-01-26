@@ -1,5 +1,6 @@
-import { createPlugin, getModuleNameMapper } from '@modern-js/testing';
-import type { NormalizedConfig } from '@modern-js/core';
+import path from 'path';
+import { createPlugin } from '@modern-js/testing';
+import type { NormalizedConfig } from '@modern-js/types';
 import { modernjs_config_key } from '../../constant';
 
 export const mergeUserJestConfig = async (testUtils: any) => {

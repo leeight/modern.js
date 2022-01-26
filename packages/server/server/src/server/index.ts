@@ -6,12 +6,8 @@ import {
   ConfigContext,
 } from '@modern-js/server-core';
 import { compatRequire, logger as defaultLogger } from '@modern-js/utils';
-import {
-  initAppContext,
-  initAppDir,
-  loadUserConfig,
-  UserConfig,
-} from '@modern-js/core';
+import { initAppContext, initAppDir, loadUserConfig } from '@modern-js/core';
+import type { UserConfig } from '@modern-js/types';
 import { ModernServerOptions, ServerHookRunner, ReadyOptions } from '../type';
 import { metrics as defaultMetrics } from '../libs/metrics';
 import { ModernServer } from './modern-server';

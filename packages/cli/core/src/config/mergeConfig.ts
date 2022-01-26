@@ -1,51 +1,6 @@
 import mergeWith from 'lodash.mergewith';
 import { isFunction } from '@modern-js/utils';
-import { UserConfig, SourceConfig, ToolsConfig } from '.';
-
-export interface NormalizedSourceConfig
-  extends Omit<SourceConfig, 'alias' | 'moduleScopes'> {
-  alias: SourceConfig['alias'] | Array<SourceConfig['alias']>;
-  moduleScopes:
-    | SourceConfig['moduleScopes']
-    | Array<SourceConfig['moduleScopes']>;
-}
-
-export interface NormalizedToolsConfig
-  extends Omit<
-    ToolsConfig,
-    | 'webpack'
-    | 'babel'
-    | 'postcss'
-    | 'autoprefixer'
-    | 'lodash'
-    | 'tsLoader'
-    | 'terser'
-    | 'minifyCss'
-    | 'esbuild'
-  > {
-  webpack: ToolsConfig['webpack'] | Array<NonNullable<ToolsConfig['webpack']>>;
-  babel: ToolsConfig['babel'] | Array<NonNullable<ToolsConfig['babel']>>;
-  postcss: ToolsConfig['postcss'] | Array<NonNullable<ToolsConfig['postcss']>>;
-  autoprefixer:
-    | ToolsConfig['autoprefixer']
-    | Array<NonNullable<ToolsConfig['autoprefixer']>>;
-  lodash: ToolsConfig['lodash'] | Array<ToolsConfig['lodash']>;
-  tsLoader:
-    | ToolsConfig['tsLoader']
-    | Array<NonNullable<ToolsConfig['tsLoader']>>;
-  terser: ToolsConfig['terser'] | Array<NonNullable<ToolsConfig['terser']>>;
-  minifyCss:
-    | ToolsConfig['minifyCss']
-    | Array<NonNullable<ToolsConfig['minifyCss']>>;
-  esbuild: ToolsConfig['esbuild'] | Array<NonNullable<ToolsConfig['esbuild']>>;
-}
-export interface NormalizedConfig
-  extends Omit<Required<UserConfig>, 'source' | 'tools'> {
-  source: NormalizedSourceConfig;
-  tools: NormalizedToolsConfig;
-  cliOptions?: Record<string, any>;
-  _raw: UserConfig;
-}
+import type { UserConfig, NormalizedConfig } from '@modern-js/types';
 
 /**
  * merge configuration from  modern.config.js and plugins.

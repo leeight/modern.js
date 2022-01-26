@@ -16,7 +16,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import webpack, { IgnorePlugin } from 'webpack';
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 import { merge } from 'webpack-merge';
 import WebpackBar from 'webpackbar';
 import { createBabelChain, BabelChain } from '@modern-js/babel-chain';

@@ -1,7 +1,6 @@
 import path from 'path';
 import fs from 'fs';
 import urlJoin from 'url-join';
-import type { NormalizedConfig, IAppContext } from '@modern-js/core';
 import {
   isPlainObject,
   removeLeadingSlash,
@@ -10,7 +9,12 @@ import {
   MAIN_ENTRY_NAME,
   removeTailSlash,
 } from '@modern-js/utils';
-import type { Entrypoint, ServerRoute } from '@modern-js/types';
+import type {
+  Entrypoint,
+  ServerRoute,
+  NormalizedConfig,
+  IAppContext,
+} from '@modern-js/types';
 import { walkDirectory } from './utils';
 
 /**

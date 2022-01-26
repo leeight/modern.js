@@ -5,7 +5,7 @@ import { fs } from '@modern-js/utils';
 import globModule from 'glob';
 import inquirer from 'inquirer';
 import semver from 'semver';
-import { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import axios from './axios';
 import loggerModule from './logger';
 import { registerPackage, registerGroup, unregisterPackage } from './butter';

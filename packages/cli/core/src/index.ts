@@ -4,7 +4,7 @@ import {
   pkgUp,
   ensureAbsolutePath,
   logger,
-  INTERNAL_PLUGINS,
+  // INTERNAL_PLUGINS,
 } from '@modern-js/utils';
 import {
   createAsyncManager,
@@ -18,7 +18,7 @@ import {
 } from '@modern-js/plugin';
 import { enable } from '@modern-js/plugin/node';
 
-import type { Hooks } from '@modern-js/types';
+import type { Hooks, NormalizedConfig, CoreOptions } from '@modern-js/types';
 import { program, Command } from './utils/commander';
 import { resolveConfig, loadUserConfig } from './config';
 import { loadPlugins } from './loadPlugins';
@@ -33,10 +33,10 @@ import {
   useResolvedConfigContext,
 } from './context';
 import { initWatcher } from './initWatcher';
-import { NormalizedConfig } from './config/mergeConfig';
+// import { NormalizedConfig } from './config/mergeConfig';
 import { loadEnv } from './loadEnv';
 
-export type { Hooks };
+export type { Hooks, IAppContext, CoreOptions };
 export * from './config';
 export * from '@modern-js/plugin';
 export * from '@modern-js/plugin/node';
@@ -122,8 +122,6 @@ export {
   ConfigContext,
 };
 
-export type { NormalizedConfig, IAppContext };
-
 const initAppDir = async (cwd?: string): Promise<string> => {
   if (!cwd) {
     // eslint-disable-next-line no-param-reassign
@@ -137,22 +135,6 @@ const initAppDir = async (cwd?: string): Promise<string> => {
 
   return path.dirname(pkg);
 };
-
-export interface CoreOptions {
-  configFile?: string;
-  packageJsonConfig?: string;
-  plugins?: typeof INTERNAL_PLUGINS;
-  beforeUsePlugins?: (
-    plugins: any,
-    config: any,
-  ) => { cli: any; cliPath: any; server: any; serverPath: any }[];
-  options?: {
-    metaName?: string;
-    srcDir?: string;
-    distDir?: string;
-    sharedDir?: string;
-  };
-}
 
 const createCli = () => {
   let hooksRunner: HooksRunner;

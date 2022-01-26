@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { Plugin as RollupPlugin } from 'rollup';
 import mime from 'mime-types';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 import { ASSETS_REGEX } from '../constants';
 
 // FIXME: declare module 不生效的问题

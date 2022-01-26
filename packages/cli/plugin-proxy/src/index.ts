@@ -37,7 +37,7 @@ export default createPlugin(
 
 export type ProxyOptions = string | Record<string, string>;
 
-declare module '@modern-js/core' {
+declare module '@modern-js/types' {
   export interface DevConfig {
     proxy?: ProxyOptions;
   }

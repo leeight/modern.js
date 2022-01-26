@@ -1,4 +1,4 @@
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import build from '../compiler';
 import { MODE } from '../contants';
 import server from './server';

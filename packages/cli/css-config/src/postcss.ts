@@ -1,4 +1,4 @@
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { applyOptionsChain, getBrowserslist } from '@modern-js/utils';
 import type { ProcessOptions, AcceptedPlugin } from 'postcss';
 import { shouldUseSourceMap } from './util';

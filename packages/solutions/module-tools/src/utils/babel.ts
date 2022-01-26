@@ -4,7 +4,7 @@ import {
 } from '@modern-js/babel-preset-module';
 import { TransformOptions } from '@babel/core';
 import { applyOptionsChain, getAlias } from '@modern-js/utils';
-import { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import type { BabelChain } from '@modern-js/babel-chain';
 import { IPackageModeValue, ModuleToolsConfig } from '../types';
 

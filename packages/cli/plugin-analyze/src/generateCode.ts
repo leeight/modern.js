@@ -1,7 +1,11 @@
 import path from 'path';
 import { fs } from '@modern-js/utils';
-import { IAppContext, mountHook, NormalizedConfig } from '@modern-js/core';
-import type { Entrypoint } from '@modern-js/types';
+import { mountHook } from '@modern-js/core';
+import type {
+  Entrypoint,
+  IAppContext,
+  NormalizedConfig,
+} from '@modern-js/types';
 import * as templates from './templates';
 import { getClientRoutes } from './getClientRoutes';
 import {

@@ -13,7 +13,7 @@ import type { Configuration } from 'webpack';
 import type Chain from 'webpack-chain';
 import type { ServerRoute } from '@modern-js/types';
 
-declare module '@modern-js/core' {
+declare module '@modern-js/types' {
   interface UserConfig {
     bff?: {
       prefix?: string;

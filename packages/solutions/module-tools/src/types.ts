@@ -1,6 +1,6 @@
 import type { OutputConfig, SourceConfig } from '@modern-js/core/config';
 import type { ImportStyleType } from '@modern-js/babel-preset-module';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import type { LoggerText } from './features/build/logger/logText';
 import type { Platform } from './features/build/build-platform';
 

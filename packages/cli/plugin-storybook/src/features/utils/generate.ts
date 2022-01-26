@@ -1,5 +1,5 @@
 import path from 'path';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { fs, Import, normalizeOutputPath } from '@modern-js/utils';
 import { STORYBOOK_TEMPLATE_DIR } from '../constants';
 

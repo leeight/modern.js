@@ -3,7 +3,7 @@ import type {
   NormalizedConfig,
   IAppContext,
   CoreOptions,
-} from '@modern-js/core';
+} from '@modern-js/types';
 
 const core: typeof import('@modern-js/core') = Import.lazy(
   '@modern-js/core',

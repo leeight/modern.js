@@ -1,5 +1,5 @@
 import * as http from 'http';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 import { Options, RequestHandler } from 'http-proxy-middleware';
 
 export interface ProxyOptions extends Options {

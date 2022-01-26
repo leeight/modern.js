@@ -4,7 +4,7 @@ import type {
   NormalizedConfig,
   IAppContext,
   CoreOptions,
-} from '@modern-js/core';
+} from '@modern-js/types';
 import type { ModuleToolsOutput } from '../types';
 
 const argv: typeof import('process.argv').default = Import.lazy(

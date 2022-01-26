@@ -4,7 +4,7 @@ import type {
   NormalizedConfig,
   IAppContext,
   CoreOptions,
-} from '@modern-js/core';
+} from '@modern-js/types';
 import type { ICompilerResult, PostcssOption } from '@modern-js/style-compiler';
 import type { ModuleToolsOutput } from '../types';
 

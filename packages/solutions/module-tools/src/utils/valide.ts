@@ -1,5 +1,5 @@
 import { validAlias } from '@modern-js/utils';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 
 export interface IValideOption {
   modernConfig: NormalizedConfig;

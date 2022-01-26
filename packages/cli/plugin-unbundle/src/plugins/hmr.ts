@@ -5,7 +5,7 @@ import MagicString from 'magic-string';
 import { Parser } from 'acorn';
 import { CallExpression, MemberExpression, Identifier, Literal } from 'estree';
 import { simple as esWalk } from 'acorn-walk';
-import { IAppContext, NormalizedConfig } from '@modern-js/core';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 import { isJsRequest, isCSSRequest } from '../utils';
 import { DEV_CLIENT_URL } from '../constants';
 import { fileToModules } from '../AssetModule';

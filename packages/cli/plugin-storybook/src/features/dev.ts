@@ -1,5 +1,5 @@
 import { Import } from '@modern-js/utils';
-import type { NormalizedConfig } from '@modern-js/core';
+import type { NormalizedConfig } from '@modern-js/types';
 import { valid } from './utils/valid';
 
 const core: typeof import('@modern-js/core') = Import.lazy(
