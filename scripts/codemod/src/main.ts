@@ -4,7 +4,7 @@
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
-// import glob from 'glob';
+import glob from 'glob';
 import JSON5 from 'json5';
 
 const kProjectDir = path.resolve(__dirname, '../../../');
@@ -250,6 +250,7 @@ function fixWorkspacePackagesVersions(file: string) {
   const ignoredPkg = new Set<string>([
     '@scripts/build',
     '@scripts/test',
+    '@scripts/eslint-config',
     '@modern-js/tsconfig',
     '@modern-js/eslint-config',
   ]);
@@ -414,16 +415,16 @@ function addMissingEslintConfig() {
 }
 
 function main() {
-  // const files = glob.sync('**/package.json', {
-  //   cwd: kProjectDir,
-  //   nodir: true,
-  //   ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
-  // });
+  const files = glob.sync('**/package.json', {
+    cwd: kProjectDir,
+    nodir: true,
+    ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
+  });
   // files.forEach(addMissingDeps);
   // files.forEach(fixTypesField);
-  // files.forEach(getWorkspacePackages);
-  // files.forEach(fixWorkspacePackagesVersions);
-  addMissingEslintConfig();
+  files.forEach(getWorkspacePackages);
+  files.forEach(fixWorkspacePackagesVersions);
+  // addMissingEslintConfig();
   // files.forEach(addPublishConfig);
   // console.log([...kWorkspace]);
 

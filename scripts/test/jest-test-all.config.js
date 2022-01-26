@@ -1,3 +1,7 @@
+const path = require('path');
+
+const rootDir = path.resolve(`${__dirname}../../..`);
+
 module.exports = {
   collectCoverage: process.env.CI === 'true',
   collectCoverageFrom: ['<rootDir>/packages/**/src/**/*.ts'],
@@ -13,8 +17,8 @@ module.exports = {
   moduleNameMapper: {},
   globals: {},
   testEnvironment: 'jsdom',
-  resolver: '<rootDir>/jest.resolver.js',
-  rootDir: __dirname,
+  resolver: require.resolve('./jest.resolver.js'),
+  rootDir,
   testTimeout: 15 * 1000,
   testMatch: [
     '<rootDir>/packages/**/src/**/*.test.[jt]s?(x)',

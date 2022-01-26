@@ -16,8 +16,7 @@ import type {
   Logger,
 } from '@modern-js/types/server';
 import type { UserConfig } from '@modern-js/core';
-import type { IAppContext } from '@modern-js/types';
-import type { NormalizedConfig } from '@modern-js/types';
+import type { IAppContext, NormalizedConfig } from '@modern-js/types';
 
 enable();
 

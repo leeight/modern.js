@@ -205,6 +205,10 @@
       "path": "packages/cli/plugin-analyze"
     },
     {
+      "name": "@modern-js/plugin-garfish",
+      "path": "packages/cli/plugin-garfish"
+    },
+    {
       "name": "@modern-js/plugin-bff",
       "path": "packages/cli/plugin-bff"
     },
@@ -361,8 +365,8 @@
       "path": "packages/generator/generators/server-generator"
     },
     {
-      "name": "@modern-js/server-plugin",
-      "path": "packages/server/plugin"
+      "name": "@modern-js/server-core",
+      "path": "packages/server/core"
     },
     {
       "name": "@modern-js/server-utils",
@@ -463,7 +467,8 @@
       "**/*/adapters/**/index.js": true,
       "**/*/adapters/**/index.ts": true,
       "**/coverage": true,
-      "**/dist": true
+      "**/dist": true,
+      "**/.rush": true
     },
     "search.followSymlinks": false,
     "search.useIgnoreFiles": true,
@@ -481,18 +486,12 @@
       "**/yarn.lock": true
     },
     //
-    "editor.rulers": [
-      80,
-      120
-    ],
+    "editor.rulers": [80, 120],
     "files.eol": "\n",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     //
-    "todo-tree.general.tags": [
-      "TODO:",
-      "FIXME:"
-    ],
+    "todo-tree.general.tags": ["TODO:", "FIXME:"],
     "todo-tree.highlights.defaultHighlight": {
       "gutterIcon": true
     },

@@ -42,7 +42,7 @@
     "@babel/runtime": "^7",
     "@modern-js/css-config": "workspace:^1.2.1",
     "@modern-js/utils": "workspace:^1.2.2",
-    "@modern-js/types": "workspace:^1.2.0",
+    "@modern-js/types": "workspace:^1.2.1",
     "sass": "^1.45.0",
     "sass-loader": "^12.4.0"
   },

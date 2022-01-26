@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "@modern-js/babel-preset-app": "workspace:^1.2.0"
+    "@modern-js/babel-preset-app": "workspace:^1.2.1"
   },
   "devDependencies": {
     "esbuild": "^0.14.5",

@@ -247,14 +247,12 @@
     //   "[^@]+@users\\.noreply\\.github\\.com",
     //   "travis@example\\.org"
     // ],
-
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
     // "sampleEmail": "mrexample@users.noreply.github.com",
-
     /**
      * The commit message to use when committing changes during 'rush publish'.
      *
@@ -263,7 +261,6 @@
      * in the commit message, and then customize Rush's message to contain that string.
      */
     // "versionBumpCommitMessage": "Bump versions [skip ci]",
-
     /**
      * The commit message to use when committing changes during 'rush version'.
      *
@@ -291,13 +288,11 @@
      * to retrieve the latest activity for the remote master branch.
      */
     // "url": "https://github.com/microsoft/rush-example",
-
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
      */
     // "defaultBranch": "master",
-
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
@@ -457,437 +452,437 @@
     //   "projectFolder": "tools/my-toolchain",
     //   "reviewCategory": "tools"
     // }
-  {
-    "packageName": "@modern-js-app/eslint-config",
-    "projectFolder": "packages/review/eslint-config-app"
-  },
-  {
-    "packageName": "@modern-js/adapter-helpers",
-    "projectFolder": "packages/server/adapter-helpers"
-  },
-  {
-    "packageName": "@modern-js/app-tools",
-    "projectFolder": "packages/solutions/app-tools"
-  },
-  {
-    "packageName": "@modern-js/babel-chain",
-    "projectFolder": "packages/toolkit/babel-chain"
-  },
-  {
-    "packageName": "@modern-js/babel-compiler",
-    "projectFolder": "packages/toolkit/compiler/babel"
-  },
-  {
-    "packageName": "@modern-js/babel-preset-app",
-    "projectFolder": "packages/cli/babel-preset-app"
-  },
-  {
-    "packageName": "@modern-js/babel-preset-base",
-    "projectFolder": "packages/cli/babel-preset-base"
-  },
-  {
-    "packageName": "@modern-js/babel-preset-lib",
-    "projectFolder": "packages/cli/babel-preset-lib"
-  },
-  {
-    "packageName": "@modern-js/babel-preset-module",
-    "projectFolder": "packages/cli/babel-preset-module"
-  },
-  {
-    "packageName": "@modern-js/base-generator",
-    "projectFolder": "packages/generator/generators/base-generator"
-  },
-  {
-    "packageName": "@modern-js/bff-generator",
-    "projectFolder": "packages/generator/generators/bff-generator"
-  },
-  {
-    "packageName": "@modern-js/bff-refactor-generator",
-    "projectFolder": "packages/generator/generators/bff-refactor-generator"
-  },
-  {
-    "packageName": "@modern-js/bff-runtime",
-    "projectFolder": "packages/server/bff-runtime"
-  },
-  {
-    "packageName": "@modern-js/bff-utils",
-    "projectFolder": "packages/server/bff-utils"
-  },
-  {
-    "packageName": "@modern-js/changeset-generator",
-    "projectFolder": "packages/generator/generators/changeset-generator"
-  },
-  {
-    "packageName": "@modern-js/cloud-deploy-generator",
-    "projectFolder": "packages/generator/generators/cloud-deploy-generator"
-  },
-  {
-    "packageName": "@modern-js/core",
-    "projectFolder": "packages/cli/core"
-  },
-  {
-    "packageName": "@modern-js/create",
-    "projectFolder": "packages/toolkit/create"
-  },
-  {
-    "packageName": "@modern-js/create-request",
-    "projectFolder": "packages/server/create-request"
-  },
-  {
-    "packageName": "@modern-js/css-config",
-    "projectFolder": "packages/cli/css-config"
-  },
-  {
-    "packageName": "@modern-js/dependence-generator",
-    "projectFolder": "packages/generator/generators/dependence-generator"
-  },
-  {
-    "packageName": "@modern-js/docsite-generator",
-    "projectFolder": "packages/generator/generators/docsite-generator"
-  },
-  {
-    "packageName": "@modern-js/doctor",
-    "projectFolder": "packages/toolkit/doctor"
-  },
-  {
-    "packageName": "@modern-js/electron-generator",
-    "projectFolder": "packages/generator/generators/electron-generator"
-  },
-  {
-    "packageName": "@modern-js/electron-independence-generator",
-    "projectFolder": "packages/generator/generators/electron-independence-generator"
-  },
-  {
-    "packageName": "@modern-js/entry-generator",
-    "projectFolder": "packages/generator/generators/entry-generator"
-  },
-  {
-    "packageName": "@modern-js/esbuild-compiler",
-    "projectFolder": "packages/toolkit/compiler/esbuild"
-  },
-  {
-    "packageName": "@modern-js/eslint-config",
-    "projectFolder": "packages/review/eslint-config"
-  },
-  {
-    "packageName": "@modern-js/eslint-generator",
-    "projectFolder": "packages/generator/generators/eslint-generator"
-  },
-  {
-    "packageName": "@modern-js/esmpack",
-    "projectFolder": "packages/toolkit/esmpack"
-  },
-  {
-    "packageName": "@modern-js/freeze",
-    "projectFolder": "packages/toolkit/freeze"
-  },
-  {
-    "packageName": "@modern-js/generator-cases",
-    "projectFolder": "packages/generator/generator-cases"
-  },
-  {
-    "packageName": "@modern-js/generator-common",
-    "projectFolder": "packages/generator/generator-common"
-  },
-  {
-    "packageName": "@modern-js/generator-generator",
-    "projectFolder": "packages/generator/generators/generator-generator"
-  },
-  {
-    "packageName": "@modern-js/generator-plugin",
-    "projectFolder": "packages/generator/generator-plugin"
-  },
-  {
-    "packageName": "@modern-js/generator-plugin-plugin",
-    "projectFolder": "packages/generator/plugins/generator-plugin"
-  },
-  {
-    "packageName": "@modern-js/generator-utils",
-    "projectFolder": "packages/generator/generator-utils"
-  },
-  {
-    "packageName": "@modern-js/hmr-client",
-    "projectFolder": "packages/server/hmr-client"
-  },
-  {
-    "packageName": "@modern-js/i18n-cli-language-detector",
-    "projectFolder": "packages/cli/i18n-cli-language-detector"
-  },
-  {
-    "packageName": "@modern-js/load-config",
-    "projectFolder": "packages/toolkit/load-config"
-  },
-  {
-    "packageName": "@modern-js/module-generator",
-    "projectFolder": "packages/generator/generators/module-generator"
-  },
-  {
-    "packageName": "@modern-js/module-tools",
-    "projectFolder": "packages/solutions/module-tools"
-  },
-  {
-    "packageName": "@modern-js/module-tools-hooks",
-    "projectFolder": "packages/toolkit/module-tools-hooks"
-  },
-  {
-    "packageName": "@modern-js/monorepo-generator",
-    "projectFolder": "packages/generator/generators/monorepo-generator"
-  },
-  {
-    "packageName": "@modern-js/monorepo-tools",
-    "projectFolder": "packages/solutions/monorepo-tools"
-  },
-  {
-    "packageName": "@modern-js/mwa-generator",
-    "projectFolder": "packages/generator/generators/mwa-generator"
-  },
-  {
-    "packageName": "@modern-js/new-action",
-    "projectFolder": "packages/generator/new-action"
-  },
-  {
-    "packageName": "@modern-js/node-bundle-require",
-    "projectFolder": "packages/toolkit/node-bundle-require"
-  },
-  {
-    "packageName": "@modern-js/plugin",
-    "projectFolder": "packages/toolkit/plugin"
-  },
-  {
-    "packageName": "@modern-js/plugin-analyze",
-    "projectFolder": "packages/cli/plugin-analyze"
-  },
-  {
-    "packageName": "@modern-js/plugin-bff",
-    "projectFolder": "packages/cli/plugin-bff"
-  },
-  {
-    "packageName": "@modern-js/plugin-cdn-cos",
-    "projectFolder": "packages/cli/plugin-cdn-cos"
-  },
-  {
-    "packageName": "@modern-js/plugin-cdn-oss",
-    "projectFolder": "packages/cli/plugin-cdn-oss"
-  },
-  {
-    "packageName": "@modern-js/plugin-changeset",
-    "projectFolder": "packages/cli/plugin-changeset"
-  },
-  {
-    "packageName": "@modern-js/plugin-docsite",
-    "projectFolder": "packages/cli/plugin-docsite"
-  },
-  {
-    "packageName": "@modern-js/plugin-egg",
-    "projectFolder": "packages/server/plugin-egg"
-  },
-  {
-    "packageName": "@modern-js/plugin-esbuild",
-    "projectFolder": "packages/cli/plugin-esbuild"
-  },
-  {
-    "packageName": "@modern-js/plugin-express",
-    "projectFolder": "packages/server/plugin-express"
-  },
-  {
-    "packageName": "@modern-js/plugin-fast-refresh",
-    "projectFolder": "packages/cli/plugin-fast-refresh"
-  },
-  {
-    "packageName": "@modern-js/plugin-fetch",
-    "projectFolder": "packages/cli/plugin-fetch"
-  },
-  {
-    "packageName": "@modern-js/plugin-i18n",
-    "projectFolder": "packages/cli/plugin-i18n"
-  },
-  {
-    "packageName": "@modern-js/plugin-jarvis",
-    "projectFolder": "packages/cli/plugin-jarvis"
-  },
-  {
-    "packageName": "@modern-js/plugin-koa",
-    "projectFolder": "packages/server/plugin-koa"
-  },
-  {
-    "packageName": "@modern-js/plugin-lambda-fc",
-    "projectFolder": "packages/cli/plugin-lambda-fc"
-  },
-  {
-    "packageName": "@modern-js/plugin-lambda-scf",
-    "projectFolder": "packages/cli/plugin-lambda-scf"
-  },
-  {
-    "packageName": "@modern-js/plugin-less",
-    "projectFolder": "packages/cli/plugin-less"
-  },
-  {
-    "packageName": "@modern-js/plugin-micro-frontend",
-    "projectFolder": "packages/cli/plugin-micro-frontend"
-  },
-  {
-    "packageName": "@modern-js/plugin-multiprocess",
-    "projectFolder": "packages/cli/plugin-multiprocess"
-  },
-  {
-    "packageName": "@modern-js/plugin-nest",
-    "projectFolder": "packages/server/plugin-nest"
-  },
-  {
-    "packageName": "@modern-js/plugin-nocode",
-    "projectFolder": "packages/cli/plugin-nocode"
-  },
-  {
-    "packageName": "@modern-js/plugin-polyfill",
-    "projectFolder": "packages/server/plugin-polyfill"
-  },
-  {
-    "packageName": "@modern-js/plugin-proxy",
-    "projectFolder": "packages/cli/plugin-proxy"
-  },
-  {
-    "packageName": "@modern-js/plugin-router",
-    "projectFolder": "packages/cli/plugin-router"
-  },
-  {
-    "packageName": "@modern-js/plugin-sass",
-    "projectFolder": "packages/cli/plugin-sass"
-  },
-  {
-    "packageName": "@modern-js/plugin-server",
-    "projectFolder": "packages/server/plugin-server"
-  },
-  {
-    "packageName": "@modern-js/plugin-server-build",
-    "projectFolder": "packages/cli/plugin-server-build"
-  },
-  {
-    "packageName": "@modern-js/plugin-ssg",
-    "projectFolder": "packages/cli/plugin-ssg"
-  },
-  {
-    "packageName": "@modern-js/plugin-ssr",
-    "projectFolder": "packages/cli/plugin-ssr"
-  },
-  {
-    "packageName": "@modern-js/plugin-state",
-    "projectFolder": "packages/cli/plugin-state"
-  },
-  {
-    "packageName": "@modern-js/plugin-static-hosting",
-    "projectFolder": "packages/cli/static-hosting"
-  },
-  {
-    "packageName": "@modern-js/plugin-storybook",
-    "projectFolder": "packages/cli/plugin-storybook"
-  },
-  {
-    "packageName": "@modern-js/plugin-tailwindcss",
-    "projectFolder": "packages/cli/plugin-tailwind"
-  },
-  {
-    "packageName": "@modern-js/plugin-testing",
-    "projectFolder": "packages/cli/plugin-testing"
-  },
-  {
-    "packageName": "@modern-js/plugin-unbundle",
-    "projectFolder": "packages/cli/plugin-unbundle"
-  },
-  {
-    "packageName": "@modern-js/repo-generator",
-    "projectFolder": "packages/generator/generators/repo-generator"
-  },
-  {
-    "packageName": "@modern-js/runtime",
-    "projectFolder": "packages/cli/plugin-runtime"
-  },
-  {
-    "packageName": "@modern-js/runtime-core",
-    "projectFolder": "packages/runtime"
-  },
-  {
-    "packageName": "@modern-js/server",
-    "projectFolder": "packages/server/server"
-  },
-  {
-    "packageName": "@modern-js/server-generator",
-    "projectFolder": "packages/generator/generators/server-generator"
-  },
-  {
-    "packageName": "@modern-js/server-plugin",
-    "projectFolder": "packages/server/plugin"
-  },
-  {
-    "packageName": "@modern-js/server-utils",
-    "projectFolder": "packages/server/utils"
-  },
-  {
-    "packageName": "@modern-js/ssg-generator",
-    "projectFolder": "packages/generator/generators/ssg-generator"
-  },
-  {
-    "packageName": "@modern-js/storybook-generator",
-    "projectFolder": "packages/generator/generators/storybook-generator"
-  },
-  {
-    "packageName": "@modern-js/style-compiler",
-    "projectFolder": "packages/toolkit/compiler/style"
-  },
-  {
-    "packageName": "@modern-js/tailwindcss-generator",
-    "projectFolder": "packages/generator/generators/tailwindcss-generator"
-  },
-  {
-    "packageName": "@modern-js/test-generator",
-    "projectFolder": "packages/generator/generators/test-generator"
-  },
-  {
-    "packageName": "@modern-js/testing",
-    "projectFolder": "packages/review/testing"
-  },
-  {
-    "packageName": "@modern-js/testing-plugin-bff",
-    "projectFolder": "packages/review/testing-plugin-bff"
-  },
-  {
-    "packageName": "@modern-js/tsconfig",
-    "projectFolder": "packages/review/tsconfig"
-  },
-  {
-    "packageName": "@modern-js/types",
-    "projectFolder": "packages/toolkit/types"
-  },
-  {
-    "packageName": "@modern-js/unbundle-generator",
-    "projectFolder": "packages/generator/generators/unbundle-generator"
-  },
-  {
-    "packageName": "@modern-js/update",
-    "projectFolder": "packages/toolkit/update"
-  },
-  {
-    "packageName": "@modern-js/utils",
-    "projectFolder": "packages/toolkit/utils"
-  },
-  {
-    "packageName": "@modern-js/webpack",
-    "projectFolder": "packages/cli/webpack"
-  },
-  {
-    "packageName": "@scripts/build",
-    "projectFolder": "scripts/build"
-  },
-  {
-    "packageName": "@scripts/test",
-    "projectFolder": "scripts/test"
-  },
-  {
-    "packageName": "@scripts/codemod",
-    "projectFolder": "scripts/codemod"
-  },
-  {
-    "packageName": "@scripts/eslint-config",
-    "projectFolder": "scripts/eslint-config"
-  }
+    {
+      "packageName": "@modern-js-app/eslint-config",
+      "projectFolder": "packages/review/eslint-config-app"
+    },
+    {
+      "packageName": "@modern-js/adapter-helpers",
+      "projectFolder": "packages/server/adapter-helpers"
+    },
+    {
+      "packageName": "@modern-js/app-tools",
+      "projectFolder": "packages/solutions/app-tools"
+    },
+    {
+      "packageName": "@modern-js/babel-chain",
+      "projectFolder": "packages/toolkit/babel-chain"
+    },
+    {
+      "packageName": "@modern-js/babel-compiler",
+      "projectFolder": "packages/toolkit/compiler/babel"
+    },
+    {
+      "packageName": "@modern-js/babel-preset-app",
+      "projectFolder": "packages/cli/babel-preset-app"
+    },
+    {
+      "packageName": "@modern-js/babel-preset-base",
+      "projectFolder": "packages/cli/babel-preset-base"
+    },
+    {
+      "packageName": "@modern-js/babel-preset-lib",
+      "projectFolder": "packages/cli/babel-preset-lib"
+    },
+    {
+      "packageName": "@modern-js/babel-preset-module",
+      "projectFolder": "packages/cli/babel-preset-module"
+    },
+    {
+      "packageName": "@modern-js/base-generator",
+      "projectFolder": "packages/generator/generators/base-generator"
+    },
+    {
+      "packageName": "@modern-js/bff-generator",
+      "projectFolder": "packages/generator/generators/bff-generator"
+    },
+    {
+      "packageName": "@modern-js/bff-refactor-generator",
+      "projectFolder": "packages/generator/generators/bff-refactor-generator"
+    },
+    {
+      "packageName": "@modern-js/bff-runtime",
+      "projectFolder": "packages/server/bff-runtime"
+    },
+    {
+      "packageName": "@modern-js/bff-utils",
+      "projectFolder": "packages/server/bff-utils"
+    },
+    {
+      "packageName": "@modern-js/changeset-generator",
+      "projectFolder": "packages/generator/generators/changeset-generator"
+    },
+    {
+      "packageName": "@modern-js/cloud-deploy-generator",
+      "projectFolder": "packages/generator/generators/cloud-deploy-generator"
+    },
+    {
+      "packageName": "@modern-js/core",
+      "projectFolder": "packages/cli/core"
+    },
+    {
+      "packageName": "@modern-js/create",
+      "projectFolder": "packages/toolkit/create"
+    },
+    {
+      "packageName": "@modern-js/create-request",
+      "projectFolder": "packages/server/create-request"
+    },
+    {
+      "packageName": "@modern-js/css-config",
+      "projectFolder": "packages/cli/css-config"
+    },
+    {
+      "packageName": "@modern-js/dependence-generator",
+      "projectFolder": "packages/generator/generators/dependence-generator"
+    },
+    {
+      "packageName": "@modern-js/docsite-generator",
+      "projectFolder": "packages/generator/generators/docsite-generator"
+    },
+    {
+      "packageName": "@modern-js/doctor",
+      "projectFolder": "packages/toolkit/doctor"
+    },
+    {
+      "packageName": "@modern-js/electron-generator",
+      "projectFolder": "packages/generator/generators/electron-generator"
+    },
+    {
+      "packageName": "@modern-js/electron-independence-generator",
+      "projectFolder": "packages/generator/generators/electron-independence-generator"
+    },
+    {
+      "packageName": "@modern-js/entry-generator",
+      "projectFolder": "packages/generator/generators/entry-generator"
+    },
+    {
+      "packageName": "@modern-js/esbuild-compiler",
+      "projectFolder": "packages/toolkit/compiler/esbuild"
+    },
+    {
+      "packageName": "@modern-js/eslint-config",
+      "projectFolder": "packages/review/eslint-config"
+    },
+    {
+      "packageName": "@modern-js/eslint-generator",
+      "projectFolder": "packages/generator/generators/eslint-generator"
+    },
+    {
+      "packageName": "@modern-js/esmpack",
+      "projectFolder": "packages/toolkit/esmpack"
+    },
+    {
+      "packageName": "@modern-js/freeze",
+      "projectFolder": "packages/toolkit/freeze"
+    },
+    {
+      "packageName": "@modern-js/generator-cases",
+      "projectFolder": "packages/generator/generator-cases"
+    },
+    {
+      "packageName": "@modern-js/generator-common",
+      "projectFolder": "packages/generator/generator-common"
+    },
+    {
+      "packageName": "@modern-js/generator-generator",
+      "projectFolder": "packages/generator/generators/generator-generator"
+    },
+    {
+      "packageName": "@modern-js/generator-plugin",
+      "projectFolder": "packages/generator/generator-plugin"
+    },
+    {
+      "packageName": "@modern-js/generator-plugin-plugin",
+      "projectFolder": "packages/generator/plugins/generator-plugin"
+    },
+    {
+      "packageName": "@modern-js/generator-utils",
+      "projectFolder": "packages/generator/generator-utils"
+    },
+    {
+      "packageName": "@modern-js/hmr-client",
+      "projectFolder": "packages/server/hmr-client"
+    },
+    {
+      "packageName": "@modern-js/i18n-cli-language-detector",
+      "projectFolder": "packages/cli/i18n-cli-language-detector"
+    },
+    {
+      "packageName": "@modern-js/load-config",
+      "projectFolder": "packages/toolkit/load-config"
+    },
+    {
+      "packageName": "@modern-js/module-generator",
+      "projectFolder": "packages/generator/generators/module-generator"
+    },
+    {
+      "packageName": "@modern-js/module-tools",
+      "projectFolder": "packages/solutions/module-tools"
+    },
+    {
+      "packageName": "@modern-js/module-tools-hooks",
+      "projectFolder": "packages/toolkit/module-tools-hooks"
+    },
+    {
+      "packageName": "@modern-js/monorepo-generator",
+      "projectFolder": "packages/generator/generators/monorepo-generator"
+    },
+    {
+      "packageName": "@modern-js/monorepo-tools",
+      "projectFolder": "packages/solutions/monorepo-tools"
+    },
+    {
+      "packageName": "@modern-js/mwa-generator",
+      "projectFolder": "packages/generator/generators/mwa-generator"
+    },
+    {
+      "packageName": "@modern-js/new-action",
+      "projectFolder": "packages/generator/new-action"
+    },
+    {
+      "packageName": "@modern-js/node-bundle-require",
+      "projectFolder": "packages/toolkit/node-bundle-require"
+    },
+    {
+      "packageName": "@modern-js/plugin",
+      "projectFolder": "packages/toolkit/plugin"
+    },
+    {
+      "packageName": "@modern-js/plugin-analyze",
+      "projectFolder": "packages/cli/plugin-analyze"
+    },
+    {
+      "packageName": "@modern-js/plugin-bff",
+      "projectFolder": "packages/cli/plugin-bff"
+    },
+    {
+      "packageName": "@modern-js/plugin-cdn-cos",
+      "projectFolder": "packages/cli/plugin-cdn-cos"
+    },
+    {
+      "packageName": "@modern-js/plugin-cdn-oss",
+      "projectFolder": "packages/cli/plugin-cdn-oss"
+    },
+    {
+      "packageName": "@modern-js/plugin-changeset",
+      "projectFolder": "packages/cli/plugin-changeset"
+    },
+    {
+      "packageName": "@modern-js/plugin-docsite",
+      "projectFolder": "packages/cli/plugin-docsite"
+    },
+    {
+      "packageName": "@modern-js/plugin-egg",
+      "projectFolder": "packages/server/plugin-egg"
+    },
+    {
+      "packageName": "@modern-js/plugin-esbuild",
+      "projectFolder": "packages/cli/plugin-esbuild"
+    },
+    {
+      "packageName": "@modern-js/plugin-express",
+      "projectFolder": "packages/server/plugin-express"
+    },
+    {
+      "packageName": "@modern-js/plugin-fast-refresh",
+      "projectFolder": "packages/cli/plugin-fast-refresh"
+    },
+    {
+      "packageName": "@modern-js/plugin-fetch",
+      "projectFolder": "packages/cli/plugin-fetch"
+    },
+    {
+      "packageName": "@modern-js/plugin-i18n",
+      "projectFolder": "packages/cli/plugin-i18n"
+    },
+    {
+      "packageName": "@modern-js/plugin-jarvis",
+      "projectFolder": "packages/cli/plugin-jarvis"
+    },
+    {
+      "packageName": "@modern-js/plugin-koa",
+      "projectFolder": "packages/server/plugin-koa"
+    },
+    {
+      "packageName": "@modern-js/plugin-lambda-fc",
+      "projectFolder": "packages/cli/plugin-lambda-fc"
+    },
+    {
+      "packageName": "@modern-js/plugin-lambda-scf",
+      "projectFolder": "packages/cli/plugin-lambda-scf"
+    },
+    {
+      "packageName": "@modern-js/plugin-less",
+      "projectFolder": "packages/cli/plugin-less"
+    },
+    {
+      "packageName": "@modern-js/plugin-garfish",
+      "projectFolder": "packages/cli/plugin-garfish"
+    },
+    {
+      "packageName": "@modern-js/plugin-multiprocess",
+      "projectFolder": "packages/cli/plugin-multiprocess"
+    },
+    {
+      "packageName": "@modern-js/plugin-nest",
+      "projectFolder": "packages/server/plugin-nest"
+    },
+    {
+      "packageName": "@modern-js/plugin-nocode",
+      "projectFolder": "packages/cli/plugin-nocode"
+    },
+    {
+      "packageName": "@modern-js/plugin-polyfill",
+      "projectFolder": "packages/server/plugin-polyfill"
+    },
+    {
+      "packageName": "@modern-js/plugin-proxy",
+      "projectFolder": "packages/cli/plugin-proxy"
+    },
+    {
+      "packageName": "@modern-js/plugin-router",
+      "projectFolder": "packages/cli/plugin-router"
+    },
+    {
+      "packageName": "@modern-js/plugin-sass",
+      "projectFolder": "packages/cli/plugin-sass"
+    },
+    {
+      "packageName": "@modern-js/plugin-server",
+      "projectFolder": "packages/server/plugin-server"
+    },
+    {
+      "packageName": "@modern-js/plugin-server-build",
+      "projectFolder": "packages/cli/plugin-server-build"
+    },
+    {
+      "packageName": "@modern-js/plugin-ssg",
+      "projectFolder": "packages/cli/plugin-ssg"
+    },
+    {
+      "packageName": "@modern-js/plugin-ssr",
+      "projectFolder": "packages/cli/plugin-ssr"
+    },
+    {
+      "packageName": "@modern-js/plugin-state",
+      "projectFolder": "packages/cli/plugin-state"
+    },
+    {
+      "packageName": "@modern-js/plugin-static-hosting",
+      "projectFolder": "packages/cli/static-hosting"
+    },
+    {
+      "packageName": "@modern-js/plugin-storybook",
+      "projectFolder": "packages/cli/plugin-storybook"
+    },
+    {
+      "packageName": "@modern-js/plugin-tailwindcss",
+      "projectFolder": "packages/cli/plugin-tailwind"
+    },
+    {
+      "packageName": "@modern-js/plugin-testing",
+      "projectFolder": "packages/cli/plugin-testing"
+    },
+    {
+      "packageName": "@modern-js/plugin-unbundle",
+      "projectFolder": "packages/cli/plugin-unbundle"
+    },
+    {
+      "packageName": "@modern-js/repo-generator",
+      "projectFolder": "packages/generator/generators/repo-generator"
+    },
+    {
+      "packageName": "@modern-js/runtime",
+      "projectFolder": "packages/cli/plugin-runtime"
+    },
+    {
+      "packageName": "@modern-js/runtime-core",
+      "projectFolder": "packages/runtime"
+    },
+    {
+      "packageName": "@modern-js/server",
+      "projectFolder": "packages/server/server"
+    },
+    {
+      "packageName": "@modern-js/server-generator",
+      "projectFolder": "packages/generator/generators/server-generator"
+    },
+    {
+      "packageName": "@modern-js/server-core",
+      "projectFolder": "packages/server/core"
+    },
+    {
+      "packageName": "@modern-js/server-utils",
+      "projectFolder": "packages/server/utils"
+    },
+    {
+      "packageName": "@modern-js/ssg-generator",
+      "projectFolder": "packages/generator/generators/ssg-generator"
+    },
+    {
+      "packageName": "@modern-js/storybook-generator",
+      "projectFolder": "packages/generator/generators/storybook-generator"
+    },
+    {
+      "packageName": "@modern-js/style-compiler",
+      "projectFolder": "packages/toolkit/compiler/style"
+    },
+    {
+      "packageName": "@modern-js/tailwindcss-generator",
+      "projectFolder": "packages/generator/generators/tailwindcss-generator"
+    },
+    {
+      "packageName": "@modern-js/test-generator",
+      "projectFolder": "packages/generator/generators/test-generator"
+    },
+    {
+      "packageName": "@modern-js/testing",
+      "projectFolder": "packages/review/testing"
+    },
+    {
+      "packageName": "@modern-js/testing-plugin-bff",
+      "projectFolder": "packages/review/testing-plugin-bff"
+    },
+    {
+      "packageName": "@modern-js/tsconfig",
+      "projectFolder": "packages/review/tsconfig"
+    },
+    {
+      "packageName": "@modern-js/types",
+      "projectFolder": "packages/toolkit/types"
+    },
+    {
+      "packageName": "@modern-js/unbundle-generator",
+      "projectFolder": "packages/generator/generators/unbundle-generator"
+    },
+    {
+      "packageName": "@modern-js/update",
+      "projectFolder": "packages/toolkit/update"
+    },
+    {
+      "packageName": "@modern-js/utils",
+      "projectFolder": "packages/toolkit/utils"
+    },
+    {
+      "packageName": "@modern-js/webpack",
+      "projectFolder": "packages/cli/webpack"
+    },
+    {
+      "packageName": "@scripts/build",
+      "projectFolder": "scripts/build"
+    },
+    {
+      "packageName": "@scripts/test",
+      "projectFolder": "scripts/test"
+    },
+    {
+      "packageName": "@scripts/codemod",
+      "projectFolder": "scripts/codemod"
+    },
+    {
+      "packageName": "@scripts/eslint-config",
+      "projectFolder": "scripts/eslint-config"
+    }
   ]
 }

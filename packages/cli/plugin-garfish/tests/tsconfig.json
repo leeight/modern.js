@@ -5,10 +5,7 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "isolatedModules": true,
-    "target": "ES5",
-    "esModuleInterop": true,
-    "paths": {},
-    "types": ["node", "jest"]
+    "paths": {}
   },
-  "include": ["src", "node.d.ts"]
+  "exclude": ["fixtures"]
 }

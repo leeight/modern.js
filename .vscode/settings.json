@@ -23,6 +23,7 @@
     "**/build": true,
     "**/output": true,
     "**/dist": true,
+    "**/.rush": true,
     "**/yarn.lock": true,
     "**/package-lock.json": true,
     "**/*.log": true,
