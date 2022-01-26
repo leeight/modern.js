@@ -18,6 +18,12 @@ module.exports = {
   }
 };
 
+
+const depAndDevDep = ['dependencies', 'devDependencies'];
+const resolutions = {
+  '@eslint/eslintrc': '0.4.3',
+}
+
 /**
  * This hook is invoked during installation before a package's dependencies
  * are selected.
@@ -33,6 +39,23 @@ function readPackage(packageJson, context) {
   //  context.log('Fixed up dependencies for @types/karma');
   //  packageJson.dependencies['log4js'] = '0.6.38';
   // }
+
+  for (const [k, v] of Object.entries(resolutions)) {
+    // force resolution version
+    modifyPackageJsonWithKeys(depAndDevDep, (obj) => {
+      if (obj[k]) {
+        obj[k] = v;
+      }
+    });
+  }
+
+  function modifyPackageJsonWithKeys(keys, cb) {
+    for (const key of keys) {
+      if (packageJson[key]) {
+        cb(packageJson[key]);
+      }
+    }
+  }
 
   return packageJson;
 }
