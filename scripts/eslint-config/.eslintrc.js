@@ -1,5 +1,9 @@
-const { defineConfig } = require('.');
+require('@rushstack/eslint-config/patch/modern-module-resolution');
 
-module.exports = defineConfig({
-  rootDir: __dirname,
-});
+module.exports = {
+  // root: true,
+  extends: ['@modern-js'],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+  },
+};

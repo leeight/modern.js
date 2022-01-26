@@ -84,7 +84,8 @@
     "@scripts/build": "workspace:*",
     "@scripts/test": "workspace:*",
     "@scripts/eslint-config": "workspace:*",
-    "@modern-js/tsconfig": "workspace:*"
+    "@modern-js/tsconfig": "workspace:*",
+    "@rushstack/eslint-config": "^2.5.1"
   },
   "sideEffects": false,
   "modernConfig": {

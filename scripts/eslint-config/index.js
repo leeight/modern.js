@@ -1,5 +1,5 @@
 // This is a workaround for https://github.com/eslint/eslint/issues/3458
-require('@rushstack/eslint-config/patch/modern-module-resolution');
+// require('@rushstack/eslint-config/patch/modern-module-resolution');
 
 const fs = require('fs');
 
@@ -16,6 +16,7 @@ function defineConfig(options) {
   }
 
   return {
+    // root: true,
     extends: [require.resolve('@modern-js/eslint-config')],
     parserOptions,
   };
