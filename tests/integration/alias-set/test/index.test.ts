@@ -7,7 +7,7 @@ import {
   killApp,
   getPort,
   modernBuild,
-} from '../../../utils/modernTestUtils';
+} from '@integration-test/shared/utils/modernTestUtils';
 
 const appDir = path.resolve(__dirname, '../');
 

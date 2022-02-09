@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "basic-module",
+  "name": "@integration-test/css-modules-fixtures-basic-module",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "less-inline-js",
+  "name": "@integration-test/css-fixtures-less-inline-js",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

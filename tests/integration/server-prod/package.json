@@ -6,9 +6,9 @@
     "new": "modern new",
     "reset": "rm -rf node_modules",
     "dev": "modern dev",
-    "build": "modern build",
+    "//build": "modern build",
     "start": "modern start",
-    "test": "modern test",
+    "test": "vitest --run --passWithNoTests",
     "preview": "modern deploy --mode preview",
     "deploy": "modern deploy"
   },
@@ -30,11 +30,6 @@
       "git add"
     ]
   },
-  "eslintConfig": {
-    "extends": [
-      "@modern-js"
-    ]
-  },
   "eslintIgnore": [
     "node_modules/",
     "dist/",
@@ -49,7 +44,13 @@
   },
   "devDependencies": {
     "@modern-js/app-tools": "workspace:^1.3.2",
-    "@modern-js/plugin-jarvis": "workspace:^1.2.1"
+    "@modern-js/plugin-jarvis": "workspace:^1.2.1",
+    "vite": "^2.7.12",
+    "vitest": "^0.1.19",
+    "puppeteer": "^10.4.0",
+    "eslint": "^7.32.0",
+    "@scripts/eslint-config": "workspace:*",
+    "@integration-test/shared": "workspace:*"
   },
   "modernConfig": {
     "runtime": {

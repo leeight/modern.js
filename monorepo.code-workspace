@@ -1,10 +1,6 @@
 {
   "folders": [
     {
-      "name": "server/core",
-      "path": "packages/server/core/"
-    },
-    {
       "name": "@modern-js-app/eslint-config",
       "path": "packages/review/eslint-config-app"
     },
@@ -447,6 +443,10 @@
     {
       "name": "Rush Config",
       "path": "common/config/rush"
+    },
+    {
+      "name": "Github Configs",
+      "path": ".github"
     }
   ],
   "settings": {
@@ -468,7 +468,8 @@
       "**/*/adapters/**/index.ts": true,
       "**/coverage": true,
       "**/dist": true,
-      "**/.rush": true
+      "**/.rush": true,
+      "*.build.log": true
     },
     "search.followSymlinks": false,
     "search.useIgnoreFiles": true,

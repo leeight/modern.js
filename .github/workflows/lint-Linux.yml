@@ -35,10 +35,22 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Cache Rush
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/install-run
+            ~/.rush
+          key: ${{ runner.os }}-${{ hashFiles('rush.json') }}
+      - name: Cache pnpm
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('common/config/rush/pnpm-lock.yaml') }}
 
       - name: Init
-        run: pnpm install --ignore-scripts
+        run: node common/scripts/install-run-rush.js install
 
       - name: Lint
-        run: pnpm run fast-lint
+        run: node common/scripts/install-run-rush.js build -t @modern-js/eslint-config

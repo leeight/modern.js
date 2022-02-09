@@ -414,16 +414,49 @@ function addMissingEslintConfig() {
   // }
 }
 
+function generateRushProject(projectFolder: string) {
+  if (!projectFolder.startsWith('packages/')) {
+    return;
+  }
+  // console.log(kProjectDir);
+  const projectDir = path.join(kProjectDir, projectFolder);
+  const projectConfigDir = path.join(projectDir, 'config');
+  const projectConfigFile = path.join(projectConfigDir, 'rush-project.json');
+  // if (fs.existsSync(projectConfigFile)) {
+  //   return;
+  // }
+  if (!fs.existsSync(projectConfigDir)) {
+    fs.mkdirSync(projectConfigDir);
+  }
+
+  // copy rush-project.json from
+  // console.log(projectFolder);
+  const rushProjectDefaultContent = fs.readFileSync(
+    path.join(
+      kProjectDir,
+      'packages',
+      'cli',
+      'core',
+      'config',
+      'rush-project.json',
+    ),
+    'utf-8',
+  );
+  fs.writeFileSync(projectConfigFile, rushProjectDefaultContent);
+}
+
 function main() {
-  const files = glob.sync('**/package.json', {
-    cwd: kProjectDir,
-    nodir: true,
-    ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
-  });
+  kProjects.forEach((v: any) => generateRushProject(v.projectFolder));
+
+  // const files = glob.sync('**/package.json', {
+  //   cwd: kProjectDir,
+  //   nodir: true,
+  //   ignore: ['**/node_modules/**', '**/dist/**', '**/fixtures/**'],
+  // });
   // files.forEach(addMissingDeps);
   // files.forEach(fixTypesField);
-  files.forEach(getWorkspacePackages);
-  files.forEach(fixWorkspacePackagesVersions);
+  // files.forEach(getWorkspacePackages);
+  // files.forEach(fixWorkspacePackagesVersions);
   // addMissingEslintConfig();
   // files.forEach(addPublishConfig);
   // console.log([...kWorkspace]);

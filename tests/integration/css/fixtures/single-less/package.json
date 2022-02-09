@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "single-less",
+  "name": "@integration-test/css-fixtures-single-less",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

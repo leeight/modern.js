@@ -8,7 +8,7 @@ import {
   sleep,
   modernBuild,
   modernStart,
-} from '../../../utils/modernTestUtils';
+} from '@integration-test/shared/utils/modernTestUtils';
 
 describe('bff in dev', () => {
   let port = 8080;

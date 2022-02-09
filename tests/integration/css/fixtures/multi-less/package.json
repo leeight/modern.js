@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "multi-less",
+  "name": "@integration-test/css-fixtures-multi-less",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

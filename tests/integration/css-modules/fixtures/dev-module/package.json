@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "dev-module",
+  "name": "@integration-test/css-modules-fixtures-dev-module",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

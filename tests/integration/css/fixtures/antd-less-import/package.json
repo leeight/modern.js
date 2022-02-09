@@ -1,5 +1,5 @@
 {
-  "name": "antd-less",
+  "name": "@integration-test/css-fixtures-antd-less",
   "version": "1.0.0",
   "dependencies": {
     "@modern-js/app-tools": "workspace:^1.0.0",

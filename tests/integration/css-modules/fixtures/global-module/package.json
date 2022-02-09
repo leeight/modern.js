@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "global-module",
+  "name": "@integration-test/css-modules-fixtures-global-module",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

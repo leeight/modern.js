@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "multi-css",
+  "name": "@integration-test/css-fixtures-multi-css",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

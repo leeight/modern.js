@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.61.1",
+  "rushVersion": "5.62.3",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -883,6 +883,171 @@
     {
       "packageName": "@scripts/eslint-config",
       "projectFolder": "scripts/eslint-config"
+    },
+    {
+      "packageName": "@integration-test/alias-set",
+      "projectFolder": "tests/integration/alias-set"
+    },
+    {
+      "packageName": "@integration-test/api-service-koa",
+      "projectFolder": "tests/integration/api-service-koa"
+    },
+    {
+      "packageName": "@integration-test/bff-express",
+      "projectFolder": "tests/integration/bff-express"
+    },
+
+    // -- @integration-test/css-modules --
+    {
+      "packageName": "@integration-test/css-modules",
+      "projectFolder": "tests/integration/css-modules"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-basic-module",
+      "projectFolder": "tests/integration/css-modules/fixtures/basic-module"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-composes-basic",
+      "projectFolder": "tests/integration/css-modules/fixtures/composes-basic"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-composes-external",
+      "projectFolder": "tests/integration/css-modules/fixtures/composes-external"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-dev-module",
+      "projectFolder": "tests/integration/css-modules/fixtures/dev-module"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-diff-suffix-module",
+      "projectFolder": "tests/integration/css-modules/fixtures/diff-suffix-module"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-global-module",
+      "projectFolder": "tests/integration/css-modules/fixtures/global-module"
+    },
+    {
+      "packageName": "@integration-test/css-modules-fixtures-prod-module",
+      "projectFolder": "tests/integration/css-modules/fixtures/prod-module"
+    },
+
+    // -- @integration-test/css --
+    {
+      "packageName": "@integration-test/css",
+      "projectFolder": "tests/integration/css"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-antd-less",
+      "projectFolder": "tests/integration/css/fixtures/antd-less-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-bad-nested-npm-import",
+      "projectFolder": "tests/integration/css/fixtures/bad-nested-npm-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-bad-npm-import",
+      "projectFolder": "tests/integration/css/fixtures/bad-npm-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-base-import",
+      "projectFolder": "tests/integration/css/fixtures/base-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-css-ts-declaration",
+      "projectFolder": "tests/integration/css/fixtures/css-ts-declaration"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-disable-source-map",
+      "projectFolder": "tests/integration/css/fixtures/disable-source-map"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-exclude-less",
+      "projectFolder": "tests/integration/css/fixtures/exclude-less"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-exclude-sass",
+      "projectFolder": "tests/integration/css/fixtures/exclude-sass"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-import-common-css",
+      "projectFolder": "tests/integration/css/fixtures/import-common-css"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-inline-css-url",
+      "projectFolder": "tests/integration/css/fixtures/inline-css-url"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-keep-css-url",
+      "projectFolder": "tests/integration/css/fixtures/keep-css-url"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-less-import",
+      "projectFolder": "tests/integration/css/fixtures/less-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-less-inline-js",
+      "projectFolder": "tests/integration/css/fixtures/less-inline-js"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-less-npm-import",
+      "projectFolder": "tests/integration/css/fixtures/less-npm-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-multi-css",
+      "projectFolder": "tests/integration/css/fixtures/multi-css"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-multi-less",
+      "projectFolder": "tests/integration/css/fixtures/multi-less"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-nested-npm-import",
+      "projectFolder": "tests/integration/css/fixtures/nested-npm-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-npm-import",
+      "projectFolder": "tests/integration/css/fixtures/npm-import"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-single-css",
+      "projectFolder": "tests/integration/css/fixtures/single-css"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-single-less",
+      "projectFolder": "tests/integration/css/fixtures/single-less"
+    },
+    {
+      "packageName": "@integration-test/css-fixtures-tips-to-install-less-plugin",
+      "projectFolder": "tests/integration/css/fixtures/tips-to-install-less-plugin"
+    },
+
+    {
+      "packageName": "@integration-test/new-mwa-app",
+      "projectFolder": "tests/integration/new-mwa-app"
+    },
+    {
+      "packageName": "@integration-test/plugin-testing-app",
+      "projectFolder": "tests/integration/plugin-testing-app"
+    },
+
+    // -- @integration-test/runtime --
+    {
+      "packageName": "@integration-test/runtime",
+      "projectFolder": "tests/integration/runtime"
+    },
+    {
+      "packageName": "@integration-test/runtime-fixtures-use-loader",
+      "projectFolder": "tests/integration/runtime/fixtures/use-loader"
+    },
+
+    {
+      // TODO: 这个地方的名字必须是 server-prod，否则会导致测试用例失败
+      "packageName": "server-prod",
+      "projectFolder": "tests/integration/server-prod"
+    },
+    {
+      "packageName": "@integration-test/shared",
+      "projectFolder": "tests/integration/shared"
     }
   ]
 }

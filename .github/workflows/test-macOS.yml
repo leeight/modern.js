@@ -38,16 +38,27 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Cache Rush
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/install-run
+            ~/.rush
+          key: ${{ runner.os }}-${{ hashFiles('rush.json') }}
+      - name: Cache pnpm
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('common/config/rush/pnpm-lock.yaml') }}
 
       - name: Init
-        run: pnpm install --ignore-scripts
+        run: node common/scripts/install-run-rush.js install
 
       - name: Test
-        run: pnpm run test:ut
-
-      - name: Collect coverage
-        uses: codecov/codecov-action@v2
-        with:
-          directory: ./coverage
-          fail_ci_if_error: true
+        run: npm run test:ut
+      # - name: Collect coverage
+      #   uses: codecov/codecov-action@v2
+      #   with:
+      #     directory: ./coverage
+      #     fail_ci_if_error: true

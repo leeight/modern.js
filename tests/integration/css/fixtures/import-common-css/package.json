@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "import-common-css",
+  "name": "@integration-test/css-fixtures-import-common-css",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "bad-nested-npm-import",
+  "name": "@integration-test/css-fixtures-bad-nested-npm-import",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

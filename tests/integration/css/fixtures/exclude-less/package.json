@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "exclude-less",
+  "name": "@integration-test/css-fixtures-exclude-less",
   "version": "1.0.0",
   "scripts": {
     "dev": "modern dev"

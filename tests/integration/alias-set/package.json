@@ -4,7 +4,8 @@
   "version": "1.1.0",
   "scripts": {
     "dev": "modern dev",
-    "build": "modern build"
+    "//build": "modern build",
+    "test": "vitest --run --passWithNoTests"
   },
   "dependencies": {
     "@modern-js/runtime": "workspace:^1.2.1",
@@ -13,8 +14,14 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "workspace:^1.3.2"
+    "vite": "^2.7.12",
+    "vitest": "^0.1.19",
+    "puppeteer": "^10.4.0",
+    "eslint": "^7.32.0",
+    "@modern-js/app-tools": "workspace:^1.3.2",
+    "@scripts/eslint-config": "workspace:*",
+    "@modern-js/tsconfig": "workspace:*",
+    "@integration-test/shared": "workspace:*"
   },
-  "browserslist": {},
-  "type": "module"
+  "browserslist": {}
 }

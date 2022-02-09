@@ -6,7 +6,7 @@ import {
   getPort,
   killApp,
   sleep,
-} from '../../../utils/modernTestUtils';
+} from '@integration-test/shared/utils/modernTestUtils';
 
 const fixtureDir = path.resolve(__dirname, '../fixtures');
 

@@ -18,6 +18,8 @@ jobs:
   integration-test-mac:
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
+    env:
+      RUSH_BUILD_CACHE_WRITE_ALLOWED: 1
     strategy:
       matrix:
         node-version: [14.x, 16.x]
@@ -31,32 +33,44 @@ jobs:
       - uses: pnpm/action-setup@v2.0.1
         with:
           version: latest
-
-      - name: Check docs only change
-        run: echo ::set-output name=DOCS_CHANGE::$(node skip-docs-change.js echo 'not-docs-only-change')
-        id: docs-change
-
-      - run: echo ${{steps.docs-change.outputs.DOCS_CHANGE}}
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache rush
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/install-run
+            ~/.rush
+          key: ${{ runner.os }}-${{ hashFiles('rush.json') }}
+      - name: Cache pnpm store
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/pnpm-store
+          key: ${{ runner.os }}-${{ matrix.node-version }}-${{ hashFiles('common/config/rush/pnpm-lock.yaml') }}
+      - name: Cache rush local build
+        uses: actions/cache@v2
+        with:
+          path: |
+            common/temp/build-cache
+          key: ${{ runner.os }}-${{ matrix.node-version }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-
 
       - name: Setup Node.js ${{ matrix.node-version }}
         if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: Init
-        if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: pnpm install --ignore-scripts
+        run: node common/scripts/install-run-rush.js install
 
       - name: Prepare
-        if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: pnpm run prepare --filter ./packages
-
-      - name: Install Puppeteer
-        if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: cd ./tests/node_modules/puppeteer && npm run install && cd ../..
+        run: node common/scripts/install-run-rush.js build -v
 
       - name: Test
-        if: ${{steps.docs-change.outputs.DOCS_CHANGE != 'docs only change'}}
-        run: cd ./tests && pnpm run test
+        run: npm run test:e2e

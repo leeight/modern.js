@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "css-ts-declaration",
+  "name": "@integration-test/css-fixtures-css-ts-declaration",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

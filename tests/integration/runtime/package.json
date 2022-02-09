@@ -1,5 +1,16 @@
 {
   "private": true,
-  "name": "runtime",
-  "version": "1.0.0"
+  "name": "@integration-test/runtime",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vitest --run --passWithNoTests"
+  },
+  "devDependencies": {
+    "vite": "^2.7.12",
+    "vitest": "^0.1.19",
+    "puppeteer": "^10.4.0",
+    "eslint": "^7.32.0",
+    "@scripts/eslint-config": "workspace:*",
+    "@integration-test/shared": "workspace:*"
+  }
 }

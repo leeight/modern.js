@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "exit"
+  },
   "dependencies": {
     "@modern-js/babel-preset-app": "workspace:^1.2.1"
   },

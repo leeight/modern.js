@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "less-import",
+  "name": "@integration-test/css-fixtures-less-import",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

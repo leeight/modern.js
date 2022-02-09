@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "composes-external",
+  "name": "@integration-test/css-modules-fixtures-composes-external",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

@@ -5,8 +5,9 @@ import {
   killApp,
   modernBuild,
   modernStart,
-} from '../../../utils/modernTestUtils';
+} from '@integration-test/shared/utils/modernTestUtils';
 import 'isomorphic-fetch';
+import { describe, beforeAll, test, expect, afterAll } from 'vitest';
 
 describe('api-service in dev', () => {
   let port = 8080;
@@ -16,7 +17,7 @@ describe('api-service in dev', () => {
   let app: any;
 
   beforeAll(async () => {
-    jest.setTimeout(1000 * 60 * 2);
+    // jest.setTimeout(1000 * 60 * 2);
     port = await getPort();
     app = await launchApp(appPath, port, {
       cwd: appPath,

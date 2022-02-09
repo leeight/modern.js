@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "keep-css-url",
+  "name": "@integration-test/css-fixtures-keep-css-url",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

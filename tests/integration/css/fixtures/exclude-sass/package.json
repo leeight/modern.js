@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "exclude-sass",
+  "name": "@integration-test/css-fixtures-exclude-sass",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

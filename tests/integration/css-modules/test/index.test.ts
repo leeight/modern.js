@@ -7,7 +7,7 @@ import {
   getPort,
   modernStart,
   killApp,
-} from '../../../utils/modernTestUtils';
+} from '@integration-test/shared/utils/modernTestUtils';
 
 const fixturesDir = join(__dirname, '../fixtures');
 

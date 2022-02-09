@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "prod-module",
+  "name": "@integration-test/css-modules-fixtures-prod-module",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

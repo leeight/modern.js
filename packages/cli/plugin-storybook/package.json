@@ -76,7 +76,7 @@
     "@modern-js/runtime-core": "workspace:^1.2.1",
     "@storybook/addons": "^6.3.7",
     "@types/findup-sync": "^4.0.1",
-    "@types/fs-extra": "^9.0.12",
+    "@types/fs-extra": "^9.0.13",
     "@types/glob": "^7.1.4",
     "@types/jest": "^26",
     "@types/lodash.merge": "^4.6.6",

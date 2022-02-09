@@ -1,6 +1,5 @@
 import path, { resolve } from 'path';
-import fs from 'fs';
-import { readdirSync, readFileSync } from 'fs-extra';
+import fs, { readdirSync, readFileSync } from 'fs';
 import { describe, it, expect } from 'vitest';
 import puppeteer from 'puppeteer';
 import {
@@ -8,7 +7,7 @@ import {
   getPort,
   launchApp,
   killApp,
-} from '../../../utils/modernTestUtils';
+} from '@integration-test/shared/utils/modernTestUtils';
 import { getCssFiles, readCssFile, copyModules } from './utils';
 
 const fixtures = path.resolve(__dirname, '../fixtures');

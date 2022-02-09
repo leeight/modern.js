@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "base-import",
+  "name": "@integration-test/css-fixtures-base-import",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "inline-css-url",
+  "name": "@integration-test/css-fixtures-inline-css-url",
   "version": "1.0.0",
   "scripts": {
     "dev": "modern dev"

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "tips-to-install-less-plugin",
+  "name": "@integration-test/css-fixtures-tips-to-install-less-plugin",
   "version": "1.0.0",
   "dependencies": {
     "react": "^17.0.1",
